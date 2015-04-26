@@ -1,0 +1,13 @@
+digraph "tests.COMPETE_testanswer"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="tests.COMPETE_testanswer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="tests.HOW_MANY_HOURS\l_THIS_PSET_TOOK_testanswer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacetests.html#ae1499c56736253155f79b3e74da4d965"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="tests.WHAT_I_FOUND\l_INTERESTING_testanswer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacetests.html#ad0f0f17aefd4844393d9db636b4124ac"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="tests.WHAT_I_FOUND\l_BORING_testanswer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacetests.html#a13f88cd85ed586d95912e20ea25a5745"];
+}

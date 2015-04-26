@@ -1,0 +1,109 @@
+\hypertarget{classcsp_1_1_c_s_p}{}\section{csp.\+C\+S\+P Class Reference}
+\label{classcsp_1_1_c_s_p}\index{csp.\+C\+S\+P@{csp.\+C\+S\+P}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcsp_1_1_c_s_p_a62c6c3b56c1dc8c0a3554c46a030a1a8}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, constraints, variables)
+\item 
+def \hyperlink{classcsp_1_1_c_s_p_a0761da7d547113252312d3aefdf2865a}{initial\+\_\+state} (self)
+\item 
+def \hyperlink{classcsp_1_1_c_s_p_a3a11bac70a871ced6790bb527a704ee0}{solve}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcsp_1_1_c_s_p_ab5c8a0bf07c71c7fef1e965df2cdbffa}{constraint\+\_\+map}
+\item 
+\hyperlink{classcsp_1_1_c_s_p_a12546b7e4b640257429c6b39cd561837}{variable\+\_\+map}
+\item 
+\hyperlink{classcsp_1_1_c_s_p_a25e138ab056f90e123b27985f341b96c}{variable\+\_\+order}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Top-level wrapper object that encapsulates all the
+variables and constraints of a CSP problem
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcsp_1_1_c_s_p_a62c6c3b56c1dc8c0a3554c46a030a1a8}{}\index{csp\+::\+C\+S\+P@{csp\+::\+C\+S\+P}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!csp\+::\+C\+S\+P@{csp\+::\+C\+S\+P}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+C\+S\+P.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{constraints, }
+\item[{}]{variables}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_c_s_p_a62c6c3b56c1dc8c0a3554c46a030a1a8}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcsp_1_1_c_s_p_a0761da7d547113252312d3aefdf2865a}{}\index{csp\+::\+C\+S\+P@{csp\+::\+C\+S\+P}!initial\+\_\+state@{initial\+\_\+state}}
+\index{initial\+\_\+state@{initial\+\_\+state}!csp\+::\+C\+S\+P@{csp\+::\+C\+S\+P}}
+\subsubsection[{initial\+\_\+state}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+C\+S\+P.\+initial\+\_\+state (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_c_s_p_a0761da7d547113252312d3aefdf2865a}
+\begin{DoxyVerb}Returns the starting state of the CSP with no variables assigned.
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 0
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+\hypertarget{classcsp_1_1_c_s_p_a3a11bac70a871ced6790bb527a704ee0}{}\index{csp\+::\+C\+S\+P@{csp\+::\+C\+S\+P}!solve@{solve}}
+\index{solve@{solve}!csp\+::\+C\+S\+P@{csp\+::\+C\+S\+P}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+C\+S\+P.\+solve (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{constraint\+\_\+checker = {\ttfamily {\bf basic\+\_\+constraint\+\_\+checker}}, }
+\item[{}]{verbose = {\ttfamily True}}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_c_s_p_a3a11bac70a871ced6790bb527a704ee0}
+\begin{DoxyVerb}Perform a depth-first search with backtracking to solve
+This CSP problem.
+
+The constraint_checker is a function that performs constraint-checking
+propagation on a CSPState.  By default the checker does
+basic constraint checking (without propagation).
+
+returns the solution state, and the search tree.
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcsp_1_1_c_s_p_ab5c8a0bf07c71c7fef1e965df2cdbffa}{}\index{csp\+::\+C\+S\+P@{csp\+::\+C\+S\+P}!constraint\+\_\+map@{constraint\+\_\+map}}
+\index{constraint\+\_\+map@{constraint\+\_\+map}!csp\+::\+C\+S\+P@{csp\+::\+C\+S\+P}}
+\subsubsection[{constraint\+\_\+map}]{\setlength{\rightskip}{0pt plus 5cm}csp.\+C\+S\+P.\+constraint\+\_\+map}\label{classcsp_1_1_c_s_p_ab5c8a0bf07c71c7fef1e965df2cdbffa}
+\hypertarget{classcsp_1_1_c_s_p_a12546b7e4b640257429c6b39cd561837}{}\index{csp\+::\+C\+S\+P@{csp\+::\+C\+S\+P}!variable\+\_\+map@{variable\+\_\+map}}
+\index{variable\+\_\+map@{variable\+\_\+map}!csp\+::\+C\+S\+P@{csp\+::\+C\+S\+P}}
+\subsubsection[{variable\+\_\+map}]{\setlength{\rightskip}{0pt plus 5cm}csp.\+C\+S\+P.\+variable\+\_\+map}\label{classcsp_1_1_c_s_p_a12546b7e4b640257429c6b39cd561837}
+\hypertarget{classcsp_1_1_c_s_p_a25e138ab056f90e123b27985f341b96c}{}\index{csp\+::\+C\+S\+P@{csp\+::\+C\+S\+P}!variable\+\_\+order@{variable\+\_\+order}}
+\index{variable\+\_\+order@{variable\+\_\+order}!csp\+::\+C\+S\+P@{csp\+::\+C\+S\+P}}
+\subsubsection[{variable\+\_\+order}]{\setlength{\rightskip}{0pt plus 5cm}csp.\+C\+S\+P.\+variable\+\_\+order}\label{classcsp_1_1_c_s_p_a25e138ab056f90e123b27985f341b96c}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lab4/\hyperlink{csp_8py}{csp.\+py}\end{DoxyCompactItemize}

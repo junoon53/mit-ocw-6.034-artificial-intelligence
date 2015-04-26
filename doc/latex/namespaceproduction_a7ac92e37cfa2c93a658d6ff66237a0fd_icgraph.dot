@@ -1,0 +1,18 @@
+digraph "production.sorted"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="production.sorted",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="production.IF.apply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classproduction_1_1_i_f.html#a8d8249f6e0329407f77f23f9eede1342"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="production.IF.__init__",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classproduction_1_1_i_f.html#a9017c2c3d1ca4982ebc9dc58afc2b750"];
+  Node3 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="search.Graph.get_connected\l_nodes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsearch_1_1_graph.html#a313519052e9ca4ea9eaeac73c667cdd3"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="util.memoize.__call__",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classutil_1_1memoize.html#a2fb9d2b784bfbfd5878bbbe5a4e51432"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="classify.nearest_neighbors",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceclassify.html#a38d3402082141a678096dddcb5d6fd02"];
+}

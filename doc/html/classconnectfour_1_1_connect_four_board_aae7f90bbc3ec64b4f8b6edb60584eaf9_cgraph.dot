@@ -1,0 +1,15 @@
+digraph "connectfour.ConnectFourBoard.longest_chain"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="connectfour.ConnectFourBoard.longest\l_chain",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="connectfour.ConnectFourBoard.get_cell",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconnectfour_1_1_connect_four_board.html#a088fda69e8c13c1e938cb4e138bb396d"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="connectfour.ConnectFourBoard.\l_max_length_from_cell",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconnectfour_1_1_connect_four_board.html#a7d88e3ae927bef23fad0401f85a88956"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="connectfour.reverse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceconnectfour.html#a5a597eb637303af8679bfba771eab239"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="connectfour.ConnectFourBoard.\l_contig_vector_cells",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconnectfour_1_1_connect_four_board.html#a52518c851aa91e3c283ed4dd38360ff1"];
+}

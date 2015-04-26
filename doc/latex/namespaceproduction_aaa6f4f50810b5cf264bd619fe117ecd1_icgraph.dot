@@ -1,0 +1,20 @@
+digraph "production.uniq"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="production.uniq",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="production.simplify",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceproduction.html#a9cdd2d9b32a63904d61e06f5a0e3932e"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="algebra.do_multiply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacealgebra.html#a5ea0efba014ee3b9e07e77132793757c"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="algebra.multiply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacealgebra.html#a1293927dfb502302e1bfafa581d2d602"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="algebra.Product.simplify",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classalgebra_1_1_product.html#ab5a704e40613060d552eb58b664dffc4"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="backchain.backchain\l_to_goal_tree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacebackchain.html#ac1a9a8fa73ff8ceccf51d3781ee5808b"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="backchain.create_statement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacebackchain.html#a221181d9f688096ccca60898b02c08ad"];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

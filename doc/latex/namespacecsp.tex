@@ -1,0 +1,79 @@
+\hypertarget{namespacecsp}{}\section{csp Namespace Reference}
+\label{namespacecsp}\index{csp@{csp}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcsp_1_1_binary_constraint}{Binary\+Constraint}
+\item 
+class \hyperlink{classcsp_1_1_c_s_p}{C\+S\+P}
+\item 
+class \hyperlink{classcsp_1_1_c_s_p_state}{C\+S\+P\+State}
+\item 
+class \hyperlink{classcsp_1_1_node}{Node}
+\item 
+class \hyperlink{classcsp_1_1_variable}{Variable}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacecsp_ad32f960c74965165e11dded780a61aea}{basic\+\_\+constraint\+\_\+checker}
+\item 
+def \hyperlink{namespacecsp_a44b4e01fccb1ead68ca05c94eca176f0}{simple\+\_\+csp\+\_\+problem} ()
+\item 
+def \hyperlink{namespacecsp_a1c5d405433770dac8d183988546dc1ee}{solve\+\_\+csp\+\_\+problem}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecsp_a521f09aff5d0f231d9cf34d594c9fad1}{checker} = \hyperlink{namespacecsp_ad32f960c74965165e11dded780a61aea}{basic\+\_\+constraint\+\_\+checker}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacecsp_ad32f960c74965165e11dded780a61aea}{}\index{csp@{csp}!basic\+\_\+constraint\+\_\+checker@{basic\+\_\+constraint\+\_\+checker}}
+\index{basic\+\_\+constraint\+\_\+checker@{basic\+\_\+constraint\+\_\+checker}!csp@{csp}}
+\subsubsection[{basic\+\_\+constraint\+\_\+checker}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+basic\+\_\+constraint\+\_\+checker (
+\begin{DoxyParamCaption}
+\item[{}]{state, }
+\item[{}]{verbose = {\ttfamily True}}
+\end{DoxyParamCaption}
+)}\label{namespacecsp_ad32f960c74965165e11dded780a61aea}
+\begin{DoxyVerb}Basic constraint checker used to check at every assignment
+whether the assignment passes all the constraints
+\end{DoxyVerb}
+ 
+
+Here is the caller graph for this function\+:
+% FIG 0
+
+
+\hypertarget{namespacecsp_a44b4e01fccb1ead68ca05c94eca176f0}{}\index{csp@{csp}!simple\+\_\+csp\+\_\+problem@{simple\+\_\+csp\+\_\+problem}}
+\index{simple\+\_\+csp\+\_\+problem@{simple\+\_\+csp\+\_\+problem}!csp@{csp}}
+\subsubsection[{simple\+\_\+csp\+\_\+problem}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+simple\+\_\+csp\+\_\+problem (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespacecsp_a44b4e01fccb1ead68ca05c94eca176f0}
+\begin{DoxyVerb}Formulation of a simple CSP problem that attempts to find
+an assignment to 4 variables: A,B,C,D.  With the constraint that
+A < B < C < D.
+\end{DoxyVerb}
+ \hypertarget{namespacecsp_a1c5d405433770dac8d183988546dc1ee}{}\index{csp@{csp}!solve\+\_\+csp\+\_\+problem@{solve\+\_\+csp\+\_\+problem}}
+\index{solve\+\_\+csp\+\_\+problem@{solve\+\_\+csp\+\_\+problem}!csp@{csp}}
+\subsubsection[{solve\+\_\+csp\+\_\+problem}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+solve\+\_\+csp\+\_\+problem (
+\begin{DoxyParamCaption}
+\item[{}]{problem, }
+\item[{}]{checker, }
+\item[{}]{verbose = {\ttfamily True}}
+\end{DoxyParamCaption}
+)}\label{namespacecsp_a1c5d405433770dac8d183988546dc1ee}
+\begin{DoxyVerb}problem is a function that returns a CSP object that we can solve.
+checker is a function that implements the contraint checking.
+variable_order_cmp is a comparator for ordering the variables.
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\hypertarget{namespacecsp_a521f09aff5d0f231d9cf34d594c9fad1}{}\index{csp@{csp}!checker@{checker}}
+\index{checker@{checker}!csp@{csp}}
+\subsubsection[{checker}]{\setlength{\rightskip}{0pt plus 5cm}csp.\+checker = {\bf basic\+\_\+constraint\+\_\+checker}}\label{namespacecsp_a521f09aff5d0f231d9cf34d594c9fad1}

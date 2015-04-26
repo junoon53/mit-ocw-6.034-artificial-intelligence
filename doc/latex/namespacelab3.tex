@@ -1,0 +1,301 @@
+\hypertarget{namespacelab3}{}\section{lab3 Namespace Reference}
+\label{namespacelab3}\index{lab3@{lab3}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacelab3_abda076f73dc12e63d20dbdcb5954a6ed}{focused\+\_\+evaluate} (board)
+\begin{DoxyCompactList}\small\item\em This section will contain occasional lines that you can uncomment to play the game interactively. \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab3_a7ead0dd82f5946316600e9a937e55037}{alpha\+\_\+beta\+\_\+search}
+\begin{DoxyCompactList}\small\item\em You can try out your new evaluation function by uncommenting this line\+: run\+\_\+game(basic\+\_\+player, quick\+\_\+to\+\_\+win\+\_\+player) \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab3_a30824a87848607d82381e77631ca275b}{alpha\+\_\+beta\+\_\+find\+\_\+board\+\_\+value}
+\item 
+def \hyperlink{namespacelab3_ad4559f27d37b36fa9a2190308c28174a}{better\+\_\+evaluate} (board)
+\begin{DoxyCompactList}\small\item\em Finally, come up with a better evaluation function than focused-\/evaluate. \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab3_a34296327d4f1f67dfca5302d2ff4751c}{run\+\_\+test\+\_\+game} (player1, player2, board)
+\begin{DoxyCompactList}\small\item\em Uncomment to watch your player play a game\+: run\+\_\+game(your\+\_\+player, your\+\_\+player) \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab3_ae1b04090543255fa707de5abb7410a35}{run\+\_\+test\+\_\+search} (search, board, depth, \hyperlink{namespacelab3_aef5722d14d422222f997cff6cd66564f}{eval\+\_\+fn})
+\item 
+def \hyperlink{namespacelab3_af9aef6e2b8254c91f1ffb4dad0f99de5}{run\+\_\+test\+\_\+tree\+\_\+search} (search, board, depth)
+\begin{DoxyCompactList}\small\item\em This function runs your alpha-\/beta implementation using a tree as the search rather than a live connect four game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespacelab3_ad2e45b0f85fa13d33b881635810e83e8}{A\+N\+S\+W\+E\+R1} = 3
+\item 
+int \hyperlink{namespacelab3_a988f22c9cf01e9e09a7df386ff76a739}{A\+N\+S\+W\+E\+R2} = 2
+\item 
+tuple \hyperlink{namespacelab3_aa43b2937a5bad423a493276473384d9a}{quick\+\_\+to\+\_\+win\+\_\+player}
+\begin{DoxyCompactList}\small\item\em Create a \char`\"{}player\char`\"{} function that uses the focused\+\_\+evaluate function. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacelab3_aa4790555a33d7ee8155ff4358799617a}{alphabeta\+\_\+player}
+\begin{DoxyCompactList}\small\item\em Now you should be able to search twice as deep in the same amount of time. \end{DoxyCompactList}\item 
+\hyperlink{namespacelab3_a38ce81786d974fadcf07d456d1576153}{ab\+\_\+iterative\+\_\+player} = lambdaboard\+:\textbackslash{}
+\begin{DoxyCompactList}\small\item\em This player uses progressive deepening, so it can kick your ass while making efficient use of time\+: \end{DoxyCompactList}\item 
+\hyperlink{namespacelab3_abc5335867f83db21385d992f00825e22}{search\+\_\+fn} = \hyperlink{namespacelab3_a7ead0dd82f5946316600e9a937e55037}{alpha\+\_\+beta\+\_\+search},
+\item 
+int \hyperlink{namespacelab3_aef5722d14d422222f997cff6cd66564f}{eval\+\_\+fn} = 5
+\item 
+tuple \hyperlink{namespacelab3_af72a06890c8de2fae05fc82044aa76be}{board\+\_\+tuples}
+\item 
+tuple \hyperlink{namespacelab3_a7c477dab1b106f5495518ad07afa5a16}{test\+\_\+board\+\_\+1}
+\item 
+tuple \hyperlink{namespacelab3_a0cf494dec1c4e8b319a04e3b8b967cf3}{test\+\_\+board\+\_\+2}
+\item 
+tuple \hyperlink{namespacelab3_abb9fde36d4d3f3fbe09a1bcc9e70a8df}{your\+\_\+player}
+\begin{DoxyCompactList}\small\item\em A player that uses alpha-\/beta and better\+\_\+evaluate\+: \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacelab3_a507ef68d63a202cdd769b53df79cf163}{C\+O\+M\+P\+E\+T\+E} = (False)
+\begin{DoxyCompactList}\small\item\em Do you want us to use your code in a tournament against other students? See the description in the problem set. \end{DoxyCompactList}\item 
+string \hyperlink{namespacelab3_ac15f588150b4ba8f99f8b305c86527cc}{H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K} = \char`\"{}10\char`\"{}
+\begin{DoxyCompactList}\small\item\em The standard survey questions. \end{DoxyCompactList}\item 
+string \hyperlink{namespacelab3_ac6298332137ba3ffbfa88449a0d8add2}{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G} = \char`\"{}alpha-\/beta\char`\"{}
+\item 
+string \hyperlink{namespacelab3_a2d4ca0461367d56429a6e110bdc70c9c}{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G} = \char`\"{}nothing\char`\"{}
+\item 
+string \hyperlink{namespacelab3_a2d13719e09eaf808047d497d45dff575}{N\+A\+M\+E} = \char`\"{}vikram\char`\"{}
+\item 
+string \hyperlink{namespacelab3_a3cd2b5e83c71f1b3c2f453bea62b3af5}{E\+M\+A\+I\+L} = \char`\"{}whocares\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacelab3_a30824a87848607d82381e77631ca275b}{}\index{lab3@{lab3}!alpha\+\_\+beta\+\_\+find\+\_\+board\+\_\+value@{alpha\+\_\+beta\+\_\+find\+\_\+board\+\_\+value}}
+\index{alpha\+\_\+beta\+\_\+find\+\_\+board\+\_\+value@{alpha\+\_\+beta\+\_\+find\+\_\+board\+\_\+value}!lab3@{lab3}}
+\subsubsection[{alpha\+\_\+beta\+\_\+find\+\_\+board\+\_\+value}]{\setlength{\rightskip}{0pt plus 5cm}def lab3.\+alpha\+\_\+beta\+\_\+find\+\_\+board\+\_\+value (
+\begin{DoxyParamCaption}
+\item[{}]{node\+Type, }
+\item[{}]{alpha, }
+\item[{}]{beta, }
+\item[{}]{board, }
+\item[{}]{depth, }
+\item[{}]{eval\+\_\+fn, }
+\item[{}]{get\+\_\+next\+\_\+moves\+\_\+fn = {\ttfamily get\+\_\+all\+\_\+next\+\_\+moves}, }
+\item[{}]{is\+\_\+terminal\+\_\+fn = {\ttfamily is\+\_\+terminal}}
+\end{DoxyParamCaption}
+)}\label{namespacelab3_a30824a87848607d82381e77631ca275b}
+\begin{DoxyVerb}Minimax helper function: Return the minimax value of a particular board,
+given a particular depth to estimate to
+\end{DoxyVerb}
+ 
+
+Here is the caller graph for this function\+:
+% FIG 0
+
+
+\hypertarget{namespacelab3_a7ead0dd82f5946316600e9a937e55037}{}\index{lab3@{lab3}!alpha\+\_\+beta\+\_\+search@{alpha\+\_\+beta\+\_\+search}}
+\index{alpha\+\_\+beta\+\_\+search@{alpha\+\_\+beta\+\_\+search}!lab3@{lab3}}
+\subsubsection[{alpha\+\_\+beta\+\_\+search}]{\setlength{\rightskip}{0pt plus 5cm}def lab3.\+alpha\+\_\+beta\+\_\+search (
+\begin{DoxyParamCaption}
+\item[{}]{board, }
+\item[{}]{depth, }
+\item[{}]{eval\+\_\+fn, }
+\item[{}]{get\+\_\+next\+\_\+moves\+\_\+fn = {\ttfamily get\+\_\+all\+\_\+next\+\_\+moves}, }
+\item[{}]{is\+\_\+terminal\+\_\+fn = {\ttfamily is\+\_\+terminal}}
+\end{DoxyParamCaption}
+)}\label{namespacelab3_a7ead0dd82f5946316600e9a937e55037}
+
+
+You can try out your new evaluation function by uncommenting this line\+: run\+\_\+game(basic\+\_\+player, quick\+\_\+to\+\_\+win\+\_\+player) 
+
+Write an alpha-\/beta-\/search procedure that acts like the minimax-\/search procedure, but uses alpha-\/beta pruning to avoid searching bad ideas that can\textquotesingle{}t improve the result. The tester will check your pruning by counting the number of static evaluations you make.
+
+You can use \hyperlink{namespacebasicplayer_a030bbbbdb3c20ccc2984ee862cce6e0f}{minimax()} in \hyperlink{basicplayer_8py}{basicplayer.\+py} as an example. 
+
+Here is the call graph for this function\+:
+% FIG 1
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+\hypertarget{namespacelab3_ad4559f27d37b36fa9a2190308c28174a}{}\index{lab3@{lab3}!better\+\_\+evaluate@{better\+\_\+evaluate}}
+\index{better\+\_\+evaluate@{better\+\_\+evaluate}!lab3@{lab3}}
+\subsubsection[{better\+\_\+evaluate}]{\setlength{\rightskip}{0pt plus 5cm}def lab3.\+better\+\_\+evaluate (
+\begin{DoxyParamCaption}
+\item[{}]{board}
+\end{DoxyParamCaption}
+)}\label{namespacelab3_ad4559f27d37b36fa9a2190308c28174a}
+
+
+Finally, come up with a better evaluation function than focused-\/evaluate. 
+
+By providing a different function, you should be able to beat simple-\/evaluate (or focused-\/evaluate) while searching to the same depth. \hypertarget{namespacelab3_abda076f73dc12e63d20dbdcb5954a6ed}{}\index{lab3@{lab3}!focused\+\_\+evaluate@{focused\+\_\+evaluate}}
+\index{focused\+\_\+evaluate@{focused\+\_\+evaluate}!lab3@{lab3}}
+\subsubsection[{focused\+\_\+evaluate}]{\setlength{\rightskip}{0pt plus 5cm}def lab3.\+focused\+\_\+evaluate (
+\begin{DoxyParamCaption}
+\item[{}]{board}
+\end{DoxyParamCaption}
+)}\label{namespacelab3_abda076f73dc12e63d20dbdcb5954a6ed}
+
+
+This section will contain occasional lines that you can uncomment to play the game interactively. 
+
+Be sure to re-\/comment them when you\textquotesingle{}re done with them. Please don\textquotesingle{}t turn in a problem set that sits there asking the grader-\/bot to play a game!
+
+Uncomment this line to play a game as white\+: run\+\_\+game(human\+\_\+player, basic\+\_\+player) Uncomment this line to play a game as black\+: run\+\_\+game(basic\+\_\+player, human\+\_\+player) Or watch the computer play against itself\+: run\+\_\+game(basic\+\_\+player, basic\+\_\+player) Change this evaluation function so that it tries to win as soon as possible, or lose as late as possible, when it decides that one side is certain to win. You don\textquotesingle{}t have to change how it evaluates non-\/winning positions. \begin{DoxyVerb}Given a board, return a numeric rating of how good
+that board is for the current player.
+A return value >= 1000 means that the current player has won;
+a return value <= -1000 means that the current player has lost
+\end{DoxyVerb}
+ \hypertarget{namespacelab3_a34296327d4f1f67dfca5302d2ff4751c}{}\index{lab3@{lab3}!run\+\_\+test\+\_\+game@{run\+\_\+test\+\_\+game}}
+\index{run\+\_\+test\+\_\+game@{run\+\_\+test\+\_\+game}!lab3@{lab3}}
+\subsubsection[{run\+\_\+test\+\_\+game}]{\setlength{\rightskip}{0pt plus 5cm}def lab3.\+run\+\_\+test\+\_\+game (
+\begin{DoxyParamCaption}
+\item[{}]{player1, }
+\item[{}]{player2, }
+\item[{}]{board}
+\end{DoxyParamCaption}
+)}\label{namespacelab3_a34296327d4f1f67dfca5302d2ff4751c}
+
+
+Uncomment to watch your player play a game\+: run\+\_\+game(your\+\_\+player, your\+\_\+player) 
+
+Uncomment this (or run it in the command window) to see how you do on the tournament that will be graded. run\+\_\+game(your\+\_\+player, basic\+\_\+player) These three functions are used by the tester; please don\textquotesingle{}t modify them! 
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+\hypertarget{namespacelab3_ae1b04090543255fa707de5abb7410a35}{}\index{lab3@{lab3}!run\+\_\+test\+\_\+search@{run\+\_\+test\+\_\+search}}
+\index{run\+\_\+test\+\_\+search@{run\+\_\+test\+\_\+search}!lab3@{lab3}}
+\subsubsection[{run\+\_\+test\+\_\+search}]{\setlength{\rightskip}{0pt plus 5cm}def lab3.\+run\+\_\+test\+\_\+search (
+\begin{DoxyParamCaption}
+\item[{}]{search, }
+\item[{}]{board, }
+\item[{}]{depth, }
+\item[{}]{eval\+\_\+fn}
+\end{DoxyParamCaption}
+)}\label{namespacelab3_ae1b04090543255fa707de5abb7410a35}
+\hypertarget{namespacelab3_af9aef6e2b8254c91f1ffb4dad0f99de5}{}\index{lab3@{lab3}!run\+\_\+test\+\_\+tree\+\_\+search@{run\+\_\+test\+\_\+tree\+\_\+search}}
+\index{run\+\_\+test\+\_\+tree\+\_\+search@{run\+\_\+test\+\_\+tree\+\_\+search}!lab3@{lab3}}
+\subsubsection[{run\+\_\+test\+\_\+tree\+\_\+search}]{\setlength{\rightskip}{0pt plus 5cm}def lab3.\+run\+\_\+test\+\_\+tree\+\_\+search (
+\begin{DoxyParamCaption}
+\item[{}]{search, }
+\item[{}]{board, }
+\item[{}]{depth}
+\end{DoxyParamCaption}
+)}\label{namespacelab3_af9aef6e2b8254c91f1ffb4dad0f99de5}
+
+
+This function runs your alpha-\/beta implementation using a tree as the search rather than a live connect four game. 
+
+This will be easier to debug. 
+
+\subsection{Variable Documentation}
+\hypertarget{namespacelab3_a38ce81786d974fadcf07d456d1576153}{}\index{lab3@{lab3}!ab\+\_\+iterative\+\_\+player@{ab\+\_\+iterative\+\_\+player}}
+\index{ab\+\_\+iterative\+\_\+player@{ab\+\_\+iterative\+\_\+player}!lab3@{lab3}}
+\subsubsection[{ab\+\_\+iterative\+\_\+player}]{\setlength{\rightskip}{0pt plus 5cm}lab3.\+ab\+\_\+iterative\+\_\+player = lambdaboard\+:\textbackslash{}}\label{namespacelab3_a38ce81786d974fadcf07d456d1576153}
+
+
+This player uses progressive deepening, so it can kick your ass while making efficient use of time\+: 
+
+\hypertarget{namespacelab3_aa4790555a33d7ee8155ff4358799617a}{}\index{lab3@{lab3}!alphabeta\+\_\+player@{alphabeta\+\_\+player}}
+\index{alphabeta\+\_\+player@{alphabeta\+\_\+player}!lab3@{lab3}}
+\subsubsection[{alphabeta\+\_\+player}]{\setlength{\rightskip}{0pt plus 5cm}tuple lab3.\+alphabeta\+\_\+player}\label{namespacelab3_aa4790555a33d7ee8155ff4358799617a}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = lambdaboard:\hyperlink{namespacelab3_a7ead0dd82f5946316600e9a937e55037}{alpha\_beta\_search}(board,
+2                                                    depth=8,
+3                                                    eval\_fn=focused\_evaluate)
+\end{DoxyCode}
+
+
+Now you should be able to search twice as deep in the same amount of time. 
+
+(Of course, this alpha-\/beta-\/player won\textquotesingle{}t work until you\textquotesingle{}ve defined alpha-\/beta-\/search.) \hypertarget{namespacelab3_ad2e45b0f85fa13d33b881635810e83e8}{}\index{lab3@{lab3}!A\+N\+S\+W\+E\+R1@{A\+N\+S\+W\+E\+R1}}
+\index{A\+N\+S\+W\+E\+R1@{A\+N\+S\+W\+E\+R1}!lab3@{lab3}}
+\subsubsection[{A\+N\+S\+W\+E\+R1}]{\setlength{\rightskip}{0pt plus 5cm}int lab3.\+A\+N\+S\+W\+E\+R1 = 3}\label{namespacelab3_ad2e45b0f85fa13d33b881635810e83e8}
+
+\begin{DoxyEnumerate}
+\item Multiple choice 
+\end{DoxyEnumerate}\hypertarget{namespacelab3_a988f22c9cf01e9e09a7df386ff76a739}{}\index{lab3@{lab3}!A\+N\+S\+W\+E\+R2@{A\+N\+S\+W\+E\+R2}}
+\index{A\+N\+S\+W\+E\+R2@{A\+N\+S\+W\+E\+R2}!lab3@{lab3}}
+\subsubsection[{A\+N\+S\+W\+E\+R2}]{\setlength{\rightskip}{0pt plus 5cm}int lab3.\+A\+N\+S\+W\+E\+R2 = 2}\label{namespacelab3_a988f22c9cf01e9e09a7df386ff76a739}
+\hypertarget{namespacelab3_af72a06890c8de2fae05fc82044aa76be}{}\index{lab3@{lab3}!board\+\_\+tuples@{board\+\_\+tuples}}
+\index{board\+\_\+tuples@{board\+\_\+tuples}!lab3@{lab3}}
+\subsubsection[{board\+\_\+tuples}]{\setlength{\rightskip}{0pt plus 5cm}tuple lab3.\+board\+\_\+tuples}\label{namespacelab3_af72a06890c8de2fae05fc82044aa76be}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = (( 0,0,0,0,0,0,0 ),
+2                     ( 0,0,0,0,0,0,0 ),
+3                     ( 0,0,0,0,0,0,0 ),
+4                     ( 0,2,2,1,1,2,0 ),
+5                     ( 0,2,1,2,1,2,0 ),
+6                     ( 2,1,2,1,1,1,0 ),
+7                     )
+\end{DoxyCode}
+\hypertarget{namespacelab3_a507ef68d63a202cdd769b53df79cf163}{}\index{lab3@{lab3}!C\+O\+M\+P\+E\+T\+E@{C\+O\+M\+P\+E\+T\+E}}
+\index{C\+O\+M\+P\+E\+T\+E@{C\+O\+M\+P\+E\+T\+E}!lab3@{lab3}}
+\subsubsection[{C\+O\+M\+P\+E\+T\+E}]{\setlength{\rightskip}{0pt plus 5cm}tuple lab3.\+C\+O\+M\+P\+E\+T\+E = (False)}\label{namespacelab3_a507ef68d63a202cdd769b53df79cf163}
+
+
+Do you want us to use your code in a tournament against other students? See the description in the problem set. 
+
+The tournament is completely optional and has no effect on your grade. \hypertarget{namespacelab3_a3cd2b5e83c71f1b3c2f453bea62b3af5}{}\index{lab3@{lab3}!E\+M\+A\+I\+L@{E\+M\+A\+I\+L}}
+\index{E\+M\+A\+I\+L@{E\+M\+A\+I\+L}!lab3@{lab3}}
+\subsubsection[{E\+M\+A\+I\+L}]{\setlength{\rightskip}{0pt plus 5cm}string lab3.\+E\+M\+A\+I\+L = \char`\"{}whocares\char`\"{}}\label{namespacelab3_a3cd2b5e83c71f1b3c2f453bea62b3af5}
+\hypertarget{namespacelab3_aef5722d14d422222f997cff6cd66564f}{}\index{lab3@{lab3}!eval\+\_\+fn@{eval\+\_\+fn}}
+\index{eval\+\_\+fn@{eval\+\_\+fn}!lab3@{lab3}}
+\subsubsection[{eval\+\_\+fn}]{\setlength{\rightskip}{0pt plus 5cm}int lab3.\+eval\+\_\+fn = 5}\label{namespacelab3_aef5722d14d422222f997cff6cd66564f}
+\hypertarget{namespacelab3_ac15f588150b4ba8f99f8b305c86527cc}{}\index{lab3@{lab3}!H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K@{H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K}}
+\index{H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K@{H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K}!lab3@{lab3}}
+\subsubsection[{H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K}]{\setlength{\rightskip}{0pt plus 5cm}string lab3.\+H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K = \char`\"{}10\char`\"{}}\label{namespacelab3_ac15f588150b4ba8f99f8b305c86527cc}
+
+
+The standard survey questions. 
+
+\hypertarget{namespacelab3_a2d13719e09eaf808047d497d45dff575}{}\index{lab3@{lab3}!N\+A\+M\+E@{N\+A\+M\+E}}
+\index{N\+A\+M\+E@{N\+A\+M\+E}!lab3@{lab3}}
+\subsubsection[{N\+A\+M\+E}]{\setlength{\rightskip}{0pt plus 5cm}string lab3.\+N\+A\+M\+E = \char`\"{}vikram\char`\"{}}\label{namespacelab3_a2d13719e09eaf808047d497d45dff575}
+\hypertarget{namespacelab3_aa43b2937a5bad423a493276473384d9a}{}\index{lab3@{lab3}!quick\+\_\+to\+\_\+win\+\_\+player@{quick\+\_\+to\+\_\+win\+\_\+player}}
+\index{quick\+\_\+to\+\_\+win\+\_\+player@{quick\+\_\+to\+\_\+win\+\_\+player}!lab3@{lab3}}
+\subsubsection[{quick\+\_\+to\+\_\+win\+\_\+player}]{\setlength{\rightskip}{0pt plus 5cm}tuple lab3.\+quick\+\_\+to\+\_\+win\+\_\+player}\label{namespacelab3_aa43b2937a5bad423a493276473384d9a}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = lambdaboard:\hyperlink{namespacebasicplayer_a030bbbbdb3c20ccc2984ee862cce6e0f}{minimax}(board, depth=6,
+2                                             eval\_fn=focused\_evaluate)
+\end{DoxyCode}
+
+
+Create a \char`\"{}player\char`\"{} function that uses the focused\+\_\+evaluate function. 
+
+\hypertarget{namespacelab3_abc5335867f83db21385d992f00825e22}{}\index{lab3@{lab3}!search\+\_\+fn@{search\+\_\+fn}}
+\index{search\+\_\+fn@{search\+\_\+fn}!lab3@{lab3}}
+\subsubsection[{search\+\_\+fn}]{\setlength{\rightskip}{0pt plus 5cm}lab3.\+search\+\_\+fn = {\bf alpha\+\_\+beta\+\_\+search},}\label{namespacelab3_abc5335867f83db21385d992f00825e22}
+\hypertarget{namespacelab3_a7c477dab1b106f5495518ad07afa5a16}{}\index{lab3@{lab3}!test\+\_\+board\+\_\+1@{test\+\_\+board\+\_\+1}}
+\index{test\+\_\+board\+\_\+1@{test\+\_\+board\+\_\+1}!lab3@{lab3}}
+\subsubsection[{test\+\_\+board\+\_\+1}]{\setlength{\rightskip}{0pt plus 5cm}tuple lab3.\+test\+\_\+board\+\_\+1}\label{namespacelab3_a7c477dab1b106f5495518ad07afa5a16}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \hyperlink{classconnectfour_1_1_connect_four_board}{ConnectFourBoard}(board\_array = board\_tuples,
+2                                     current\_player = 1)
+\end{DoxyCode}
+\hypertarget{namespacelab3_a0cf494dec1c4e8b319a04e3b8b967cf3}{}\index{lab3@{lab3}!test\+\_\+board\+\_\+2@{test\+\_\+board\+\_\+2}}
+\index{test\+\_\+board\+\_\+2@{test\+\_\+board\+\_\+2}!lab3@{lab3}}
+\subsubsection[{test\+\_\+board\+\_\+2}]{\setlength{\rightskip}{0pt plus 5cm}tuple lab3.\+test\+\_\+board\+\_\+2}\label{namespacelab3_a0cf494dec1c4e8b319a04e3b8b967cf3}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \hyperlink{classconnectfour_1_1_connect_four_board}{ConnectFourBoard}(board\_array = board\_tuples,
+2                                     current\_player = 2)
+\end{DoxyCode}
+\hypertarget{namespacelab3_a2d4ca0461367d56429a6e110bdc70c9c}{}\index{lab3@{lab3}!W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G@{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G}}
+\index{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G@{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G}!lab3@{lab3}}
+\subsubsection[{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}string lab3.\+W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G = \char`\"{}nothing\char`\"{}}\label{namespacelab3_a2d4ca0461367d56429a6e110bdc70c9c}
+\hypertarget{namespacelab3_ac6298332137ba3ffbfa88449a0d8add2}{}\index{lab3@{lab3}!W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G@{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G}}
+\index{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G@{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G}!lab3@{lab3}}
+\subsubsection[{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}string lab3.\+W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G = \char`\"{}alpha-\/beta\char`\"{}}\label{namespacelab3_ac6298332137ba3ffbfa88449a0d8add2}
+\hypertarget{namespacelab3_abb9fde36d4d3f3fbe09a1bcc9e70a8df}{}\index{lab3@{lab3}!your\+\_\+player@{your\+\_\+player}}
+\index{your\+\_\+player@{your\+\_\+player}!lab3@{lab3}}
+\subsubsection[{your\+\_\+player}]{\setlength{\rightskip}{0pt plus 5cm}tuple lab3.\+your\+\_\+player}\label{namespacelab3_abb9fde36d4d3f3fbe09a1bcc9e70a8df}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = lambdaboard:\hyperlink{namespaceutil_ab8b35c47eb1a77e7a3f61851a1b46122}{run\_search\_function}(board,
+2                                                 search\_fn=alpha\_beta\_search,
+3                                                 eval\_fn=better\_evaluate,
+4                                                 timeout=5)
+\end{DoxyCode}
+
+
+A player that uses alpha-\/beta and better\+\_\+evaluate\+: 
+

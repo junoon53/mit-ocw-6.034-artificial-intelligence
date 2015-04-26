@@ -1,0 +1,119 @@
+\hypertarget{classconnectfour_1_1_connect_four_runner}{}\section{connectfour.\+Connect\+Four\+Runner Class Reference}
+\label{classconnectfour_1_1_connect_four_runner}\index{connectfour.\+Connect\+Four\+Runner@{connectfour.\+Connect\+Four\+Runner}}
+
+
+Inheritance diagram for connectfour.\+Connect\+Four\+Runner\+:
+% FIG 0
+
+
+Collaboration diagram for connectfour.\+Connect\+Four\+Runner\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_runner_a5732bc3d38f772be013ec8bb0b9baeff}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_runner_abbeac92677d7463c480ea70c5549b054}{get\+\_\+board} (self)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_runner_a57927a6244036c9e76b9c767c2ab5371}{get\+\_\+time\+\_\+limit} (self)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_runner_a4c808906ef0d9fe6f1dbf043777ff4ac}{run\+\_\+game}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classconnectfour_1_1_connect_four_runner_a1f7cbaa7df8b4dd89aa596acb4977109}{player1\+\_\+callback}
+\item 
+\hyperlink{classconnectfour_1_1_connect_four_runner_a5b19a63b068583b57e75e425dbe0fcde}{player2\+\_\+callback}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Runs a game of Connect Four.
+
+The rules of this Connect Four game are the same as those for the real Connect Four game:
+
+* The game is a two-player game.  Players take turns adding tokens to the board.
+* When a token is added to the board, it is added to a particular column.
+  It "falls" to the unoccupied cell in the column with the largest index.
+* The game ends when one of the two players has four consecutive tokens in a row
+  (either horizontally, vertically, or on 45-degree diagonals), or when the board
+  is completely filled.  If the game ends with a player having four consecutive
+  diagonal tokens, that player is the winner.
+
+The game runner is implemented via callbacks:  The two players specify callbacks to be 
+called when it's their turn.  The callback is passed two arguments, self and self.get_board().
+The function must return a value within the time specified (in seconds) by self.get_time_limit();
+otherwise the corresponding player will lose!
+
+The callback functions must return integers corresponding to the columns they want
+to drop a token into.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classconnectfour_1_1_connect_four_runner_a5732bc3d38f772be013ec8bb0b9baeff}{}\index{connectfour\+::\+Connect\+Four\+Runner@{connectfour\+::\+Connect\+Four\+Runner}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!connectfour\+::\+Connect\+Four\+Runner@{connectfour\+::\+Connect\+Four\+Runner}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Runner.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{player1\+\_\+callback, }
+\item[{}]{player2\+\_\+callback, }
+\item[{}]{board = {\ttfamily {\bf Connect\+Four\+Board}()}, }
+\item[{}]{time\+\_\+limit = {\ttfamily 10}}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_runner_a5732bc3d38f772be013ec8bb0b9baeff}
+\begin{DoxyVerb}Create a new ConnectFourRunner.
+
+player1_callback and player2_callback are the callback functions for the two players.
+board is the initial board to start with, a generic ConnectFourBoard() by default.
+time_limit is the time (in seconds) allocated per player, 10 seconds by default.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classconnectfour_1_1_connect_four_runner_abbeac92677d7463c480ea70c5549b054}{}\index{connectfour\+::\+Connect\+Four\+Runner@{connectfour\+::\+Connect\+Four\+Runner}!get\+\_\+board@{get\+\_\+board}}
+\index{get\+\_\+board@{get\+\_\+board}!connectfour\+::\+Connect\+Four\+Runner@{connectfour\+::\+Connect\+Four\+Runner}}
+\subsubsection[{get\+\_\+board}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Runner.\+get\+\_\+board (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_runner_abbeac92677d7463c480ea70c5549b054}
+\begin{DoxyVerb}Return the current game board \end{DoxyVerb}
+ \hypertarget{classconnectfour_1_1_connect_four_runner_a57927a6244036c9e76b9c767c2ab5371}{}\index{connectfour\+::\+Connect\+Four\+Runner@{connectfour\+::\+Connect\+Four\+Runner}!get\+\_\+time\+\_\+limit@{get\+\_\+time\+\_\+limit}}
+\index{get\+\_\+time\+\_\+limit@{get\+\_\+time\+\_\+limit}!connectfour\+::\+Connect\+Four\+Runner@{connectfour\+::\+Connect\+Four\+Runner}}
+\subsubsection[{get\+\_\+time\+\_\+limit}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Runner.\+get\+\_\+time\+\_\+limit (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_runner_a57927a6244036c9e76b9c767c2ab5371}
+\begin{DoxyVerb}Return the time limit (in seconds) for callback functions for this runner \end{DoxyVerb}
+ \hypertarget{classconnectfour_1_1_connect_four_runner_a4c808906ef0d9fe6f1dbf043777ff4ac}{}\index{connectfour\+::\+Connect\+Four\+Runner@{connectfour\+::\+Connect\+Four\+Runner}!run\+\_\+game@{run\+\_\+game}}
+\index{run\+\_\+game@{run\+\_\+game}!connectfour\+::\+Connect\+Four\+Runner@{connectfour\+::\+Connect\+Four\+Runner}}
+\subsubsection[{run\+\_\+game}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Runner.\+run\+\_\+game (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{verbose = {\ttfamily True}}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_runner_a4c808906ef0d9fe6f1dbf043777ff4ac}
+\begin{DoxyVerb}Run the test defined by this test runner.  Print and return the id of the winning player. \end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classconnectfour_1_1_connect_four_runner_a1f7cbaa7df8b4dd89aa596acb4977109}{}\index{connectfour\+::\+Connect\+Four\+Runner@{connectfour\+::\+Connect\+Four\+Runner}!player1\+\_\+callback@{player1\+\_\+callback}}
+\index{player1\+\_\+callback@{player1\+\_\+callback}!connectfour\+::\+Connect\+Four\+Runner@{connectfour\+::\+Connect\+Four\+Runner}}
+\subsubsection[{player1\+\_\+callback}]{\setlength{\rightskip}{0pt plus 5cm}connectfour.\+Connect\+Four\+Runner.\+player1\+\_\+callback}\label{classconnectfour_1_1_connect_four_runner_a1f7cbaa7df8b4dd89aa596acb4977109}
+\hypertarget{classconnectfour_1_1_connect_four_runner_a5b19a63b068583b57e75e425dbe0fcde}{}\index{connectfour\+::\+Connect\+Four\+Runner@{connectfour\+::\+Connect\+Four\+Runner}!player2\+\_\+callback@{player2\+\_\+callback}}
+\index{player2\+\_\+callback@{player2\+\_\+callback}!connectfour\+::\+Connect\+Four\+Runner@{connectfour\+::\+Connect\+Four\+Runner}}
+\subsubsection[{player2\+\_\+callback}]{\setlength{\rightskip}{0pt plus 5cm}connectfour.\+Connect\+Four\+Runner.\+player2\+\_\+callback}\label{classconnectfour_1_1_connect_four_runner_a5b19a63b068583b57e75e425dbe0fcde}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lab3/\hyperlink{connectfour_8py}{connectfour.\+py}\end{DoxyCompactItemize}

@@ -1,0 +1,127 @@
+\hypertarget{namespacebasicplayer}{}\section{basicplayer Namespace Reference}
+\label{namespacebasicplayer}\index{basicplayer@{basicplayer}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacebasicplayer_a2962f523af7aeaa39d58be2cdf3d6d6d}{basic\+\_\+evaluate} (board)
+\item 
+def \hyperlink{namespacebasicplayer_acad964e2f439ab4e2220fea5c0574728}{get\+\_\+all\+\_\+next\+\_\+moves} (board)
+\item 
+def \hyperlink{namespacebasicplayer_ae276eac2da00c9d44c78c0c9ac1452b0}{is\+\_\+terminal} (depth, board)
+\item 
+def \hyperlink{namespacebasicplayer_a62f7c238ff1fe79bcb2c56d5897a4864}{minimax\+\_\+find\+\_\+board\+\_\+value}
+\item 
+def \hyperlink{namespacebasicplayer_a030bbbbdb3c20ccc2984ee862cce6e0f}{minimax}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespacebasicplayer_af4714dbbe203205344968d715419e8dd}{basic\+\_\+player} = lambdaboard\+:minimax(board, depth=4, eval\+\_\+fn=\hyperlink{namespacebasicplayer_a2962f523af7aeaa39d58be2cdf3d6d6d}{basic\+\_\+evaluate})
+\item 
+tuple \hyperlink{namespacebasicplayer_a54f0471ccb2744141a3ace5f56e46161}{progressive\+\_\+deepening\+\_\+player} = lambdaboard\+:run\+\_\+search\+\_\+function(board, search\+\_\+fn=\hyperlink{namespacebasicplayer_a030bbbbdb3c20ccc2984ee862cce6e0f}{minimax}, eval\+\_\+fn=\hyperlink{namespacebasicplayer_a2962f523af7aeaa39d58be2cdf3d6d6d}{basic\+\_\+evaluate})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacebasicplayer_a2962f523af7aeaa39d58be2cdf3d6d6d}{}\index{basicplayer@{basicplayer}!basic\+\_\+evaluate@{basic\+\_\+evaluate}}
+\index{basic\+\_\+evaluate@{basic\+\_\+evaluate}!basicplayer@{basicplayer}}
+\subsubsection[{basic\+\_\+evaluate}]{\setlength{\rightskip}{0pt plus 5cm}def basicplayer.\+basic\+\_\+evaluate (
+\begin{DoxyParamCaption}
+\item[{}]{board}
+\end{DoxyParamCaption}
+)}\label{namespacebasicplayer_a2962f523af7aeaa39d58be2cdf3d6d6d}
+\begin{DoxyVerb}The original focused-evaluate function from the lab.
+The original is kept because the lab expects the code in the lab to be modified. 
+\end{DoxyVerb}
+ \hypertarget{namespacebasicplayer_acad964e2f439ab4e2220fea5c0574728}{}\index{basicplayer@{basicplayer}!get\+\_\+all\+\_\+next\+\_\+moves@{get\+\_\+all\+\_\+next\+\_\+moves}}
+\index{get\+\_\+all\+\_\+next\+\_\+moves@{get\+\_\+all\+\_\+next\+\_\+moves}!basicplayer@{basicplayer}}
+\subsubsection[{get\+\_\+all\+\_\+next\+\_\+moves}]{\setlength{\rightskip}{0pt plus 5cm}def basicplayer.\+get\+\_\+all\+\_\+next\+\_\+moves (
+\begin{DoxyParamCaption}
+\item[{}]{board}
+\end{DoxyParamCaption}
+)}\label{namespacebasicplayer_acad964e2f439ab4e2220fea5c0574728}
+\begin{DoxyVerb}Return a generator of all moves that the current player could take from this position \end{DoxyVerb}
+ \hypertarget{namespacebasicplayer_ae276eac2da00c9d44c78c0c9ac1452b0}{}\index{basicplayer@{basicplayer}!is\+\_\+terminal@{is\+\_\+terminal}}
+\index{is\+\_\+terminal@{is\+\_\+terminal}!basicplayer@{basicplayer}}
+\subsubsection[{is\+\_\+terminal}]{\setlength{\rightskip}{0pt plus 5cm}def basicplayer.\+is\+\_\+terminal (
+\begin{DoxyParamCaption}
+\item[{}]{depth, }
+\item[{}]{board}
+\end{DoxyParamCaption}
+)}\label{namespacebasicplayer_ae276eac2da00c9d44c78c0c9ac1452b0}
+\begin{DoxyVerb}Generic terminal state check, true when maximum depth is reached or
+the game has ended.
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 0
+
+
+\hypertarget{namespacebasicplayer_a030bbbbdb3c20ccc2984ee862cce6e0f}{}\index{basicplayer@{basicplayer}!minimax@{minimax}}
+\index{minimax@{minimax}!basicplayer@{basicplayer}}
+\subsubsection[{minimax}]{\setlength{\rightskip}{0pt plus 5cm}def basicplayer.\+minimax (
+\begin{DoxyParamCaption}
+\item[{}]{board, }
+\item[{}]{depth, }
+\item[{}]{eval\+\_\+fn = {\ttfamily {\bf basic\+\_\+evaluate}}, }
+\item[{}]{get\+\_\+next\+\_\+moves\+\_\+fn = {\ttfamily {\bf get\+\_\+all\+\_\+next\+\_\+moves}}, }
+\item[{}]{is\+\_\+terminal\+\_\+fn = {\ttfamily {\bf is\+\_\+terminal}}, }
+\item[{}]{verbose = {\ttfamily True}}
+\end{DoxyParamCaption}
+)}\label{namespacebasicplayer_a030bbbbdb3c20ccc2984ee862cce6e0f}
+\begin{DoxyVerb}Do a minimax search to the specified depth on the specified board.
+
+board -- the ConnectFourBoard instance to evaluate
+depth -- the depth of the search tree (measured in maximum distance from a leaf to the root)
+eval_fn -- (optional) the evaluation function to use to give a value to a leaf of the tree; see "focused_evaluate" in the lab for an example
+
+Returns an integer, the column number of the column that the search determines you should add a token to
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 1
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+\hypertarget{namespacebasicplayer_a62f7c238ff1fe79bcb2c56d5897a4864}{}\index{basicplayer@{basicplayer}!minimax\+\_\+find\+\_\+board\+\_\+value@{minimax\+\_\+find\+\_\+board\+\_\+value}}
+\index{minimax\+\_\+find\+\_\+board\+\_\+value@{minimax\+\_\+find\+\_\+board\+\_\+value}!basicplayer@{basicplayer}}
+\subsubsection[{minimax\+\_\+find\+\_\+board\+\_\+value}]{\setlength{\rightskip}{0pt plus 5cm}def basicplayer.\+minimax\+\_\+find\+\_\+board\+\_\+value (
+\begin{DoxyParamCaption}
+\item[{}]{board, }
+\item[{}]{depth, }
+\item[{}]{eval\+\_\+fn, }
+\item[{}]{get\+\_\+next\+\_\+moves\+\_\+fn = {\ttfamily {\bf get\+\_\+all\+\_\+next\+\_\+moves}}, }
+\item[{}]{is\+\_\+terminal\+\_\+fn = {\ttfamily {\bf is\+\_\+terminal}}}
+\end{DoxyParamCaption}
+)}\label{namespacebasicplayer_a62f7c238ff1fe79bcb2c56d5897a4864}
+\begin{DoxyVerb}Minimax helper function: Return the minimax value of a particular board,
+given a particular depth to estimate to
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacebasicplayer_af4714dbbe203205344968d715419e8dd}{}\index{basicplayer@{basicplayer}!basic\+\_\+player@{basic\+\_\+player}}
+\index{basic\+\_\+player@{basic\+\_\+player}!basicplayer@{basicplayer}}
+\subsubsection[{basic\+\_\+player}]{\setlength{\rightskip}{0pt plus 5cm}tuple basicplayer.\+basic\+\_\+player = lambdaboard\+:minimax(board, depth=4, eval\+\_\+fn={\bf basic\+\_\+evaluate})}\label{namespacebasicplayer_af4714dbbe203205344968d715419e8dd}
+\hypertarget{namespacebasicplayer_a54f0471ccb2744141a3ace5f56e46161}{}\index{basicplayer@{basicplayer}!progressive\+\_\+deepening\+\_\+player@{progressive\+\_\+deepening\+\_\+player}}
+\index{progressive\+\_\+deepening\+\_\+player@{progressive\+\_\+deepening\+\_\+player}!basicplayer@{basicplayer}}
+\subsubsection[{progressive\+\_\+deepening\+\_\+player}]{\setlength{\rightskip}{0pt plus 5cm}tuple basicplayer.\+progressive\+\_\+deepening\+\_\+player = lambdaboard\+:run\+\_\+search\+\_\+function(board, search\+\_\+fn={\bf minimax}, eval\+\_\+fn={\bf basic\+\_\+evaluate})}\label{namespacebasicplayer_a54f0471ccb2744141a3ace5f56e46161}

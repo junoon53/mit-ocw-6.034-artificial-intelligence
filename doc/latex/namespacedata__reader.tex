@@ -1,0 +1,165 @@
+\hypertarget{namespacedata__reader}{}\section{data\+\_\+reader Namespace Reference}
+\label{namespacedata__reader}\index{data\+\_\+reader@{data\+\_\+reader}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacedata__reader_ae6d7a3d1c3644c57a762604d7521784f}{legislator\+\_\+info} (legislator)
+\item 
+def \hyperlink{namespacedata__reader_ab188bb279dfcad5668b987fb397d7ba0}{vote\+\_\+info} (vote)
+\item 
+def \hyperlink{namespacedata__reader_ac24e4a632575f7c91465a3d73e98a03f}{is\+\_\+interesting} (vote)
+\item 
+def \hyperlink{namespacedata__reader_ac06220b3282ef8191572b11f41906230}{title\+\_\+case} (str)
+\item 
+def \hyperlink{namespacedata__reader_ab92b8a5ad0aa41abcbbdc80203928d96}{vote\+\_\+meaning} (n)
+\item 
+def \hyperlink{namespacedata__reader_ac57e1cb4429cfcffa4b1dd88c7da4c4c}{read\+\_\+congress\+\_\+data} (filename)
+\item 
+def \hyperlink{namespacedata__reader_aa02be737061bc86dc492dcfca6d5b5c8}{read\+\_\+vote\+\_\+data} (filename)
+\item 
+def \hyperlink{namespacedata__reader_ab91ea6523c4ca764fb49f9fdfb1789cb}{limit\+\_\+votes} (legislators, votes, n)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dictionary \hyperlink{namespacedata__reader_ad3c1b3a1ac9c17a8a9901495e9c4ec36}{state\+\_\+codes} = \{\}
+\item 
+tuple \hyperlink{namespacedata__reader_ac080e983af4252f0809a2eb2b7a145eb}{f} = open(\textquotesingle{}states.\+dat\textquotesingle{})
+\item 
+dictionary \hyperlink{namespacedata__reader_a7afd821f0f05ccf8e869ee486962ba14}{party\+\_\+codes} = \{\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A set of utility functions for reading in the data format used by Keith T.
+Poole on voteview.com.
+
+You can download additional data that will work with these functions, for
+any Congress going back to the 1st, on that site.
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\hypertarget{namespacedata__reader_ac24e4a632575f7c91465a3d73e98a03f}{}\index{data\+\_\+reader@{data\+\_\+reader}!is\+\_\+interesting@{is\+\_\+interesting}}
+\index{is\+\_\+interesting@{is\+\_\+interesting}!data\+\_\+reader@{data\+\_\+reader}}
+\subsubsection[{is\+\_\+interesting}]{\setlength{\rightskip}{0pt plus 5cm}def data\+\_\+reader.\+is\+\_\+interesting (
+\begin{DoxyParamCaption}
+\item[{}]{vote}
+\end{DoxyParamCaption}
+)}\label{namespacedata__reader_ac24e4a632575f7c91465a3d73e98a03f}
+
+
+Here is the caller graph for this function\+:
+% FIG 0
+
+
+\hypertarget{namespacedata__reader_ae6d7a3d1c3644c57a762604d7521784f}{}\index{data\+\_\+reader@{data\+\_\+reader}!legislator\+\_\+info@{legislator\+\_\+info}}
+\index{legislator\+\_\+info@{legislator\+\_\+info}!data\+\_\+reader@{data\+\_\+reader}}
+\subsubsection[{legislator\+\_\+info}]{\setlength{\rightskip}{0pt plus 5cm}def data\+\_\+reader.\+legislator\+\_\+info (
+\begin{DoxyParamCaption}
+\item[{}]{legislator}
+\end{DoxyParamCaption}
+)}\label{namespacedata__reader_ae6d7a3d1c3644c57a762604d7521784f}
+
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+\hypertarget{namespacedata__reader_ab91ea6523c4ca764fb49f9fdfb1789cb}{}\index{data\+\_\+reader@{data\+\_\+reader}!limit\+\_\+votes@{limit\+\_\+votes}}
+\index{limit\+\_\+votes@{limit\+\_\+votes}!data\+\_\+reader@{data\+\_\+reader}}
+\subsubsection[{limit\+\_\+votes}]{\setlength{\rightskip}{0pt plus 5cm}def data\+\_\+reader.\+limit\+\_\+votes (
+\begin{DoxyParamCaption}
+\item[{}]{legislators, }
+\item[{}]{votes, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)}\label{namespacedata__reader_ab91ea6523c4ca764fb49f9fdfb1789cb}
+
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+\hypertarget{namespacedata__reader_ac57e1cb4429cfcffa4b1dd88c7da4c4c}{}\index{data\+\_\+reader@{data\+\_\+reader}!read\+\_\+congress\+\_\+data@{read\+\_\+congress\+\_\+data}}
+\index{read\+\_\+congress\+\_\+data@{read\+\_\+congress\+\_\+data}!data\+\_\+reader@{data\+\_\+reader}}
+\subsubsection[{read\+\_\+congress\+\_\+data}]{\setlength{\rightskip}{0pt plus 5cm}def data\+\_\+reader.\+read\+\_\+congress\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{}]{filename}
+\end{DoxyParamCaption}
+)}\label{namespacedata__reader_ac57e1cb4429cfcffa4b1dd88c7da4c4c}
+\begin{DoxyVerb}Reads a database of Congressional information in the format that comes
+from Keith T. Poole's voteview.com.
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 4
+
+
+\hypertarget{namespacedata__reader_aa02be737061bc86dc492dcfca6d5b5c8}{}\index{data\+\_\+reader@{data\+\_\+reader}!read\+\_\+vote\+\_\+data@{read\+\_\+vote\+\_\+data}}
+\index{read\+\_\+vote\+\_\+data@{read\+\_\+vote\+\_\+data}!data\+\_\+reader@{data\+\_\+reader}}
+\subsubsection[{read\+\_\+vote\+\_\+data}]{\setlength{\rightskip}{0pt plus 5cm}def data\+\_\+reader.\+read\+\_\+vote\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{}]{filename}
+\end{DoxyParamCaption}
+)}\label{namespacedata__reader_aa02be737061bc86dc492dcfca6d5b5c8}
+\begin{DoxyVerb}Reads a CSV file of data on the votes that were taken.
+\end{DoxyVerb}
+ \hypertarget{namespacedata__reader_ac06220b3282ef8191572b11f41906230}{}\index{data\+\_\+reader@{data\+\_\+reader}!title\+\_\+case@{title\+\_\+case}}
+\index{title\+\_\+case@{title\+\_\+case}!data\+\_\+reader@{data\+\_\+reader}}
+\subsubsection[{title\+\_\+case}]{\setlength{\rightskip}{0pt plus 5cm}def data\+\_\+reader.\+title\+\_\+case (
+\begin{DoxyParamCaption}
+\item[{}]{str}
+\end{DoxyParamCaption}
+)}\label{namespacedata__reader_ac06220b3282ef8191572b11f41906230}
+
+
+Here is the caller graph for this function\+:
+% FIG 5
+
+
+\hypertarget{namespacedata__reader_ab188bb279dfcad5668b987fb397d7ba0}{}\index{data\+\_\+reader@{data\+\_\+reader}!vote\+\_\+info@{vote\+\_\+info}}
+\index{vote\+\_\+info@{vote\+\_\+info}!data\+\_\+reader@{data\+\_\+reader}}
+\subsubsection[{vote\+\_\+info}]{\setlength{\rightskip}{0pt plus 5cm}def data\+\_\+reader.\+vote\+\_\+info (
+\begin{DoxyParamCaption}
+\item[{}]{vote}
+\end{DoxyParamCaption}
+)}\label{namespacedata__reader_ab188bb279dfcad5668b987fb397d7ba0}
+
+
+Here is the caller graph for this function\+:
+% FIG 6
+
+
+\hypertarget{namespacedata__reader_ab92b8a5ad0aa41abcbbdc80203928d96}{}\index{data\+\_\+reader@{data\+\_\+reader}!vote\+\_\+meaning@{vote\+\_\+meaning}}
+\index{vote\+\_\+meaning@{vote\+\_\+meaning}!data\+\_\+reader@{data\+\_\+reader}}
+\subsubsection[{vote\+\_\+meaning}]{\setlength{\rightskip}{0pt plus 5cm}def data\+\_\+reader.\+vote\+\_\+meaning (
+\begin{DoxyParamCaption}
+\item[{}]{n}
+\end{DoxyParamCaption}
+)}\label{namespacedata__reader_ab92b8a5ad0aa41abcbbdc80203928d96}
+
+
+Here is the caller graph for this function\+:
+% FIG 7
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacedata__reader_ac080e983af4252f0809a2eb2b7a145eb}{}\index{data\+\_\+reader@{data\+\_\+reader}!f@{f}}
+\index{f@{f}!data\+\_\+reader@{data\+\_\+reader}}
+\subsubsection[{f}]{\setlength{\rightskip}{0pt plus 5cm}tuple data\+\_\+reader.\+f = open(\textquotesingle{}states.\+dat\textquotesingle{})}\label{namespacedata__reader_ac080e983af4252f0809a2eb2b7a145eb}
+\hypertarget{namespacedata__reader_a7afd821f0f05ccf8e869ee486962ba14}{}\index{data\+\_\+reader@{data\+\_\+reader}!party\+\_\+codes@{party\+\_\+codes}}
+\index{party\+\_\+codes@{party\+\_\+codes}!data\+\_\+reader@{data\+\_\+reader}}
+\subsubsection[{party\+\_\+codes}]{\setlength{\rightskip}{0pt plus 5cm}dictionary data\+\_\+reader.\+party\+\_\+codes = \{\}}\label{namespacedata__reader_a7afd821f0f05ccf8e869ee486962ba14}
+\hypertarget{namespacedata__reader_ad3c1b3a1ac9c17a8a9901495e9c4ec36}{}\index{data\+\_\+reader@{data\+\_\+reader}!state\+\_\+codes@{state\+\_\+codes}}
+\index{state\+\_\+codes@{state\+\_\+codes}!data\+\_\+reader@{data\+\_\+reader}}
+\subsubsection[{state\+\_\+codes}]{\setlength{\rightskip}{0pt plus 5cm}dictionary data\+\_\+reader.\+state\+\_\+codes = \{\}}\label{namespacedata__reader_ad3c1b3a1ac9c17a8a9901495e9c4ec36}

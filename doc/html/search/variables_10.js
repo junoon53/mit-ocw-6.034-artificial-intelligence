@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['same_5fidentity',['same_identity',['../namespacelab1.html#a898e66c595856ca61d7a684347e1587d',1,'lab1']]],
+  ['sample_5ftree',['sample_tree',['../namespacetests.html#aed50057d4b41d5c384706e2092ba8639',1,'tests']]],
+  ['saqg',['SAQG',['../namespacegraphs.html#ab79b321ca7aaeaa5719c63f369ccc780',1,'graphs']]],
+  ['search_5ffn',['search_fn',['../namespacelab3.html#abc5335867f83db21385d992f00825e22',1,'lab3']]],
+  ['senate_5fpeople',['senate_people',['../namespacelab4.html#ab431969dcbdc497ed29f78787174f64b',1,'lab4.senate_people()'],['../namespacetests.html#a76731f212803054faab680e5139f44e4',1,'tests.senate_people()']]],
+  ['senate_5fvotes',['senate_votes',['../namespacelab4.html#ac5205d0d5639e598abd827580ff7f6ce',1,'lab4.senate_votes()'],['../namespacetests.html#a31fa9b044d03a027e3ab901df1eae4f3',1,'tests.senate_votes()']]],
+  ['senator_5fclassified',['senator_classified',['../namespacelab4.html#a6fd54c2b5b11a8c2578c2777a6f47a35',1,'lab4']]],
+  ['senator_5fclassified_5fgetargs',['senator_classified_getargs',['../namespacetests.html#a710ce4daf7bb272f672cf82c3a6ca91d',1,'tests']]],
+  ['simpsons_5fdata',['simpsons_data',['../namespacelab1.html#af339432da6bd451c07808024dae9fc1b',1,'lab1']]],
+  ['sister_5frule',['sister_rule',['../namespacelab1.html#af4f117ff665235f6bade3d725b728f59',1,'lab1']]],
+  ['sol',['sol',['../namespacesudoku__csp.html#ad63795a911d014e95721a1018f8dde6e',1,'sudoku_csp']]],
+  ['solution',['SOLUTION',['../classcsp_1_1_node.html#a233c4430c7ef9f5d4017c43abc95192b',1,'csp::Node']]],
+  ['son_5frule',['son_rule',['../namespacelab1.html#a2a1ea2c1c23fef0cfcd295caf1235fc0',1,'lab1']]],
+  ['state_5fcodes',['state_codes',['../namespacedata__reader.html#ad3c1b3a1ac9c17a8a9901495e9c4ec36',1,'data_reader']]],
+  ['status',['status',['../classcsp_1_1_node.html#a5d6490f3695a26b990b8d8aac5e62de2',1,'csp::Node']]],
+  ['step',['step',['../classcsp_1_1_node.html#ad24c152aa4db47cdcaf07e9f300da283',1,'csp::Node']]]
+];

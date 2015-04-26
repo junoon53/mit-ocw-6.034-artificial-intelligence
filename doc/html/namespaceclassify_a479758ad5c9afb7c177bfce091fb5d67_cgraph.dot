@@ -1,0 +1,9 @@
+digraph "classify.homogeneous_disorder"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="classify.homogeneous\l_disorder",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="classify.homogeneous\l_value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceclassify.html#aaaeafd0c793635d8e63598e8d42e2fde"];
+}

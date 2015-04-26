@@ -1,0 +1,26 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="algebra.Expression",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classalgebra_1_1_expression.html",tooltip="Expression classes _____________________________________________________. "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="algebra.Product",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classalgebra_1_1_product.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="algebra.Sum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classalgebra_1_1_sum.html"];
+  Node4 [label="list",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="production.RuleExpression",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classproduction_1_1_rule_expression.html"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="production.AND",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classproduction_1_1_a_n_d.html"];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="production.NOT",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classproduction_1_1_n_o_t.html"];
+  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="production.OR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classproduction_1_1_o_r.html"];
+  Node4 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="production.THEN",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classproduction_1_1_t_h_e_n.html"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="production.DELETE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classproduction_1_1_d_e_l_e_t_e.html"];
+}

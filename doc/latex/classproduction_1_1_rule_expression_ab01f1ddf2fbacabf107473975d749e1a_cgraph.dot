@@ -1,0 +1,13 @@
+digraph "production.RuleExpression.test_term_matches"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="production.RuleExpression.test\l_term_matches",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="production.RuleExpression.basecase\l_bindings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classproduction_1_1_rule_expression.html#ad530f5927cc21f08597c57845b417c58"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="production.match",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceproduction.html#a9ba3934c56c12a0922452b8d33555f4a"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="utils.AIStringToRegex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceutils.html#a0151902f0ddac0b2729c4e2b301d9365"];
+}

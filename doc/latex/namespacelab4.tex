@@ -1,0 +1,251 @@
+\hypertarget{namespacelab4}{}\section{lab4 Namespace Reference}
+\label{namespacelab4}\index{lab4@{lab4}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacelab4_a89017da59eab7aaf4ba6a8e9e148b714}{forward\+\_\+checking}
+\item 
+def \hyperlink{namespacelab4_a8bb02f6dec7b66c837deacf38d0602bf}{forward\+\_\+checking\+\_\+prop\+\_\+singleton}
+\item 
+def \hyperlink{namespacelab4_a4ca0fb51c398a07cef35678f56ceef6a}{csp\+\_\+solver\+\_\+tree} (problem, checker)
+\item 
+def \hyperlink{namespacelab4_a64af0c00ffea4205cb40005854505cc9}{euclidean\+\_\+distance} (list1, list2)
+\begin{DoxyCompactList}\small\item\em Part 1\+: Nearest Neighbors An example of evaluating a nearest-\/neighbors classifier. \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab4_afc4e3e4bf14bf03bc80bcb4e87106053}{information\+\_\+disorder} (yes, no)
+\begin{DoxyCompactList}\small\item\em Part 2\+: I\+D Trees print Congress\+I\+D\+Tree(senate\+\_\+people, senate\+\_\+votes, homogeneous\+\_\+disorder) \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab4_afeb6f3043e63aad7e472bc70ac32b8cc}{limited\+\_\+house\+\_\+classifier}
+\begin{DoxyCompactList}\small\item\em Now try it on the House of Representatives. \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab4_ab9f66836efa5bbcc08f6874e5bb5f049}{eval\+\_\+test}
+\begin{DoxyCompactList}\small\item\em This function is used by the tester, please don\textquotesingle{}t modify it! \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespacelab4_ab431969dcbdc497ed29f78787174f64b}{senate\+\_\+people} = read\+\_\+congress\+\_\+data(\textquotesingle{}S110.\+ord\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em C\+O\+D\+E for the learning portion of lab 4. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacelab4_ac5205d0d5639e598abd827580ff7f6ce}{senate\+\_\+votes} = read\+\_\+vote\+\_\+data(\textquotesingle{}S110desc.\+csv\textquotesingle{})
+\item 
+tuple \hyperlink{namespacelab4_aa3012299c849f02ae31ae12757cf2f47}{house\+\_\+people} = read\+\_\+congress\+\_\+data(\textquotesingle{}H110.\+ord\textquotesingle{})
+\item 
+tuple \hyperlink{namespacelab4_aaf99ce787c94a9fc9d4d77942cf300c3}{house\+\_\+votes} = read\+\_\+vote\+\_\+data(\textquotesingle{}H110desc.\+csv\textquotesingle{})
+\item 
+tuple \hyperlink{namespacelab4_a1ede50f42a59bf83d5c09c3aef93c234}{last\+\_\+senate\+\_\+people} = read\+\_\+congress\+\_\+data(\textquotesingle{}S109.\+ord\textquotesingle{})
+\item 
+tuple \hyperlink{namespacelab4_a7770c32cb0f0983cb6ae508b479e7a6d}{last\+\_\+senate\+\_\+votes} = read\+\_\+vote\+\_\+data(\textquotesingle{}S109desc.\+csv\textquotesingle{})
+\item 
+tuple \hyperlink{namespacelab4_a00fffafa3b319c7bff473fdf1b6a45e7}{my\+\_\+classifier} = nearest\+\_\+neighbors(hamming\+\_\+distance, 1)
+\begin{DoxyCompactList}\small\item\em By changing the parameters you used, you can get a classifier factory that deals better with independents. \end{DoxyCompactList}\item 
+int \hyperlink{namespacelab4_a950de6b6a30b3a64b09305c0a1f52990}{N\+\_\+1} = 10
+\begin{DoxyCompactList}\small\item\em Find a value of n that classifies at least 430 representatives correctly. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacelab4_a0a6d77c441ad0d92c2505978d09d00b6}{rep\+\_\+classified} = \hyperlink{namespacelab4_afeb6f3043e63aad7e472bc70ac32b8cc}{limited\+\_\+house\+\_\+classifier}(\hyperlink{namespacelab4_aa3012299c849f02ae31ae12757cf2f47}{house\+\_\+people}, \hyperlink{namespacelab4_aaf99ce787c94a9fc9d4d77942cf300c3}{house\+\_\+votes}, \hyperlink{namespacelab4_a950de6b6a30b3a64b09305c0a1f52990}{N\+\_\+1})
+\item 
+int \hyperlink{namespacelab4_a35d81e5aba299c0a383ad648ed879fa8}{N\+\_\+2} = 10
+\begin{DoxyCompactList}\small\item\em Find a value of n that classifies at least 90 senators correctly. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacelab4_a6fd54c2b5b11a8c2578c2777a6f47a35}{senator\+\_\+classified} = \hyperlink{namespacelab4_afeb6f3043e63aad7e472bc70ac32b8cc}{limited\+\_\+house\+\_\+classifier}(\hyperlink{namespacelab4_ab431969dcbdc497ed29f78787174f64b}{senate\+\_\+people}, \hyperlink{namespacelab4_ac5205d0d5639e598abd827580ff7f6ce}{senate\+\_\+votes}, \hyperlink{namespacelab4_a35d81e5aba299c0a383ad648ed879fa8}{N\+\_\+2})
+\item 
+int \hyperlink{namespacelab4_af4fa52415c905938ba3e0b76e2b57196}{N\+\_\+3} = 10
+\begin{DoxyCompactList}\small\item\em Now, find a value of n that classifies at least 95 of last year\textquotesingle{}s senators correctly. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacelab4_a085a485c7a948fb548fb294216b560bc}{old\+\_\+senator\+\_\+classified} = \hyperlink{namespacelab4_afeb6f3043e63aad7e472bc70ac32b8cc}{limited\+\_\+house\+\_\+classifier}(\hyperlink{namespacelab4_a1ede50f42a59bf83d5c09c3aef93c234}{last\+\_\+senate\+\_\+people}, \hyperlink{namespacelab4_a7770c32cb0f0983cb6ae508b479e7a6d}{last\+\_\+senate\+\_\+votes}, \hyperlink{namespacelab4_af4fa52415c905938ba3e0b76e2b57196}{N\+\_\+3})
+\item 
+string \hyperlink{namespacelab4_a603179138a7ff56fcea1a59347d8154c}{H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em The standard survey questions. \end{DoxyCompactList}\item 
+string \hyperlink{namespacelab4_ae3a183ad2ccdafaeb81264d2e04a7e71}{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G} = \char`\"{}\char`\"{}
+\item 
+string \hyperlink{namespacelab4_a9ef9abf2d634215662582c7fae76fb2e}{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacelab4_a4ca0fb51c398a07cef35678f56ceef6a}{}\index{lab4@{lab4}!csp\+\_\+solver\+\_\+tree@{csp\+\_\+solver\+\_\+tree}}
+\index{csp\+\_\+solver\+\_\+tree@{csp\+\_\+solver\+\_\+tree}!lab4@{lab4}}
+\subsubsection[{csp\+\_\+solver\+\_\+tree}]{\setlength{\rightskip}{0pt plus 5cm}def lab4.\+csp\+\_\+solver\+\_\+tree (
+\begin{DoxyParamCaption}
+\item[{}]{problem, }
+\item[{}]{checker}
+\end{DoxyParamCaption}
+)}\label{namespacelab4_a4ca0fb51c398a07cef35678f56ceef6a}
+\hypertarget{namespacelab4_a64af0c00ffea4205cb40005854505cc9}{}\index{lab4@{lab4}!euclidean\+\_\+distance@{euclidean\+\_\+distance}}
+\index{euclidean\+\_\+distance@{euclidean\+\_\+distance}!lab4@{lab4}}
+\subsubsection[{euclidean\+\_\+distance}]{\setlength{\rightskip}{0pt plus 5cm}def lab4.\+euclidean\+\_\+distance (
+\begin{DoxyParamCaption}
+\item[{}]{list1, }
+\item[{}]{list2}
+\end{DoxyParamCaption}
+)}\label{namespacelab4_a64af0c00ffea4205cb40005854505cc9}
+
+
+Part 1\+: Nearest Neighbors An example of evaluating a nearest-\/neighbors classifier. 
+
+Write the euclidean\+\_\+distance function. This function should take two lists of integers and find the Euclidean distance between them. See \textquotesingle{}\hyperlink{namespaceclassify_a53feccc4cce4688adaea63dd77df6ad4}{hamming\+\_\+distance()}\textquotesingle{} in \hyperlink{classify_8py}{classify.\+py} for an example that computes Hamming distances. 
+
+Here is the call graph for this function\+:
+% FIG 0
+
+
+\hypertarget{namespacelab4_ab9f66836efa5bbcc08f6874e5bb5f049}{}\index{lab4@{lab4}!eval\+\_\+test@{eval\+\_\+test}}
+\index{eval\+\_\+test@{eval\+\_\+test}!lab4@{lab4}}
+\subsubsection[{eval\+\_\+test}]{\setlength{\rightskip}{0pt plus 5cm}def lab4.\+eval\+\_\+test (
+\begin{DoxyParamCaption}
+\item[{}]{eval\+\_\+fn, }
+\item[{}]{group1, }
+\item[{}]{group2, }
+\item[{}]{verbose = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{namespacelab4_ab9f66836efa5bbcc08f6874e5bb5f049}
+
+
+This function is used by the tester, please don\textquotesingle{}t modify it! 
+
+\begin{DoxyVerb}Find eval_fn in globals(), then execute evaluate() on it \end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 1
+
+
+\hypertarget{namespacelab4_a89017da59eab7aaf4ba6a8e9e148b714}{}\index{lab4@{lab4}!forward\+\_\+checking@{forward\+\_\+checking}}
+\index{forward\+\_\+checking@{forward\+\_\+checking}!lab4@{lab4}}
+\subsubsection[{forward\+\_\+checking}]{\setlength{\rightskip}{0pt plus 5cm}def lab4.\+forward\+\_\+checking (
+\begin{DoxyParamCaption}
+\item[{}]{state, }
+\item[{}]{verbose = {\ttfamily False}}
+\end{DoxyParamCaption}
+)}\label{namespacelab4_a89017da59eab7aaf4ba6a8e9e148b714}
+
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+\hypertarget{namespacelab4_a8bb02f6dec7b66c837deacf38d0602bf}{}\index{lab4@{lab4}!forward\+\_\+checking\+\_\+prop\+\_\+singleton@{forward\+\_\+checking\+\_\+prop\+\_\+singleton}}
+\index{forward\+\_\+checking\+\_\+prop\+\_\+singleton@{forward\+\_\+checking\+\_\+prop\+\_\+singleton}!lab4@{lab4}}
+\subsubsection[{forward\+\_\+checking\+\_\+prop\+\_\+singleton}]{\setlength{\rightskip}{0pt plus 5cm}def lab4.\+forward\+\_\+checking\+\_\+prop\+\_\+singleton (
+\begin{DoxyParamCaption}
+\item[{}]{state, }
+\item[{}]{verbose = {\ttfamily False}}
+\end{DoxyParamCaption}
+)}\label{namespacelab4_a8bb02f6dec7b66c837deacf38d0602bf}
+
+
+Here is the call graph for this function\+:
+% FIG 4
+
+
+\hypertarget{namespacelab4_afc4e3e4bf14bf03bc80bcb4e87106053}{}\index{lab4@{lab4}!information\+\_\+disorder@{information\+\_\+disorder}}
+\index{information\+\_\+disorder@{information\+\_\+disorder}!lab4@{lab4}}
+\subsubsection[{information\+\_\+disorder}]{\setlength{\rightskip}{0pt plus 5cm}def lab4.\+information\+\_\+disorder (
+\begin{DoxyParamCaption}
+\item[{}]{yes, }
+\item[{}]{no}
+\end{DoxyParamCaption}
+)}\label{namespacelab4_afc4e3e4bf14bf03bc80bcb4e87106053}
+
+
+Part 2\+: I\+D Trees print Congress\+I\+D\+Tree(senate\+\_\+people, senate\+\_\+votes, homogeneous\+\_\+disorder) 
+
+Now write an information\+\_\+disorder function to replace homogeneous\+\_\+disorder, which should lead to simpler trees. 
+
+Here is the call graph for this function\+:
+% FIG 5
+
+
+\hypertarget{namespacelab4_afeb6f3043e63aad7e472bc70ac32b8cc}{}\index{lab4@{lab4}!limited\+\_\+house\+\_\+classifier@{limited\+\_\+house\+\_\+classifier}}
+\index{limited\+\_\+house\+\_\+classifier@{limited\+\_\+house\+\_\+classifier}!lab4@{lab4}}
+\subsubsection[{limited\+\_\+house\+\_\+classifier}]{\setlength{\rightskip}{0pt plus 5cm}def lab4.\+limited\+\_\+house\+\_\+classifier (
+\begin{DoxyParamCaption}
+\item[{}]{house\+\_\+people, }
+\item[{}]{house\+\_\+votes, }
+\item[{}]{n, }
+\item[{}]{verbose = {\ttfamily False}}
+\end{DoxyParamCaption}
+)}\label{namespacelab4_afeb6f3043e63aad7e472bc70ac32b8cc}
+
+
+Now try it on the House of Representatives. 
+
+However, do it over a data set that only includes the most recent n votes, to show that it is possible to classify politicians without ludicrous amounts of information. 
+
+Here is the call graph for this function\+:
+% FIG 6
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacelab4_aa3012299c849f02ae31ae12757cf2f47}{}\index{lab4@{lab4}!house\+\_\+people@{house\+\_\+people}}
+\index{house\+\_\+people@{house\+\_\+people}!lab4@{lab4}}
+\subsubsection[{house\+\_\+people}]{\setlength{\rightskip}{0pt plus 5cm}tuple lab4.\+house\+\_\+people = read\+\_\+congress\+\_\+data(\textquotesingle{}H110.\+ord\textquotesingle{})}\label{namespacelab4_aa3012299c849f02ae31ae12757cf2f47}
+\hypertarget{namespacelab4_aaf99ce787c94a9fc9d4d77942cf300c3}{}\index{lab4@{lab4}!house\+\_\+votes@{house\+\_\+votes}}
+\index{house\+\_\+votes@{house\+\_\+votes}!lab4@{lab4}}
+\subsubsection[{house\+\_\+votes}]{\setlength{\rightskip}{0pt plus 5cm}tuple lab4.\+house\+\_\+votes = read\+\_\+vote\+\_\+data(\textquotesingle{}H110desc.\+csv\textquotesingle{})}\label{namespacelab4_aaf99ce787c94a9fc9d4d77942cf300c3}
+\hypertarget{namespacelab4_a603179138a7ff56fcea1a59347d8154c}{}\index{lab4@{lab4}!H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K@{H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K}}
+\index{H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K@{H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K}!lab4@{lab4}}
+\subsubsection[{H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K}]{\setlength{\rightskip}{0pt plus 5cm}string lab4.\+H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K = \char`\"{}\char`\"{}}\label{namespacelab4_a603179138a7ff56fcea1a59347d8154c}
+
+
+The standard survey questions. 
+
+\hypertarget{namespacelab4_a1ede50f42a59bf83d5c09c3aef93c234}{}\index{lab4@{lab4}!last\+\_\+senate\+\_\+people@{last\+\_\+senate\+\_\+people}}
+\index{last\+\_\+senate\+\_\+people@{last\+\_\+senate\+\_\+people}!lab4@{lab4}}
+\subsubsection[{last\+\_\+senate\+\_\+people}]{\setlength{\rightskip}{0pt plus 5cm}tuple lab4.\+last\+\_\+senate\+\_\+people = read\+\_\+congress\+\_\+data(\textquotesingle{}S109.\+ord\textquotesingle{})}\label{namespacelab4_a1ede50f42a59bf83d5c09c3aef93c234}
+\hypertarget{namespacelab4_a7770c32cb0f0983cb6ae508b479e7a6d}{}\index{lab4@{lab4}!last\+\_\+senate\+\_\+votes@{last\+\_\+senate\+\_\+votes}}
+\index{last\+\_\+senate\+\_\+votes@{last\+\_\+senate\+\_\+votes}!lab4@{lab4}}
+\subsubsection[{last\+\_\+senate\+\_\+votes}]{\setlength{\rightskip}{0pt plus 5cm}tuple lab4.\+last\+\_\+senate\+\_\+votes = read\+\_\+vote\+\_\+data(\textquotesingle{}S109desc.\+csv\textquotesingle{})}\label{namespacelab4_a7770c32cb0f0983cb6ae508b479e7a6d}
+\hypertarget{namespacelab4_a00fffafa3b319c7bff473fdf1b6a45e7}{}\index{lab4@{lab4}!my\+\_\+classifier@{my\+\_\+classifier}}
+\index{my\+\_\+classifier@{my\+\_\+classifier}!lab4@{lab4}}
+\subsubsection[{my\+\_\+classifier}]{\setlength{\rightskip}{0pt plus 5cm}tuple lab4.\+my\+\_\+classifier = nearest\+\_\+neighbors(hamming\+\_\+distance, 1)}\label{namespacelab4_a00fffafa3b319c7bff473fdf1b6a45e7}
+
+
+By changing the parameters you used, you can get a classifier factory that deals better with independents. 
+
+Make a classifier that makes at most 3 errors on the Senate. \hypertarget{namespacelab4_a950de6b6a30b3a64b09305c0a1f52990}{}\index{lab4@{lab4}!N\+\_\+1@{N\+\_\+1}}
+\index{N\+\_\+1@{N\+\_\+1}!lab4@{lab4}}
+\subsubsection[{N\+\_\+1}]{\setlength{\rightskip}{0pt plus 5cm}int lab4.\+N\+\_\+1 = 10}\label{namespacelab4_a950de6b6a30b3a64b09305c0a1f52990}
+
+
+Find a value of n that classifies at least 430 representatives correctly. 
+
+Hint\+: It\textquotesingle{}s not 10. \hypertarget{namespacelab4_a35d81e5aba299c0a383ad648ed879fa8}{}\index{lab4@{lab4}!N\+\_\+2@{N\+\_\+2}}
+\index{N\+\_\+2@{N\+\_\+2}!lab4@{lab4}}
+\subsubsection[{N\+\_\+2}]{\setlength{\rightskip}{0pt plus 5cm}int lab4.\+N\+\_\+2 = 10}\label{namespacelab4_a35d81e5aba299c0a383ad648ed879fa8}
+
+
+Find a value of n that classifies at least 90 senators correctly. 
+
+\hypertarget{namespacelab4_af4fa52415c905938ba3e0b76e2b57196}{}\index{lab4@{lab4}!N\+\_\+3@{N\+\_\+3}}
+\index{N\+\_\+3@{N\+\_\+3}!lab4@{lab4}}
+\subsubsection[{N\+\_\+3}]{\setlength{\rightskip}{0pt plus 5cm}int lab4.\+N\+\_\+3 = 10}\label{namespacelab4_af4fa52415c905938ba3e0b76e2b57196}
+
+
+Now, find a value of n that classifies at least 95 of last year\textquotesingle{}s senators correctly. 
+
+\hypertarget{namespacelab4_a085a485c7a948fb548fb294216b560bc}{}\index{lab4@{lab4}!old\+\_\+senator\+\_\+classified@{old\+\_\+senator\+\_\+classified}}
+\index{old\+\_\+senator\+\_\+classified@{old\+\_\+senator\+\_\+classified}!lab4@{lab4}}
+\subsubsection[{old\+\_\+senator\+\_\+classified}]{\setlength{\rightskip}{0pt plus 5cm}tuple lab4.\+old\+\_\+senator\+\_\+classified = {\bf limited\+\_\+house\+\_\+classifier}({\bf last\+\_\+senate\+\_\+people}, {\bf last\+\_\+senate\+\_\+votes}, {\bf N\+\_\+3})}\label{namespacelab4_a085a485c7a948fb548fb294216b560bc}
+\hypertarget{namespacelab4_a0a6d77c441ad0d92c2505978d09d00b6}{}\index{lab4@{lab4}!rep\+\_\+classified@{rep\+\_\+classified}}
+\index{rep\+\_\+classified@{rep\+\_\+classified}!lab4@{lab4}}
+\subsubsection[{rep\+\_\+classified}]{\setlength{\rightskip}{0pt plus 5cm}tuple lab4.\+rep\+\_\+classified = {\bf limited\+\_\+house\+\_\+classifier}({\bf house\+\_\+people}, {\bf house\+\_\+votes}, {\bf N\+\_\+1})}\label{namespacelab4_a0a6d77c441ad0d92c2505978d09d00b6}
+\hypertarget{namespacelab4_ab431969dcbdc497ed29f78787174f64b}{}\index{lab4@{lab4}!senate\+\_\+people@{senate\+\_\+people}}
+\index{senate\+\_\+people@{senate\+\_\+people}!lab4@{lab4}}
+\subsubsection[{senate\+\_\+people}]{\setlength{\rightskip}{0pt plus 5cm}tuple lab4.\+senate\+\_\+people = read\+\_\+congress\+\_\+data(\textquotesingle{}S110.\+ord\textquotesingle{})}\label{namespacelab4_ab431969dcbdc497ed29f78787174f64b}
+
+
+C\+O\+D\+E for the learning portion of lab 4. 
+
+Data sets for the lab You will be classifying data from these sets. \hypertarget{namespacelab4_ac5205d0d5639e598abd827580ff7f6ce}{}\index{lab4@{lab4}!senate\+\_\+votes@{senate\+\_\+votes}}
+\index{senate\+\_\+votes@{senate\+\_\+votes}!lab4@{lab4}}
+\subsubsection[{senate\+\_\+votes}]{\setlength{\rightskip}{0pt plus 5cm}tuple lab4.\+senate\+\_\+votes = read\+\_\+vote\+\_\+data(\textquotesingle{}S110desc.\+csv\textquotesingle{})}\label{namespacelab4_ac5205d0d5639e598abd827580ff7f6ce}
+\hypertarget{namespacelab4_a6fd54c2b5b11a8c2578c2777a6f47a35}{}\index{lab4@{lab4}!senator\+\_\+classified@{senator\+\_\+classified}}
+\index{senator\+\_\+classified@{senator\+\_\+classified}!lab4@{lab4}}
+\subsubsection[{senator\+\_\+classified}]{\setlength{\rightskip}{0pt plus 5cm}tuple lab4.\+senator\+\_\+classified = {\bf limited\+\_\+house\+\_\+classifier}({\bf senate\+\_\+people}, {\bf senate\+\_\+votes}, {\bf N\+\_\+2})}\label{namespacelab4_a6fd54c2b5b11a8c2578c2777a6f47a35}
+\hypertarget{namespacelab4_a9ef9abf2d634215662582c7fae76fb2e}{}\index{lab4@{lab4}!W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G@{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G}}
+\index{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G@{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G}!lab4@{lab4}}
+\subsubsection[{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}string lab4.\+W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G = \char`\"{}\char`\"{}}\label{namespacelab4_a9ef9abf2d634215662582c7fae76fb2e}
+\hypertarget{namespacelab4_ae3a183ad2ccdafaeb81264d2e04a7e71}{}\index{lab4@{lab4}!W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G@{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G}}
+\index{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G@{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G}!lab4@{lab4}}
+\subsubsection[{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}string lab4.\+W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G = \char`\"{}\char`\"{}}\label{namespacelab4_ae3a183ad2ccdafaeb81264d2e04a7e71}

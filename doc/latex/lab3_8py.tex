@@ -1,0 +1,61 @@
+\hypertarget{lab3_8py}{}\section{lab3/lab3.py File Reference}
+\label{lab3_8py}\index{lab3/lab3.\+py@{lab3/lab3.\+py}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacelab3}{lab3}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacelab3_abda076f73dc12e63d20dbdcb5954a6ed}{lab3.\+focused\+\_\+evaluate} (board)
+\begin{DoxyCompactList}\small\item\em This section will contain occasional lines that you can uncomment to play the game interactively. \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab3_a7ead0dd82f5946316600e9a937e55037}{lab3.\+alpha\+\_\+beta\+\_\+search}
+\begin{DoxyCompactList}\small\item\em You can try out your new evaluation function by uncommenting this line\+: run\+\_\+game(basic\+\_\+player, quick\+\_\+to\+\_\+win\+\_\+player) \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab3_a30824a87848607d82381e77631ca275b}{lab3.\+alpha\+\_\+beta\+\_\+find\+\_\+board\+\_\+value}
+\item 
+def \hyperlink{namespacelab3_ad4559f27d37b36fa9a2190308c28174a}{lab3.\+better\+\_\+evaluate} (board)
+\begin{DoxyCompactList}\small\item\em Finally, come up with a better evaluation function than focused-\/evaluate. \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab3_a34296327d4f1f67dfca5302d2ff4751c}{lab3.\+run\+\_\+test\+\_\+game} (player1, player2, board)
+\begin{DoxyCompactList}\small\item\em Uncomment to watch your player play a game\+: run\+\_\+game(your\+\_\+player, your\+\_\+player) \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab3_ae1b04090543255fa707de5abb7410a35}{lab3.\+run\+\_\+test\+\_\+search} (search, board, depth, eval\+\_\+fn)
+\item 
+def \hyperlink{namespacelab3_af9aef6e2b8254c91f1ffb4dad0f99de5}{lab3.\+run\+\_\+test\+\_\+tree\+\_\+search} (search, board, depth)
+\begin{DoxyCompactList}\small\item\em This function runs your alpha-\/beta implementation using a tree as the search rather than a live connect four game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespacelab3_ad2e45b0f85fa13d33b881635810e83e8}{lab3.\+A\+N\+S\+W\+E\+R1} = 3
+\item 
+int \hyperlink{namespacelab3_a988f22c9cf01e9e09a7df386ff76a739}{lab3.\+A\+N\+S\+W\+E\+R2} = 2
+\item 
+tuple \hyperlink{namespacelab3_aa43b2937a5bad423a493276473384d9a}{lab3.\+quick\+\_\+to\+\_\+win\+\_\+player}
+\begin{DoxyCompactList}\small\item\em Create a \char`\"{}player\char`\"{} function that uses the focused\+\_\+evaluate function. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacelab3_aa4790555a33d7ee8155ff4358799617a}{lab3.\+alphabeta\+\_\+player}
+\begin{DoxyCompactList}\small\item\em Now you should be able to search twice as deep in the same amount of time. \end{DoxyCompactList}\item 
+\hyperlink{namespacelab3_a38ce81786d974fadcf07d456d1576153}{lab3.\+ab\+\_\+iterative\+\_\+player} = lambdaboard\+:\textbackslash{}
+\begin{DoxyCompactList}\small\item\em This player uses progressive deepening, so it can kick your ass while making efficient use of time\+: \end{DoxyCompactList}\item 
+\hyperlink{namespacelab3_abc5335867f83db21385d992f00825e22}{lab3.\+search\+\_\+fn} = alpha\+\_\+beta\+\_\+search,
+\item 
+int \hyperlink{namespacelab3_aef5722d14d422222f997cff6cd66564f}{lab3.\+eval\+\_\+fn} = 5
+\item 
+tuple \hyperlink{namespacelab3_af72a06890c8de2fae05fc82044aa76be}{lab3.\+board\+\_\+tuples}
+\item 
+tuple \hyperlink{namespacelab3_a7c477dab1b106f5495518ad07afa5a16}{lab3.\+test\+\_\+board\+\_\+1}
+\item 
+tuple \hyperlink{namespacelab3_a0cf494dec1c4e8b319a04e3b8b967cf3}{lab3.\+test\+\_\+board\+\_\+2}
+\item 
+tuple \hyperlink{namespacelab3_abb9fde36d4d3f3fbe09a1bcc9e70a8df}{lab3.\+your\+\_\+player}
+\begin{DoxyCompactList}\small\item\em A player that uses alpha-\/beta and better\+\_\+evaluate\+: \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacelab3_a507ef68d63a202cdd769b53df79cf163}{lab3.\+C\+O\+M\+P\+E\+T\+E} = (False)
+\begin{DoxyCompactList}\small\item\em Do you want us to use your code in a tournament against other students? See the description in the problem set. \end{DoxyCompactList}\item 
+string \hyperlink{namespacelab3_ac15f588150b4ba8f99f8b305c86527cc}{lab3.\+H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K} = \char`\"{}10\char`\"{}
+\begin{DoxyCompactList}\small\item\em The standard survey questions. \end{DoxyCompactList}\item 
+string \hyperlink{namespacelab3_ac6298332137ba3ffbfa88449a0d8add2}{lab3.\+W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G} = \char`\"{}alpha-\/beta\char`\"{}
+\item 
+string \hyperlink{namespacelab3_a2d4ca0461367d56429a6e110bdc70c9c}{lab3.\+W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G} = \char`\"{}nothing\char`\"{}
+\item 
+string \hyperlink{namespacelab3_a2d13719e09eaf808047d497d45dff575}{lab3.\+N\+A\+M\+E} = \char`\"{}vikram\char`\"{}
+\item 
+string \hyperlink{namespacelab3_a3cd2b5e83c71f1b3c2f453bea62b3af5}{lab3.\+E\+M\+A\+I\+L} = \char`\"{}whocares\char`\"{}
+\end{DoxyCompactItemize}

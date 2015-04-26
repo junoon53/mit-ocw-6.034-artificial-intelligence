@@ -1,0 +1,467 @@
+\hypertarget{classconnectfour_1_1_connect_four_board}{}\section{connectfour.\+Connect\+Four\+Board Class Reference}
+\label{classconnectfour_1_1_connect_four_board}\index{connectfour.\+Connect\+Four\+Board@{connectfour.\+Connect\+Four\+Board}}
+
+
+Inheritance diagram for connectfour.\+Connect\+Four\+Board\+:
+% FIG 0
+
+
+Collaboration diagram for connectfour.\+Connect\+Four\+Board\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_a9039d2f294b916f2c5139807e4aa1cb3}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_abedfbd3308b4918066fc4872a702ae8a}{get\+\_\+current\+\_\+player\+\_\+id} (self)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_a2698eb546bb597244cfee4b139f9da0c}{get\+\_\+other\+\_\+player\+\_\+id} (self)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_a644165386835760d4a4c5ca79664c985}{get\+\_\+board\+\_\+array} (self)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_a4e25091c15ebbf727d77c6d7d42498b2}{get\+\_\+top\+\_\+elt\+\_\+in\+\_\+column} (self, column)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_a4d0e7514308bb16b206a6cb156a831e4}{get\+\_\+height\+\_\+of\+\_\+column} (self, column)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_a088fda69e8c13c1e938cb4e138bb396d}{get\+\_\+cell} (self, row, col)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_af8352dbf6f205a0ddfb6c642a166b43e}{do\+\_\+move} (self, column)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_aae7f90bbc3ec64b4f8b6edb60584eaf9}{longest\+\_\+chain} (self, playerid)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_a7a56b29249ef3d6270da98bf0676e046}{chain\+\_\+cells} (self, playerid)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_a69769c7825f546e9e9fe5af60ef6ebac}{is\+\_\+win} (self)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_a3dccbfa0b2b9e1cb64306964edf46776}{is\+\_\+game\+\_\+over} (self)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_aa56fe0b1b07f9995e4b0bec934317a62}{is\+\_\+tie} (self)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_a4f2aed3f3fd565ef5508a448b5a28ecc}{clone} (self)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_a28425f26b3b7d7857d90a01c9ebe99d7}{num\+\_\+tokens\+\_\+on\+\_\+board} (self)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_a79db4f932dab894e733e9d7783e1912b}{\+\_\+\+\_\+unicode\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_a5d864ec8577e93d795d2652fdb36105c}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_a21aac38964cad4976cdb926e96090b2b}{\+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_ae5b30e0abc85657a97edf8efa1818d9c}{\+\_\+\+\_\+hash\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classconnectfour_1_1_connect_four_board_ac14002ce00eb4b9f764237dea5c14a39}{\+\_\+\+\_\+eq\+\_\+\+\_\+} (self, other)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classconnectfour_1_1_connect_four_board_ae28d1dac88e83fb944b018976f719cef}{board\+\_\+symbol\+\_\+mapping}
+\item 
+\hyperlink{classconnectfour_1_1_connect_four_board_a9fe155eb44056df0fe1ca6c0cbcd69d3}{current\+\_\+player}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classconnectfour_1_1_connect_four_board_a57326ec6b2c23f9dafd27d84f6ce0b27}{board\+\_\+width} = 7
+\item 
+int \hyperlink{classconnectfour_1_1_connect_four_board_a31a0129e0fd919af299f88e82a44348f}{board\+\_\+height} = 6
+\item 
+dictionary \hyperlink{classconnectfour_1_1_connect_four_board_a939160228737190efd67695aea4e08f1}{board\+\_\+symbol\+\_\+mapping}
+\item 
+dictionary \hyperlink{classconnectfour_1_1_connect_four_board_a7d5a560c3dde1e17eae92e13ce03f32a}{board\+\_\+symbol\+\_\+mapping\+\_\+ascii}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Store a Connect-Four Board
+
+Connect-Four boards are intended to be immutable; please don't use
+Python wizardry to hack/mutate them.  (It won't give you an advantage;
+it'll just make the tester crash.)
+
+A Connect-Four board is a matrix, laid out as follows:
+
+     0 1 2 3 4 5 6 7
+   0 * * * * * * * *
+   1 * * * * * * * *
+   2 * * * * * * * *
+   3 * * * * * * * *
+   4 * * * * * * * *
+   5 * * * * * * * *
+   6 * * * * * * * *
+
+Board columns fill from the bottom (ie., row 6).
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classconnectfour_1_1_connect_four_board_a9039d2f294b916f2c5139807e4aa1cb3}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{board\+\_\+array = {\ttfamily None}, }
+\item[{}]{board\+\_\+already\+\_\+won = {\ttfamily None}, }
+\item[{}]{modified\+\_\+column = {\ttfamily None}, }
+\item[{}]{current\+\_\+player = {\ttfamily 1}, }
+\item[{}]{previous\+\_\+move = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_a9039d2f294b916f2c5139807e4aa1cb3}
+\begin{DoxyVerb}Create a new ConnectFourBoard
+
+If board_array is specified, it should be an MxN matrix of iterables
+(ideally tuples or lists), that will be used to describe the initial
+board state.  Each cell should be either '0', meaning unoccupied, or
+N for some integer N corresponding to a player number.
+
+board_already_won can optionally be set to either None, or to the id#
+of the player who has already won the board.
+If modified_column is specified, it should be the index of the last column
+that had a token dropped into it.
+Both board_already_won and modified_column are used as hints to the
+'is_win_for_player()' function.  It is fine to not specify them, but if they
+are specified, they must be correct.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classconnectfour_1_1_connect_four_board_ac14002ce00eb4b9f764237dea5c14a39}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!\+\_\+\+\_\+eq\+\_\+\+\_\+@{\+\_\+\+\_\+eq\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+eq\+\_\+\+\_\+@{\+\_\+\+\_\+eq\+\_\+\+\_\+}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{\+\_\+\+\_\+eq\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+\_\+\+\_\+eq\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{other}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_ac14002ce00eb4b9f764237dea5c14a39}
+\begin{DoxyVerb}Determine whether two boards are equal. \end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+\hypertarget{classconnectfour_1_1_connect_four_board_ae5b30e0abc85657a97edf8efa1818d9c}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!\+\_\+\+\_\+hash\+\_\+\+\_\+@{\+\_\+\+\_\+hash\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+hash\+\_\+\+\_\+@{\+\_\+\+\_\+hash\+\_\+\+\_\+}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{\+\_\+\+\_\+hash\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+\_\+\+\_\+hash\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_ae5b30e0abc85657a97edf8efa1818d9c}
+\begin{DoxyVerb}Determine the hash key of a board.  The hash key must be the same on any two identical boards. \end{DoxyVerb}
+ \hypertarget{classconnectfour_1_1_connect_four_board_a21aac38964cad4976cdb926e96090b2b}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!\+\_\+\+\_\+repr\+\_\+\+\_\+@{\+\_\+\+\_\+repr\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+repr\+\_\+\+\_\+@{\+\_\+\+\_\+repr\+\_\+\+\_\+}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{\+\_\+\+\_\+repr\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+\_\+\+\_\+repr\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_a21aac38964cad4976cdb926e96090b2b}
+\begin{DoxyVerb}The string representation of a board in the Python shell \end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+\hypertarget{classconnectfour_1_1_connect_four_board_a5d864ec8577e93d795d2652fdb36105c}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{\+\_\+\+\_\+str\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+\_\+\+\_\+str\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_a5d864ec8577e93d795d2652fdb36105c}
+\begin{DoxyVerb}Return a string representation of this board \end{DoxyVerb}
+ 
+
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+\hypertarget{classconnectfour_1_1_connect_four_board_a79db4f932dab894e733e9d7783e1912b}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!\+\_\+\+\_\+unicode\+\_\+\+\_\+@{\+\_\+\+\_\+unicode\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+unicode\+\_\+\+\_\+@{\+\_\+\+\_\+unicode\+\_\+\+\_\+}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{\+\_\+\+\_\+unicode\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+\_\+\+\_\+unicode\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_a79db4f932dab894e733e9d7783e1912b}
+\begin{DoxyVerb}Return a string representation of this board \end{DoxyVerb}
+ \hypertarget{classconnectfour_1_1_connect_four_board_a7a56b29249ef3d6270da98bf0676e046}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!chain\+\_\+cells@{chain\+\_\+cells}}
+\index{chain\+\_\+cells@{chain\+\_\+cells}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{chain\+\_\+cells}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+chain\+\_\+cells (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{playerid}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_a7a56b29249ef3d6270da98bf0676e046}
+\begin{DoxyVerb}Returns a set of all cells on the board that are part of a chain controlled
+by the specified player.
+
+The return value will be a Python set containing tuples of coordinates.
+For example, a return value might look like:
+
+set([ ( (0,1),(0,2),(0,3) ), ( (0,1),(1,1) ) ])
+
+This would indicate a contiguous string of tokens from (0,1)-(0,3) and (0,1)-(1,1).
+
+The coordinates within a tuple are weakly ordered: any coordinates that are 
+adjacent in a tuple are also adjacent on the board.
+
+Note that single lone tokens are regarded as chains of length 1.  This is
+sometimes useful, but sometimes not; however, it's relatively easy to remove
+such elements via list comprehension or via the built-in Python 'filter' function
+as follows (for example):
+
+>>> my_big_chains = filter(lambda x: len(x) > 1, myBoard.chain_cells(playernum))
+
+Also recall that you can convert this set to a list as follows:
+
+>>> my_list = list( myBoard.chain_cells(playernum) )
+
+The return value is provided as a set because sets are unique and unordered,
+as is this collection of chains.
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 5
+
+
+\hypertarget{classconnectfour_1_1_connect_four_board_a4f2aed3f3fd565ef5508a448b5a28ecc}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!clone@{clone}}
+\index{clone@{clone}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+clone (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_a4f2aed3f3fd565ef5508a448b5a28ecc}
+\begin{DoxyVerb}Return a duplicate of this board object \end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 6
+
+
+\hypertarget{classconnectfour_1_1_connect_four_board_af8352dbf6f205a0ddfb6c642a166b43e}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!do\+\_\+move@{do\+\_\+move}}
+\index{do\+\_\+move@{do\+\_\+move}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{do\+\_\+move}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+do\+\_\+move (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{column}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_af8352dbf6f205a0ddfb6c642a166b43e}
+\begin{DoxyVerb}Execute the specified move as the specified player.
+Return a new board with the result.
+Raise 'InvalidMoveException' if the specified move is invalid.
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 7
+
+
+\hypertarget{classconnectfour_1_1_connect_four_board_a644165386835760d4a4c5ca79664c985}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!get\+\_\+board\+\_\+array@{get\+\_\+board\+\_\+array}}
+\index{get\+\_\+board\+\_\+array@{get\+\_\+board\+\_\+array}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{get\+\_\+board\+\_\+array}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+get\+\_\+board\+\_\+array (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_a644165386835760d4a4c5ca79664c985}
+\begin{DoxyVerb}Return the board array representing this board (as a tuple of tuples) \end{DoxyVerb}
+ 
+
+Here is the caller graph for this function\+:
+% FIG 8
+
+
+\hypertarget{classconnectfour_1_1_connect_four_board_a088fda69e8c13c1e938cb4e138bb396d}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!get\+\_\+cell@{get\+\_\+cell}}
+\index{get\+\_\+cell@{get\+\_\+cell}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{get\+\_\+cell}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+get\+\_\+cell (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{row, }
+\item[{}]{col}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_a088fda69e8c13c1e938cb4e138bb396d}
+\begin{DoxyVerb}Get the id# of the player owning the token in the specified cell.
+Return 0 if it is unclaimed.
+\end{DoxyVerb}
+ 
+
+Here is the caller graph for this function\+:
+% FIG 9
+
+
+\hypertarget{classconnectfour_1_1_connect_four_board_abedfbd3308b4918066fc4872a702ae8a}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!get\+\_\+current\+\_\+player\+\_\+id@{get\+\_\+current\+\_\+player\+\_\+id}}
+\index{get\+\_\+current\+\_\+player\+\_\+id@{get\+\_\+current\+\_\+player\+\_\+id}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{get\+\_\+current\+\_\+player\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+get\+\_\+current\+\_\+player\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_abedfbd3308b4918066fc4872a702ae8a}
+\begin{DoxyVerb}Return the id of the player who should be moving now \end{DoxyVerb}
+ 
+
+Here is the caller graph for this function\+:
+% FIG 10
+
+
+\hypertarget{classconnectfour_1_1_connect_four_board_a4d0e7514308bb16b206a6cb156a831e4}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!get\+\_\+height\+\_\+of\+\_\+column@{get\+\_\+height\+\_\+of\+\_\+column}}
+\index{get\+\_\+height\+\_\+of\+\_\+column@{get\+\_\+height\+\_\+of\+\_\+column}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{get\+\_\+height\+\_\+of\+\_\+column}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+get\+\_\+height\+\_\+of\+\_\+column (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{column}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_a4d0e7514308bb16b206a6cb156a831e4}
+\begin{DoxyVerb}Return the index of the first cell in the specified column that is filled.
+Return ConnectFourBoard.board_height if the column is empty.
+\end{DoxyVerb}
+ 
+
+Here is the caller graph for this function\+:
+% FIG 11
+
+
+\hypertarget{classconnectfour_1_1_connect_four_board_a2698eb546bb597244cfee4b139f9da0c}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!get\+\_\+other\+\_\+player\+\_\+id@{get\+\_\+other\+\_\+player\+\_\+id}}
+\index{get\+\_\+other\+\_\+player\+\_\+id@{get\+\_\+other\+\_\+player\+\_\+id}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{get\+\_\+other\+\_\+player\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+get\+\_\+other\+\_\+player\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_a2698eb546bb597244cfee4b139f9da0c}
+\begin{DoxyVerb}Return the id of the opponent of the player who should be moving now \end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 12
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 13
+
+
+\hypertarget{classconnectfour_1_1_connect_four_board_a4e25091c15ebbf727d77c6d7d42498b2}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!get\+\_\+top\+\_\+elt\+\_\+in\+\_\+column@{get\+\_\+top\+\_\+elt\+\_\+in\+\_\+column}}
+\index{get\+\_\+top\+\_\+elt\+\_\+in\+\_\+column@{get\+\_\+top\+\_\+elt\+\_\+in\+\_\+column}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{get\+\_\+top\+\_\+elt\+\_\+in\+\_\+column}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+get\+\_\+top\+\_\+elt\+\_\+in\+\_\+column (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{column}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_a4e25091c15ebbf727d77c6d7d42498b2}
+\begin{DoxyVerb}Get the id# of the player who put the topmost token in the specified column.
+Return 0 if the column is empty.
+\end{DoxyVerb}
+ \hypertarget{classconnectfour_1_1_connect_four_board_a3dccbfa0b2b9e1cb64306964edf46776}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!is\+\_\+game\+\_\+over@{is\+\_\+game\+\_\+over}}
+\index{is\+\_\+game\+\_\+over@{is\+\_\+game\+\_\+over}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{is\+\_\+game\+\_\+over}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+is\+\_\+game\+\_\+over (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_a3dccbfa0b2b9e1cb64306964edf46776}
+\begin{DoxyVerb}Return True if the game has been won, False otherwise \end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 14
+
+
+\hypertarget{classconnectfour_1_1_connect_four_board_aa56fe0b1b07f9995e4b0bec934317a62}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!is\+\_\+tie@{is\+\_\+tie}}
+\index{is\+\_\+tie@{is\+\_\+tie}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{is\+\_\+tie}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+is\+\_\+tie (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_aa56fe0b1b07f9995e4b0bec934317a62}
+\begin{DoxyVerb}Return true iff the game has reached a stalemate \end{DoxyVerb}
+ 
+
+Here is the caller graph for this function\+:
+% FIG 15
+
+
+\hypertarget{classconnectfour_1_1_connect_four_board_a69769c7825f546e9e9fe5af60ef6ebac}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!is\+\_\+win@{is\+\_\+win}}
+\index{is\+\_\+win@{is\+\_\+win}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{is\+\_\+win}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+is\+\_\+win (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_a69769c7825f546e9e9fe5af60ef6ebac}
+\begin{DoxyVerb}Return the id# of the player who has won this game.
+Return 0 if it has not yet been won.
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 16
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 17
+
+
+\hypertarget{classconnectfour_1_1_connect_four_board_aae7f90bbc3ec64b4f8b6edb60584eaf9}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!longest\+\_\+chain@{longest\+\_\+chain}}
+\index{longest\+\_\+chain@{longest\+\_\+chain}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{longest\+\_\+chain}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+longest\+\_\+chain (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{playerid}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_aae7f90bbc3ec64b4f8b6edb60584eaf9}
+\begin{DoxyVerb}Returns the length of the longest chain of tokens controlled by this player,
+0 if the player has no tokens on the board
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 18
+
+
+\hypertarget{classconnectfour_1_1_connect_four_board_a28425f26b3b7d7857d90a01c9ebe99d7}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!num\+\_\+tokens\+\_\+on\+\_\+board@{num\+\_\+tokens\+\_\+on\+\_\+board}}
+\index{num\+\_\+tokens\+\_\+on\+\_\+board@{num\+\_\+tokens\+\_\+on\+\_\+board}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{num\+\_\+tokens\+\_\+on\+\_\+board}]{\setlength{\rightskip}{0pt plus 5cm}def connectfour.\+Connect\+Four\+Board.\+num\+\_\+tokens\+\_\+on\+\_\+board (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classconnectfour_1_1_connect_four_board_a28425f26b3b7d7857d90a01c9ebe99d7}
+\begin{DoxyVerb}Returns the total number of tokens (for either player)
+currently on the board
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classconnectfour_1_1_connect_four_board_a31a0129e0fd919af299f88e82a44348f}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!board\+\_\+height@{board\+\_\+height}}
+\index{board\+\_\+height@{board\+\_\+height}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{board\+\_\+height}]{\setlength{\rightskip}{0pt plus 5cm}int connectfour.\+Connect\+Four\+Board.\+board\+\_\+height = 6\hspace{0.3cm}{\ttfamily [static]}}\label{classconnectfour_1_1_connect_four_board_a31a0129e0fd919af299f88e82a44348f}
+\hypertarget{classconnectfour_1_1_connect_four_board_a939160228737190efd67695aea4e08f1}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!board\+\_\+symbol\+\_\+mapping@{board\+\_\+symbol\+\_\+mapping}}
+\index{board\+\_\+symbol\+\_\+mapping@{board\+\_\+symbol\+\_\+mapping}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{board\+\_\+symbol\+\_\+mapping}]{\setlength{\rightskip}{0pt plus 5cm}dictionary connectfour.\+Connect\+Four\+Board.\+board\+\_\+symbol\+\_\+mapping\hspace{0.3cm}{\ttfamily [static]}}\label{classconnectfour_1_1_connect_four_board_a939160228737190efd67695aea4e08f1}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \{ 0: \textcolor{stringliteral}{u' '},
+2                              1: unicodedata.lookup(\textcolor{stringliteral}{"WHITE SMILING FACE"}),
+3                              2: unicodedata.lookup(\textcolor{stringliteral}{"BLACK SMILING FACE"}) \}
+\end{DoxyCode}
+\hypertarget{classconnectfour_1_1_connect_four_board_ae28d1dac88e83fb944b018976f719cef}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!board\+\_\+symbol\+\_\+mapping@{board\+\_\+symbol\+\_\+mapping}}
+\index{board\+\_\+symbol\+\_\+mapping@{board\+\_\+symbol\+\_\+mapping}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{board\+\_\+symbol\+\_\+mapping}]{\setlength{\rightskip}{0pt plus 5cm}connectfour.\+Connect\+Four\+Board.\+board\+\_\+symbol\+\_\+mapping}\label{classconnectfour_1_1_connect_four_board_ae28d1dac88e83fb944b018976f719cef}
+\hypertarget{classconnectfour_1_1_connect_four_board_a7d5a560c3dde1e17eae92e13ce03f32a}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!board\+\_\+symbol\+\_\+mapping\+\_\+ascii@{board\+\_\+symbol\+\_\+mapping\+\_\+ascii}}
+\index{board\+\_\+symbol\+\_\+mapping\+\_\+ascii@{board\+\_\+symbol\+\_\+mapping\+\_\+ascii}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{board\+\_\+symbol\+\_\+mapping\+\_\+ascii}]{\setlength{\rightskip}{0pt plus 5cm}dictionary connectfour.\+Connect\+Four\+Board.\+board\+\_\+symbol\+\_\+mapping\+\_\+ascii\hspace{0.3cm}{\ttfamily [static]}}\label{classconnectfour_1_1_connect_four_board_a7d5a560c3dde1e17eae92e13ce03f32a}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \{ 0: \textcolor{stringliteral}{' '},
+2                                    1: \textcolor{stringliteral}{'X'},
+3                                    2: \textcolor{stringliteral}{'O'} \}
+\end{DoxyCode}
+\hypertarget{classconnectfour_1_1_connect_four_board_a57326ec6b2c23f9dafd27d84f6ce0b27}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!board\+\_\+width@{board\+\_\+width}}
+\index{board\+\_\+width@{board\+\_\+width}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{board\+\_\+width}]{\setlength{\rightskip}{0pt plus 5cm}int connectfour.\+Connect\+Four\+Board.\+board\+\_\+width = 7\hspace{0.3cm}{\ttfamily [static]}}\label{classconnectfour_1_1_connect_four_board_a57326ec6b2c23f9dafd27d84f6ce0b27}
+\hypertarget{classconnectfour_1_1_connect_four_board_a9fe155eb44056df0fe1ca6c0cbcd69d3}{}\index{connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}!current\+\_\+player@{current\+\_\+player}}
+\index{current\+\_\+player@{current\+\_\+player}!connectfour\+::\+Connect\+Four\+Board@{connectfour\+::\+Connect\+Four\+Board}}
+\subsubsection[{current\+\_\+player}]{\setlength{\rightskip}{0pt plus 5cm}connectfour.\+Connect\+Four\+Board.\+current\+\_\+player}\label{classconnectfour_1_1_connect_four_board_a9fe155eb44056df0fe1ca6c0cbcd69d3}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lab3/\hyperlink{connectfour_8py}{connectfour.\+py}\end{DoxyCompactItemize}

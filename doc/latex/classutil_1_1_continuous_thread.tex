@@ -1,0 +1,69 @@
+\hypertarget{classutil_1_1_continuous_thread}{}\section{util.\+Continuous\+Thread Class Reference}
+\label{classutil_1_1_continuous_thread}\index{util.\+Continuous\+Thread@{util.\+Continuous\+Thread}}
+
+
+Inheritance diagram for util.\+Continuous\+Thread\+:
+% FIG 0
+
+
+Collaboration diagram for util.\+Continuous\+Thread\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classutil_1_1_continuous_thread_a16e1f77f2d184cab1df58acec3d0dfaa}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classutil_1_1_continuous_thread_a682cdd72375f821f9f98969f4e3e4162}{run} (self)
+\item 
+def \hyperlink{classutil_1_1_continuous_thread_a8a3a5d08728b65941d3eeb9c20388239}{get\+\_\+most\+\_\+recent\+\_\+val} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A thread that runs a function continuously,
+with an incrementing 'depth' kwarg, until
+a specified timeout has been exceeded
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classutil_1_1_continuous_thread_a16e1f77f2d184cab1df58acec3d0dfaa}{}\index{util\+::\+Continuous\+Thread@{util\+::\+Continuous\+Thread}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!util\+::\+Continuous\+Thread@{util\+::\+Continuous\+Thread}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def util.\+Continuous\+Thread.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{timeout = {\ttfamily 5}, }
+\item[{}]{target = {\ttfamily None}, }
+\item[{}]{group = {\ttfamily None}, }
+\item[{}]{name = {\ttfamily None}, }
+\item[{}]{args = {\ttfamily ()}, }
+\item[{}]{kwargs = {\ttfamily \{\}}}
+\end{DoxyParamCaption}
+)}\label{classutil_1_1_continuous_thread_a16e1f77f2d184cab1df58acec3d0dfaa}
+\begin{DoxyVerb}Store the various values that we use from the constructor args,
+then let the superclass's constructor do its thing
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classutil_1_1_continuous_thread_a8a3a5d08728b65941d3eeb9c20388239}{}\index{util\+::\+Continuous\+Thread@{util\+::\+Continuous\+Thread}!get\+\_\+most\+\_\+recent\+\_\+val@{get\+\_\+most\+\_\+recent\+\_\+val}}
+\index{get\+\_\+most\+\_\+recent\+\_\+val@{get\+\_\+most\+\_\+recent\+\_\+val}!util\+::\+Continuous\+Thread@{util\+::\+Continuous\+Thread}}
+\subsubsection[{get\+\_\+most\+\_\+recent\+\_\+val}]{\setlength{\rightskip}{0pt plus 5cm}def util.\+Continuous\+Thread.\+get\+\_\+most\+\_\+recent\+\_\+val (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classutil_1_1_continuous_thread_a8a3a5d08728b65941d3eeb9c20388239}
+\begin{DoxyVerb}Return the most-recent return value of the thread function \end{DoxyVerb}
+ \hypertarget{classutil_1_1_continuous_thread_a682cdd72375f821f9f98969f4e3e4162}{}\index{util\+::\+Continuous\+Thread@{util\+::\+Continuous\+Thread}!run@{run}}
+\index{run@{run}!util\+::\+Continuous\+Thread@{util\+::\+Continuous\+Thread}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}def util.\+Continuous\+Thread.\+run (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classutil_1_1_continuous_thread_a682cdd72375f821f9f98969f4e3e4162}
+\begin{DoxyVerb}Run until the specified time limit has been exceeded \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lab3/\hyperlink{util_8py}{util.\+py}\end{DoxyCompactItemize}

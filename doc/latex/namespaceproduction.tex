@@ -1,0 +1,233 @@
+\hypertarget{namespaceproduction}{}\section{production Namespace Reference}
+\label{namespaceproduction}\index{production@{production}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classproduction_1_1_a_n_d}{A\+N\+D}
+\item 
+class \hyperlink{classproduction_1_1_d_e_l_e_t_e}{D\+E\+L\+E\+T\+E}
+\item 
+class \hyperlink{classproduction_1_1_i_f}{I\+F}
+\item 
+class \hyperlink{classproduction_1_1_n_o_t}{N\+O\+T}
+\item 
+class \hyperlink{classproduction_1_1_o_r}{O\+R}
+\item 
+class \hyperlink{classproduction_1_1_rule_expression}{Rule\+Expression}
+\item 
+class \hyperlink{classproduction_1_1_t_h_e_n}{T\+H\+E\+N}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceproduction_a7ac92e37cfa2c93a658d6ff66237a0fd}{sorted} (lst)
+\item 
+def \hyperlink{namespaceproduction_af279b12f495c76be9424cb6cf0fa014f}{forward\+\_\+chain}
+\begin{DoxyCompactList}\small\item\em We\textquotesingle{}ve tried to keep the functions you will need for back-\/chaining at the top of this file. \end{DoxyCompactList}\item 
+def \hyperlink{namespaceproduction_a010fe1af862244071801e839df05b6f2}{instantiate} (template, values\+\_\+dict)
+\item 
+def \hyperlink{namespaceproduction_a9ba3934c56c12a0922452b8d33555f4a}{match} (template, A\+I\+Str)
+\item 
+def \hyperlink{namespaceproduction_ac1aec33c79d4b61b1d7d0cdd3caa8faf}{is\+\_\+variable} (str)
+\item 
+def \hyperlink{namespaceproduction_a28e0a912c828dc4c508c279cadbb0514}{variables} (exp)
+\item 
+def \hyperlink{namespaceproduction_aaa6f4f50810b5cf264bd619fe117ecd1}{uniq} (lst)
+\item 
+def \hyperlink{namespaceproduction_a9cdd2d9b32a63904d61e06f5a0e3932e}{simplify} (node)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceproduction_a751c158cea5246ee2fdb8397fe36195c}{populate} = \hyperlink{namespaceproduction_a010fe1af862244071801e839df05b6f2}{instantiate}
+\item 
+tuple \hyperlink{namespaceproduction_ae689947c217c2bf52c209776290f6c0d}{P\+A\+S\+S} = \hyperlink{classproduction_1_1_a_n_d}{A\+N\+D}()
+\item 
+tuple \hyperlink{namespaceproduction_a991cfbd6401d50899210e7c488c52958}{F\+A\+I\+L} = \hyperlink{classproduction_1_1_o_r}{O\+R}()
+\item 
+\hyperlink{namespaceproduction_aa5049c71dca019f1e7a7dd7d46231426}{run\+\_\+conditions} = \hyperlink{namespaceproduction_af279b12f495c76be9424cb6cf0fa014f}{forward\+\_\+chain}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceproduction_af279b12f495c76be9424cb6cf0fa014f}{}\index{production@{production}!forward\+\_\+chain@{forward\+\_\+chain}}
+\index{forward\+\_\+chain@{forward\+\_\+chain}!production@{production}}
+\subsubsection[{forward\+\_\+chain}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+forward\+\_\+chain (
+\begin{DoxyParamCaption}
+\item[{}]{rules, }
+\item[{}]{data, }
+\item[{}]{apply\+\_\+only\+\_\+one = {\ttfamily False}, }
+\item[{}]{verbose = {\ttfamily False}}
+\end{DoxyParamCaption}
+)}\label{namespaceproduction_af279b12f495c76be9424cb6cf0fa014f}
+
+
+We\textquotesingle{}ve tried to keep the functions you will need for back-\/chaining at the top of this file. 
+
+Keep in mind that you can get at this documentation from a Python prompt\+:
+
+\begin{quote}
+\begin{quote}
+\begin{quote}
+import production help(production) \end{quote}
+\end{quote}
+\end{quote}
+\begin{DoxyVerb}Apply a list of IF-expressions (rules) through a set of data
+in order.  Return the modified data set that results from the
+rules.
+
+Set apply_only_one=True to get the behavior we describe in
+class.  When it's False, a rule that fires will do so for
+_all_ possible bindings of its variables at the same time,
+making the code considerably more efficient. In the end, only
+DELETE rules will act differently.
+\end{DoxyVerb}
+ \hypertarget{namespaceproduction_a010fe1af862244071801e839df05b6f2}{}\index{production@{production}!instantiate@{instantiate}}
+\index{instantiate@{instantiate}!production@{production}}
+\subsubsection[{instantiate}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+instantiate (
+\begin{DoxyParamCaption}
+\item[{}]{template, }
+\item[{}]{values\+\_\+dict}
+\end{DoxyParamCaption}
+)}\label{namespaceproduction_a010fe1af862244071801e839df05b6f2}
+\begin{DoxyVerb}Given an expression ('template') with variables in it,
+replace those variables with values from values_dict.
+
+For example:
+>>> instantiate("sister (?x) {?y)", {'x': 'Lisa', 'y': 'Bart'})
+=> "sister Lisa Bart"
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 0
+
+
+\hypertarget{namespaceproduction_ac1aec33c79d4b61b1d7d0cdd3caa8faf}{}\index{production@{production}!is\+\_\+variable@{is\+\_\+variable}}
+\index{is\+\_\+variable@{is\+\_\+variable}!production@{production}}
+\subsubsection[{is\+\_\+variable}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+is\+\_\+variable (
+\begin{DoxyParamCaption}
+\item[{}]{str}
+\end{DoxyParamCaption}
+)}\label{namespaceproduction_ac1aec33c79d4b61b1d7d0cdd3caa8faf}
+\begin{DoxyVerb}Is 'str' a variable, of the form '(?x)'?\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 1
+
+
+\hypertarget{namespaceproduction_a9ba3934c56c12a0922452b8d33555f4a}{}\index{production@{production}!match@{match}}
+\index{match@{match}!production@{production}}
+\subsubsection[{match}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+match (
+\begin{DoxyParamCaption}
+\item[{}]{template, }
+\item[{}]{A\+I\+Str}
+\end{DoxyParamCaption}
+)}\label{namespaceproduction_a9ba3934c56c12a0922452b8d33555f4a}
+\begin{DoxyVerb}Given two strings, 'template': a string containing variables
+of the form '(?x)', and 'AIStr': a string that 'template'
+matches, with certain variable substitutions.
+
+Returns a dictionary of the set of variables that would need
+to be substituted into template in order to make it equal to
+AIStr, or None if no such set exists.
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+\hypertarget{namespaceproduction_a9cdd2d9b32a63904d61e06f5a0e3932e}{}\index{production@{production}!simplify@{simplify}}
+\index{simplify@{simplify}!production@{production}}
+\subsubsection[{simplify}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+simplify (
+\begin{DoxyParamCaption}
+\item[{}]{node}
+\end{DoxyParamCaption}
+)}\label{namespaceproduction_a9cdd2d9b32a63904d61e06f5a0e3932e}
+\begin{DoxyVerb}Given an AND/OR tree, reduce it to a canonical, simplified
+form, as described in the lab.
+
+You should do this to the expressions you produce by backward
+chaining.
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 4
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 5
+
+
+\hypertarget{namespaceproduction_a7ac92e37cfa2c93a658d6ff66237a0fd}{}\index{production@{production}!sorted@{sorted}}
+\index{sorted@{sorted}!production@{production}}
+\subsubsection[{sorted}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+sorted (
+\begin{DoxyParamCaption}
+\item[{}]{lst}
+\end{DoxyParamCaption}
+)}\label{namespaceproduction_a7ac92e37cfa2c93a658d6ff66237a0fd}
+
+
+Here is the caller graph for this function\+:
+% FIG 6
+
+
+\hypertarget{namespaceproduction_aaa6f4f50810b5cf264bd619fe117ecd1}{}\index{production@{production}!uniq@{uniq}}
+\index{uniq@{uniq}!production@{production}}
+\subsubsection[{uniq}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+uniq (
+\begin{DoxyParamCaption}
+\item[{}]{lst}
+\end{DoxyParamCaption}
+)}\label{namespaceproduction_aaa6f4f50810b5cf264bd619fe117ecd1}
+\begin{DoxyVerb}this is like list(set(lst)) except that it gets around
+unhashability by stringifying everything.  If str(a) ==
+str(b) then this will get rid of one of them.
+\end{DoxyVerb}
+ 
+
+Here is the caller graph for this function\+:
+% FIG 7
+
+
+\hypertarget{namespaceproduction_a28e0a912c828dc4c508c279cadbb0514}{}\index{production@{production}!variables@{variables}}
+\index{variables@{variables}!production@{production}}
+\subsubsection[{variables}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+variables (
+\begin{DoxyParamCaption}
+\item[{}]{exp}
+\end{DoxyParamCaption}
+)}\label{namespaceproduction_a28e0a912c828dc4c508c279cadbb0514}
+\begin{DoxyVerb}Return a dictionary containing the names of all variables in
+'exp' as keys, or None if there are no such variables.
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 8
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespaceproduction_a991cfbd6401d50899210e7c488c52958}{}\index{production@{production}!F\+A\+I\+L@{F\+A\+I\+L}}
+\index{F\+A\+I\+L@{F\+A\+I\+L}!production@{production}}
+\subsubsection[{F\+A\+I\+L}]{\setlength{\rightskip}{0pt plus 5cm}tuple production.\+F\+A\+I\+L = {\bf O\+R}()}\label{namespaceproduction_a991cfbd6401d50899210e7c488c52958}
+\hypertarget{namespaceproduction_ae689947c217c2bf52c209776290f6c0d}{}\index{production@{production}!P\+A\+S\+S@{P\+A\+S\+S}}
+\index{P\+A\+S\+S@{P\+A\+S\+S}!production@{production}}
+\subsubsection[{P\+A\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}tuple production.\+P\+A\+S\+S = {\bf A\+N\+D}()}\label{namespaceproduction_ae689947c217c2bf52c209776290f6c0d}
+\hypertarget{namespaceproduction_a751c158cea5246ee2fdb8397fe36195c}{}\index{production@{production}!populate@{populate}}
+\index{populate@{populate}!production@{production}}
+\subsubsection[{populate}]{\setlength{\rightskip}{0pt plus 5cm}production.\+populate = {\bf instantiate}}\label{namespaceproduction_a751c158cea5246ee2fdb8397fe36195c}
+\hypertarget{namespaceproduction_aa5049c71dca019f1e7a7dd7d46231426}{}\index{production@{production}!run\+\_\+conditions@{run\+\_\+conditions}}
+\index{run\+\_\+conditions@{run\+\_\+conditions}!production@{production}}
+\subsubsection[{run\+\_\+conditions}]{\setlength{\rightskip}{0pt plus 5cm}production.\+run\+\_\+conditions = {\bf forward\+\_\+chain}}\label{namespaceproduction_aa5049c71dca019f1e7a7dd7d46231426}

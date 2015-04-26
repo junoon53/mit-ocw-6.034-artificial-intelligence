@@ -1,0 +1,272 @@
+\hypertarget{classcsp_1_1_c_s_p_state}{}\section{csp.\+C\+S\+P\+State Class Reference}
+\label{classcsp_1_1_c_s_p_state}\index{csp.\+C\+S\+P\+State@{csp.\+C\+S\+P\+State}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcsp_1_1_c_s_p_state_af4c1179fcd168c100bcd59586ab4d303}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{classcsp_1_1_c_s_p_state_a121e387a978bd94e973fd75e5a34d7aa}{constraint\+\_\+map}, \hyperlink{classcsp_1_1_c_s_p_state_a6aea06dad446dc6c3f0f801211511929}{variable\+\_\+map}, \hyperlink{classcsp_1_1_c_s_p_state_a43e4b250a7558b5f1429a25d15f4683f}{variable\+\_\+order}, \hyperlink{classcsp_1_1_c_s_p_state_a13ed1ff27ef3d9c6e13f124be61fed74}{variable\+\_\+index})
+\item 
+def \hyperlink{classcsp_1_1_c_s_p_state_a37eefac1cf30bbff64b8f216899d4e17}{copy} (self)
+\item 
+def \hyperlink{classcsp_1_1_c_s_p_state_a21ad4ae81d479bc9f9667dca72d598ed}{get\+\_\+constraints\+\_\+by\+\_\+name} (self, variable\+\_\+name)
+\item 
+def \hyperlink{classcsp_1_1_c_s_p_state_af20aebf66467e64e47ea46ddf5d0bc15}{get\+\_\+all\+\_\+constraints} (self)
+\item 
+def \hyperlink{classcsp_1_1_c_s_p_state_a2cc9093b1dfe47626c926b5e3c088822}{get\+\_\+all\+\_\+variables} (self)
+\item 
+def \hyperlink{classcsp_1_1_c_s_p_state_a7fdcc5e772d816835af290d65d7f139a}{get\+\_\+current\+\_\+variable\+\_\+name} (self)
+\item 
+def \hyperlink{classcsp_1_1_c_s_p_state_a7570a60bab86b1c20b0ad65544a2833d}{get\+\_\+current\+\_\+variable} (self)
+\item 
+def \hyperlink{classcsp_1_1_c_s_p_state_af21de7f4ee6ccec033123fa67e7787eb}{set\+\_\+variable\+\_\+by\+\_\+index} (self, \hyperlink{classcsp_1_1_c_s_p_state_a13ed1ff27ef3d9c6e13f124be61fed74}{variable\+\_\+index}, variable\+\_\+value)
+\item 
+def \hyperlink{classcsp_1_1_c_s_p_state_ad21332e62a47fe3ee947cbb27028ae03}{get\+\_\+variable\+\_\+by\+\_\+index} (self, index)
+\item 
+def \hyperlink{classcsp_1_1_c_s_p_state_a136ae090bcbc511ba7400d0764d4b370}{get\+\_\+variable\+\_\+by\+\_\+name} (self, name)
+\item 
+def \hyperlink{classcsp_1_1_c_s_p_state_a2dad0723eb508513e028c9cfc6907ae7}{is\+\_\+solution} (self)
+\item 
+def \hyperlink{classcsp_1_1_c_s_p_state_a93600486c87a23f34bd070352e52e8be}{solution} (self)
+\item 
+def \hyperlink{classcsp_1_1_c_s_p_state_a81baea18e6bd4a2e1bb5c62ad6753ba6}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classcsp_1_1_c_s_p_state_a88e923fb69359973abff84b535275aeb}{vd\+\_\+table} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcsp_1_1_c_s_p_state_a121e387a978bd94e973fd75e5a34d7aa}{constraint\+\_\+map}
+\item 
+\hyperlink{classcsp_1_1_c_s_p_state_a6aea06dad446dc6c3f0f801211511929}{variable\+\_\+map}
+\item 
+\hyperlink{classcsp_1_1_c_s_p_state_a43e4b250a7558b5f1429a25d15f4683f}{variable\+\_\+order}
+\item 
+\hyperlink{classcsp_1_1_c_s_p_state_a13ed1ff27ef3d9c6e13f124be61fed74}{variable\+\_\+index}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Representation of a single state in the CSP search tree.  One can
+think of this as the encapsulation of the Variable-domain (VD) table.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcsp_1_1_c_s_p_state_af4c1179fcd168c100bcd59586ab4d303}{}\index{csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+C\+S\+P\+State.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{constraint\+\_\+map, }
+\item[{}]{variable\+\_\+map, }
+\item[{}]{variable\+\_\+order, }
+\item[{}]{variable\+\_\+index}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_c_s_p_state_af4c1179fcd168c100bcd59586ab4d303}
+\begin{DoxyVerb}constraint_map - a dictionary of variable names to
+         lists of associated constraints
+variable_map - a dictionary of variable names to
+       variable objects
+variable_order - the ordering in which variables are assigned
+       values are the names of variables
+variable_index - the position into the variable_order in which
+       we are currently making an assignment.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcsp_1_1_c_s_p_state_a81baea18e6bd4a2e1bb5c62ad6753ba6}{}\index{csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}}
+\subsubsection[{\+\_\+\+\_\+str\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+C\+S\+P\+State.\+\_\+\+\_\+str\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_c_s_p_state_a81baea18e6bd4a2e1bb5c62ad6753ba6}
+
+
+Here is the call graph for this function\+:
+% FIG 0
+
+
+\hypertarget{classcsp_1_1_c_s_p_state_a37eefac1cf30bbff64b8f216899d4e17}{}\index{csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}!copy@{copy}}
+\index{copy@{copy}!csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}}
+\subsubsection[{copy}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+C\+S\+P\+State.\+copy (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_c_s_p_state_a37eefac1cf30bbff64b8f216899d4e17}
+\begin{DoxyVerb}Make a complete deep copy of this state; this should be
+done so that modifications to the VD table is only transmitted
+to children but not siblings (in the search tree).
+\end{DoxyVerb}
+ \hypertarget{classcsp_1_1_c_s_p_state_af20aebf66467e64e47ea46ddf5d0bc15}{}\index{csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}!get\+\_\+all\+\_\+constraints@{get\+\_\+all\+\_\+constraints}}
+\index{get\+\_\+all\+\_\+constraints@{get\+\_\+all\+\_\+constraints}!csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}}
+\subsubsection[{get\+\_\+all\+\_\+constraints}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+C\+S\+P\+State.\+get\+\_\+all\+\_\+constraints (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_c_s_p_state_af20aebf66467e64e47ea46ddf5d0bc15}
+\begin{DoxyVerb}List all the constraints in this problem
+\end{DoxyVerb}
+ \hypertarget{classcsp_1_1_c_s_p_state_a2cc9093b1dfe47626c926b5e3c088822}{}\index{csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}!get\+\_\+all\+\_\+variables@{get\+\_\+all\+\_\+variables}}
+\index{get\+\_\+all\+\_\+variables@{get\+\_\+all\+\_\+variables}!csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}}
+\subsubsection[{get\+\_\+all\+\_\+variables}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+C\+S\+P\+State.\+get\+\_\+all\+\_\+variables (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_c_s_p_state_a2cc9093b1dfe47626c926b5e3c088822}
+\begin{DoxyVerb}List all the variable objects in this problem
+\end{DoxyVerb}
+ \hypertarget{classcsp_1_1_c_s_p_state_a21ad4ae81d479bc9f9667dca72d598ed}{}\index{csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}!get\+\_\+constraints\+\_\+by\+\_\+name@{get\+\_\+constraints\+\_\+by\+\_\+name}}
+\index{get\+\_\+constraints\+\_\+by\+\_\+name@{get\+\_\+constraints\+\_\+by\+\_\+name}!csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}}
+\subsubsection[{get\+\_\+constraints\+\_\+by\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+C\+S\+P\+State.\+get\+\_\+constraints\+\_\+by\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{variable\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_c_s_p_state_a21ad4ae81d479bc9f9667dca72d598ed}
+\begin{DoxyVerb}List only constraints associated with variable_name
+(where variable_name is variable_i in the constraint)
+\end{DoxyVerb}
+ \hypertarget{classcsp_1_1_c_s_p_state_a7570a60bab86b1c20b0ad65544a2833d}{}\index{csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}!get\+\_\+current\+\_\+variable@{get\+\_\+current\+\_\+variable}}
+\index{get\+\_\+current\+\_\+variable@{get\+\_\+current\+\_\+variable}!csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}}
+\subsubsection[{get\+\_\+current\+\_\+variable}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+C\+S\+P\+State.\+get\+\_\+current\+\_\+variable (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_c_s_p_state_a7570a60bab86b1c20b0ad65544a2833d}
+\begin{DoxyVerb}Get variable (object) currently being assigned.
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 1
+
+
+\hypertarget{classcsp_1_1_c_s_p_state_a7fdcc5e772d816835af290d65d7f139a}{}\index{csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}!get\+\_\+current\+\_\+variable\+\_\+name@{get\+\_\+current\+\_\+variable\+\_\+name}}
+\index{get\+\_\+current\+\_\+variable\+\_\+name@{get\+\_\+current\+\_\+variable\+\_\+name}!csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}}
+\subsubsection[{get\+\_\+current\+\_\+variable\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+C\+S\+P\+State.\+get\+\_\+current\+\_\+variable\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_c_s_p_state_a7fdcc5e772d816835af290d65d7f139a}
+\begin{DoxyVerb}Get the name of the variable currently being assigned.
+This function will returns None when in the root/initial state.
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+\hypertarget{classcsp_1_1_c_s_p_state_ad21332e62a47fe3ee947cbb27028ae03}{}\index{csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}!get\+\_\+variable\+\_\+by\+\_\+index@{get\+\_\+variable\+\_\+by\+\_\+index}}
+\index{get\+\_\+variable\+\_\+by\+\_\+index@{get\+\_\+variable\+\_\+by\+\_\+index}!csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}}
+\subsubsection[{get\+\_\+variable\+\_\+by\+\_\+index}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+C\+S\+P\+State.\+get\+\_\+variable\+\_\+by\+\_\+index (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{index}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_c_s_p_state_ad21332e62a47fe3ee947cbb27028ae03}
+\begin{DoxyVerb}fetch the index(th) variable object
+\end{DoxyVerb}
+ 
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+\hypertarget{classcsp_1_1_c_s_p_state_a136ae090bcbc511ba7400d0764d4b370}{}\index{csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}!get\+\_\+variable\+\_\+by\+\_\+name@{get\+\_\+variable\+\_\+by\+\_\+name}}
+\index{get\+\_\+variable\+\_\+by\+\_\+name@{get\+\_\+variable\+\_\+by\+\_\+name}!csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}}
+\subsubsection[{get\+\_\+variable\+\_\+by\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+C\+S\+P\+State.\+get\+\_\+variable\+\_\+by\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{name}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_c_s_p_state_a136ae090bcbc511ba7400d0764d4b370}
+\begin{DoxyVerb}fetch a variable object by the variable name
+\end{DoxyVerb}
+ 
+
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+\hypertarget{classcsp_1_1_c_s_p_state_a2dad0723eb508513e028c9cfc6907ae7}{}\index{csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}!is\+\_\+solution@{is\+\_\+solution}}
+\index{is\+\_\+solution@{is\+\_\+solution}!csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}}
+\subsubsection[{is\+\_\+solution}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+C\+S\+P\+State.\+is\+\_\+solution (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_c_s_p_state_a2dad0723eb508513e028c9cfc6907ae7}
+\begin{DoxyVerb}Check if this csp state is a solution.
+Note we assume that constraint checking has been done
+on this state.  This merely checks if all the variables
+have an assignment
+\end{DoxyVerb}
+ \hypertarget{classcsp_1_1_c_s_p_state_af21de7f4ee6ccec033123fa67e7787eb}{}\index{csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}!set\+\_\+variable\+\_\+by\+\_\+index@{set\+\_\+variable\+\_\+by\+\_\+index}}
+\index{set\+\_\+variable\+\_\+by\+\_\+index@{set\+\_\+variable\+\_\+by\+\_\+index}!csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}}
+\subsubsection[{set\+\_\+variable\+\_\+by\+\_\+index}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+C\+S\+P\+State.\+set\+\_\+variable\+\_\+by\+\_\+index (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{variable\+\_\+index, }
+\item[{}]{variable\+\_\+value}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_c_s_p_state_af21de7f4ee6ccec033123fa67e7787eb}
+\begin{DoxyVerb}assign variable (given index) the variable_value
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 5
+
+
+\hypertarget{classcsp_1_1_c_s_p_state_a93600486c87a23f34bd070352e52e8be}{}\index{csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}!solution@{solution}}
+\index{solution@{solution}!csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}}
+\subsubsection[{solution}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+C\+S\+P\+State.\+solution (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_c_s_p_state_a93600486c87a23f34bd070352e52e8be}
+\begin{DoxyVerb}return the set of tuples (var-name, var-value) for
+all the assigned variables
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 6
+
+
+\hypertarget{classcsp_1_1_c_s_p_state_a88e923fb69359973abff84b535275aeb}{}\index{csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}!vd\+\_\+table@{vd\+\_\+table}}
+\index{vd\+\_\+table@{vd\+\_\+table}!csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}}
+\subsubsection[{vd\+\_\+table}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+C\+S\+P\+State.\+vd\+\_\+table (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_c_s_p_state_a88e923fb69359973abff84b535275aeb}
+\begin{DoxyVerb}Output the vd table as a string for debugging.
+\end{DoxyVerb}
+ 
+
+Here is the caller graph for this function\+:
+% FIG 7
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcsp_1_1_c_s_p_state_a121e387a978bd94e973fd75e5a34d7aa}{}\index{csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}!constraint\+\_\+map@{constraint\+\_\+map}}
+\index{constraint\+\_\+map@{constraint\+\_\+map}!csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}}
+\subsubsection[{constraint\+\_\+map}]{\setlength{\rightskip}{0pt plus 5cm}csp.\+C\+S\+P\+State.\+constraint\+\_\+map}\label{classcsp_1_1_c_s_p_state_a121e387a978bd94e973fd75e5a34d7aa}
+\hypertarget{classcsp_1_1_c_s_p_state_a13ed1ff27ef3d9c6e13f124be61fed74}{}\index{csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}!variable\+\_\+index@{variable\+\_\+index}}
+\index{variable\+\_\+index@{variable\+\_\+index}!csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}}
+\subsubsection[{variable\+\_\+index}]{\setlength{\rightskip}{0pt plus 5cm}csp.\+C\+S\+P\+State.\+variable\+\_\+index}\label{classcsp_1_1_c_s_p_state_a13ed1ff27ef3d9c6e13f124be61fed74}
+\hypertarget{classcsp_1_1_c_s_p_state_a6aea06dad446dc6c3f0f801211511929}{}\index{csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}!variable\+\_\+map@{variable\+\_\+map}}
+\index{variable\+\_\+map@{variable\+\_\+map}!csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}}
+\subsubsection[{variable\+\_\+map}]{\setlength{\rightskip}{0pt plus 5cm}csp.\+C\+S\+P\+State.\+variable\+\_\+map}\label{classcsp_1_1_c_s_p_state_a6aea06dad446dc6c3f0f801211511929}
+\hypertarget{classcsp_1_1_c_s_p_state_a43e4b250a7558b5f1429a25d15f4683f}{}\index{csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}!variable\+\_\+order@{variable\+\_\+order}}
+\index{variable\+\_\+order@{variable\+\_\+order}!csp\+::\+C\+S\+P\+State@{csp\+::\+C\+S\+P\+State}}
+\subsubsection[{variable\+\_\+order}]{\setlength{\rightskip}{0pt plus 5cm}csp.\+C\+S\+P\+State.\+variable\+\_\+order}\label{classcsp_1_1_c_s_p_state_a43e4b250a7558b5f1429a25d15f4683f}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lab4/\hyperlink{csp_8py}{csp.\+py}\end{DoxyCompactItemize}

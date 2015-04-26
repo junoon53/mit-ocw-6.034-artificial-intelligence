@@ -1,0 +1,11 @@
+digraph "classify.evaluate"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="classify.evaluate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="lab4.limited_house\l_classifier",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacelab4.html#afeb6f3043e63aad7e472bc70ac32b8cc",tooltip="Now try it on the House of Representatives. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="lab4.eval_test",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacelab4.html#ab9f66836efa5bbcc08f6874e5bb5f049",tooltip="This function is used by the tester, please don&#39;t modify it! "];
+}

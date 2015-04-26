@@ -1,0 +1,191 @@
+\hypertarget{namespacetree__searcher}{}\section{tree\+\_\+searcher Namespace Reference}
+\label{namespacetree__searcher}\index{tree\+\_\+searcher@{tree\+\_\+searcher}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtree__searcher_1_1_node}{Node}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacetree__searcher_a40429bd232bf64508d7559f679db0c43}{tree\+\_\+as\+\_\+string}
+\item 
+def \hyperlink{namespacetree__searcher_ad7aa3b2a8e8a2967ca966399c95c9401}{make\+\_\+tree} (tup)
+\item 
+def \hyperlink{namespacetree__searcher_add6d93a6d7b1ca1fc2ba6b8003cbbdfc}{make\+\_\+tree\+\_\+helper} (tup, node\+\_\+type)
+\item 
+def \hyperlink{namespacetree__searcher_aef6b1c7f075dfa18d1e49cf00b13760b}{is\+\_\+at\+\_\+depth} (depth, node)
+\item 
+def \hyperlink{namespacetree__searcher_a33493ef1557aa857dd530e280f4153a8}{is\+\_\+leaf} (depth, node)
+\item 
+def \hyperlink{namespacetree__searcher_ac2042e0c041ed68a4fd9fd4377afbee4}{tree\+\_\+get\+\_\+next\+\_\+move} (node)
+\item 
+def \hyperlink{namespacetree__searcher_a0de4d6482e8f62561944e5f9b2cf7047}{tree\+\_\+eval} (node)
+\item 
+def \hyperlink{namespacetree__searcher_a1b3b90d379cc3db6e9d0dedd3ba40264}{T\+E\+S\+T\+\_\+1} (expected)
+\item 
+def \hyperlink{namespacetree__searcher_a977851e09f5b46a5710d065d8f342d39}{T\+E\+S\+T\+\_\+2} (expected)
+\item 
+def \hyperlink{namespacetree__searcher_a22d3d902139be0cd38cec908adfefdcb}{T\+E\+S\+T\+\_\+3} (expected)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacetree__searcher_aef6b1c7f075dfa18d1e49cf00b13760b}{}\index{tree\+\_\+searcher@{tree\+\_\+searcher}!is\+\_\+at\+\_\+depth@{is\+\_\+at\+\_\+depth}}
+\index{is\+\_\+at\+\_\+depth@{is\+\_\+at\+\_\+depth}!tree\+\_\+searcher@{tree\+\_\+searcher}}
+\subsubsection[{is\+\_\+at\+\_\+depth}]{\setlength{\rightskip}{0pt plus 5cm}def tree\+\_\+searcher.\+is\+\_\+at\+\_\+depth (
+\begin{DoxyParamCaption}
+\item[{}]{depth, }
+\item[{}]{node}
+\end{DoxyParamCaption}
+)}\label{namespacetree__searcher_aef6b1c7f075dfa18d1e49cf00b13760b}
+\begin{DoxyVerb}is_terminal_fn for fixed depth trees
+True if depth == 0 has been reached.
+\end{DoxyVerb}
+ \hypertarget{namespacetree__searcher_a33493ef1557aa857dd530e280f4153a8}{}\index{tree\+\_\+searcher@{tree\+\_\+searcher}!is\+\_\+leaf@{is\+\_\+leaf}}
+\index{is\+\_\+leaf@{is\+\_\+leaf}!tree\+\_\+searcher@{tree\+\_\+searcher}}
+\subsubsection[{is\+\_\+leaf}]{\setlength{\rightskip}{0pt plus 5cm}def tree\+\_\+searcher.\+is\+\_\+leaf (
+\begin{DoxyParamCaption}
+\item[{}]{depth, }
+\item[{}]{node}
+\end{DoxyParamCaption}
+)}\label{namespacetree__searcher_a33493ef1557aa857dd530e280f4153a8}
+\begin{DoxyVerb}is_terminal_fn for variable-depth trees.
+Check if a node is a leaf node.
+\end{DoxyVerb}
+ \hypertarget{namespacetree__searcher_ad7aa3b2a8e8a2967ca966399c95c9401}{}\index{tree\+\_\+searcher@{tree\+\_\+searcher}!make\+\_\+tree@{make\+\_\+tree}}
+\index{make\+\_\+tree@{make\+\_\+tree}!tree\+\_\+searcher@{tree\+\_\+searcher}}
+\subsubsection[{make\+\_\+tree}]{\setlength{\rightskip}{0pt plus 5cm}def tree\+\_\+searcher.\+make\+\_\+tree (
+\begin{DoxyParamCaption}
+\item[{}]{tup}
+\end{DoxyParamCaption}
+)}\label{namespacetree__searcher_ad7aa3b2a8e8a2967ca966399c95c9401}
+\begin{DoxyVerb}Generates a Node tree from a tuple formatted tree
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 0
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+\hypertarget{namespacetree__searcher_add6d93a6d7b1ca1fc2ba6b8003cbbdfc}{}\index{tree\+\_\+searcher@{tree\+\_\+searcher}!make\+\_\+tree\+\_\+helper@{make\+\_\+tree\+\_\+helper}}
+\index{make\+\_\+tree\+\_\+helper@{make\+\_\+tree\+\_\+helper}!tree\+\_\+searcher@{tree\+\_\+searcher}}
+\subsubsection[{make\+\_\+tree\+\_\+helper}]{\setlength{\rightskip}{0pt plus 5cm}def tree\+\_\+searcher.\+make\+\_\+tree\+\_\+helper (
+\begin{DoxyParamCaption}
+\item[{}]{tup, }
+\item[{}]{node\+\_\+type}
+\end{DoxyParamCaption}
+)}\label{namespacetree__searcher_add6d93a6d7b1ca1fc2ba6b8003cbbdfc}
+\begin{DoxyVerb}Generate a Tree from tuple format\end{DoxyVerb}
+ 
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+\hypertarget{namespacetree__searcher_a1b3b90d379cc3db6e9d0dedd3ba40264}{}\index{tree\+\_\+searcher@{tree\+\_\+searcher}!T\+E\+S\+T\+\_\+1@{T\+E\+S\+T\+\_\+1}}
+\index{T\+E\+S\+T\+\_\+1@{T\+E\+S\+T\+\_\+1}!tree\+\_\+searcher@{tree\+\_\+searcher}}
+\subsubsection[{T\+E\+S\+T\+\_\+1}]{\setlength{\rightskip}{0pt plus 5cm}def tree\+\_\+searcher.\+T\+E\+S\+T\+\_\+1 (
+\begin{DoxyParamCaption}
+\item[{}]{expected}
+\end{DoxyParamCaption}
+)}\label{namespacetree__searcher_a1b3b90d379cc3db6e9d0dedd3ba40264}
+
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+\hypertarget{namespacetree__searcher_a977851e09f5b46a5710d065d8f342d39}{}\index{tree\+\_\+searcher@{tree\+\_\+searcher}!T\+E\+S\+T\+\_\+2@{T\+E\+S\+T\+\_\+2}}
+\index{T\+E\+S\+T\+\_\+2@{T\+E\+S\+T\+\_\+2}!tree\+\_\+searcher@{tree\+\_\+searcher}}
+\subsubsection[{T\+E\+S\+T\+\_\+2}]{\setlength{\rightskip}{0pt plus 5cm}def tree\+\_\+searcher.\+T\+E\+S\+T\+\_\+2 (
+\begin{DoxyParamCaption}
+\item[{}]{expected}
+\end{DoxyParamCaption}
+)}\label{namespacetree__searcher_a977851e09f5b46a5710d065d8f342d39}
+
+
+Here is the call graph for this function\+:
+% FIG 5
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 6
+
+
+\hypertarget{namespacetree__searcher_a22d3d902139be0cd38cec908adfefdcb}{}\index{tree\+\_\+searcher@{tree\+\_\+searcher}!T\+E\+S\+T\+\_\+3@{T\+E\+S\+T\+\_\+3}}
+\index{T\+E\+S\+T\+\_\+3@{T\+E\+S\+T\+\_\+3}!tree\+\_\+searcher@{tree\+\_\+searcher}}
+\subsubsection[{T\+E\+S\+T\+\_\+3}]{\setlength{\rightskip}{0pt plus 5cm}def tree\+\_\+searcher.\+T\+E\+S\+T\+\_\+3 (
+\begin{DoxyParamCaption}
+\item[{}]{expected}
+\end{DoxyParamCaption}
+)}\label{namespacetree__searcher_a22d3d902139be0cd38cec908adfefdcb}
+
+
+Here is the call graph for this function\+:
+% FIG 7
+
+
+\hypertarget{namespacetree__searcher_a40429bd232bf64508d7559f679db0c43}{}\index{tree\+\_\+searcher@{tree\+\_\+searcher}!tree\+\_\+as\+\_\+string@{tree\+\_\+as\+\_\+string}}
+\index{tree\+\_\+as\+\_\+string@{tree\+\_\+as\+\_\+string}!tree\+\_\+searcher@{tree\+\_\+searcher}}
+\subsubsection[{tree\+\_\+as\+\_\+string}]{\setlength{\rightskip}{0pt plus 5cm}def tree\+\_\+searcher.\+tree\+\_\+as\+\_\+string (
+\begin{DoxyParamCaption}
+\item[{}]{node, }
+\item[{}]{depth = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{namespacetree__searcher_a40429bd232bf64508d7559f679db0c43}
+\begin{DoxyVerb}Generates a string representation of the tree
+in a space indented format
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 8
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 9
+
+
+\hypertarget{namespacetree__searcher_a0de4d6482e8f62561944e5f9b2cf7047}{}\index{tree\+\_\+searcher@{tree\+\_\+searcher}!tree\+\_\+eval@{tree\+\_\+eval}}
+\index{tree\+\_\+eval@{tree\+\_\+eval}!tree\+\_\+searcher@{tree\+\_\+searcher}}
+\subsubsection[{tree\+\_\+eval}]{\setlength{\rightskip}{0pt plus 5cm}def tree\+\_\+searcher.\+tree\+\_\+eval (
+\begin{DoxyParamCaption}
+\item[{}]{node}
+\end{DoxyParamCaption}
+)}\label{namespacetree__searcher_a0de4d6482e8f62561944e5f9b2cf7047}
+\begin{DoxyVerb}Returns the static value of a node
+\end{DoxyVerb}
+ 
+
+Here is the caller graph for this function\+:
+% FIG 10
+
+
+\hypertarget{namespacetree__searcher_ac2042e0c041ed68a4fd9fd4377afbee4}{}\index{tree\+\_\+searcher@{tree\+\_\+searcher}!tree\+\_\+get\+\_\+next\+\_\+move@{tree\+\_\+get\+\_\+next\+\_\+move}}
+\index{tree\+\_\+get\+\_\+next\+\_\+move@{tree\+\_\+get\+\_\+next\+\_\+move}!tree\+\_\+searcher@{tree\+\_\+searcher}}
+\subsubsection[{tree\+\_\+get\+\_\+next\+\_\+move}]{\setlength{\rightskip}{0pt plus 5cm}def tree\+\_\+searcher.\+tree\+\_\+get\+\_\+next\+\_\+move (
+\begin{DoxyParamCaption}
+\item[{}]{node}
+\end{DoxyParamCaption}
+)}\label{namespacetree__searcher_ac2042e0c041ed68a4fd9fd4377afbee4}
+\begin{DoxyVerb}get_next_move_fn for trees
+Returns the list of next moves for traversing the tree
+\end{DoxyVerb}
+ 

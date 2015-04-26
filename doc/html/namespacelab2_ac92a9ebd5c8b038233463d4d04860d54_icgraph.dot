@@ -1,0 +1,15 @@
+digraph "lab2.partition"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="lab2.partition",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="lab2.quickSortHelper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacelab2.html#a3a1a3b5cfb516d5a9d5ee8bb9e9d1354"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="lab2.quickSort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacelab2.html#a587fb5e12b9b6bbe5a98a76af303b841"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="lab2.hill_climbing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacelab2.html#ac34e3ba898541997df325041046f5418",tooltip="Now we&#39;re going to add some heuristics into the search. "];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="lab2.beam_search",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacelab2.html#a6e27047ed6d844e2e8dc9ed3d1571473",tooltip="Now we&#39;re going to implement beam search, a variation on BFS that caps the amount of memory used to s..."];
+}

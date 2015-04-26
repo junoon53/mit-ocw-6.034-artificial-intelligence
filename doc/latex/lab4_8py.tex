@@ -1,0 +1,59 @@
+\hypertarget{lab4_8py}{}\section{lab4/lab4.py File Reference}
+\label{lab4_8py}\index{lab4/lab4.\+py@{lab4/lab4.\+py}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacelab4}{lab4}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacelab4_a89017da59eab7aaf4ba6a8e9e148b714}{lab4.\+forward\+\_\+checking}
+\item 
+def \hyperlink{namespacelab4_a8bb02f6dec7b66c837deacf38d0602bf}{lab4.\+forward\+\_\+checking\+\_\+prop\+\_\+singleton}
+\item 
+def \hyperlink{namespacelab4_a4ca0fb51c398a07cef35678f56ceef6a}{lab4.\+csp\+\_\+solver\+\_\+tree} (problem, checker)
+\item 
+def \hyperlink{namespacelab4_a64af0c00ffea4205cb40005854505cc9}{lab4.\+euclidean\+\_\+distance} (list1, list2)
+\begin{DoxyCompactList}\small\item\em Part 1\+: Nearest Neighbors An example of evaluating a nearest-\/neighbors classifier. \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab4_afc4e3e4bf14bf03bc80bcb4e87106053}{lab4.\+information\+\_\+disorder} (yes, no)
+\begin{DoxyCompactList}\small\item\em Part 2\+: I\+D Trees print Congress\+I\+D\+Tree(senate\+\_\+people, senate\+\_\+votes, homogeneous\+\_\+disorder) \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab4_afeb6f3043e63aad7e472bc70ac32b8cc}{lab4.\+limited\+\_\+house\+\_\+classifier}
+\begin{DoxyCompactList}\small\item\em Now try it on the House of Representatives. \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab4_ab9f66836efa5bbcc08f6874e5bb5f049}{lab4.\+eval\+\_\+test}
+\begin{DoxyCompactList}\small\item\em This function is used by the tester, please don\textquotesingle{}t modify it! \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespacelab4_ab431969dcbdc497ed29f78787174f64b}{lab4.\+senate\+\_\+people} = read\+\_\+congress\+\_\+data(\textquotesingle{}S110.\+ord\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em C\+O\+D\+E for the learning portion of lab 4. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacelab4_ac5205d0d5639e598abd827580ff7f6ce}{lab4.\+senate\+\_\+votes} = read\+\_\+vote\+\_\+data(\textquotesingle{}S110desc.\+csv\textquotesingle{})
+\item 
+tuple \hyperlink{namespacelab4_aa3012299c849f02ae31ae12757cf2f47}{lab4.\+house\+\_\+people} = read\+\_\+congress\+\_\+data(\textquotesingle{}H110.\+ord\textquotesingle{})
+\item 
+tuple \hyperlink{namespacelab4_aaf99ce787c94a9fc9d4d77942cf300c3}{lab4.\+house\+\_\+votes} = read\+\_\+vote\+\_\+data(\textquotesingle{}H110desc.\+csv\textquotesingle{})
+\item 
+tuple \hyperlink{namespacelab4_a1ede50f42a59bf83d5c09c3aef93c234}{lab4.\+last\+\_\+senate\+\_\+people} = read\+\_\+congress\+\_\+data(\textquotesingle{}S109.\+ord\textquotesingle{})
+\item 
+tuple \hyperlink{namespacelab4_a7770c32cb0f0983cb6ae508b479e7a6d}{lab4.\+last\+\_\+senate\+\_\+votes} = read\+\_\+vote\+\_\+data(\textquotesingle{}S109desc.\+csv\textquotesingle{})
+\item 
+tuple \hyperlink{namespacelab4_a00fffafa3b319c7bff473fdf1b6a45e7}{lab4.\+my\+\_\+classifier} = nearest\+\_\+neighbors(hamming\+\_\+distance, 1)
+\begin{DoxyCompactList}\small\item\em By changing the parameters you used, you can get a classifier factory that deals better with independents. \end{DoxyCompactList}\item 
+int \hyperlink{namespacelab4_a950de6b6a30b3a64b09305c0a1f52990}{lab4.\+N\+\_\+1} = 10
+\begin{DoxyCompactList}\small\item\em Find a value of n that classifies at least 430 representatives correctly. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacelab4_a0a6d77c441ad0d92c2505978d09d00b6}{lab4.\+rep\+\_\+classified} = limited\+\_\+house\+\_\+classifier(house\+\_\+people, house\+\_\+votes, N\+\_\+1)
+\item 
+int \hyperlink{namespacelab4_a35d81e5aba299c0a383ad648ed879fa8}{lab4.\+N\+\_\+2} = 10
+\begin{DoxyCompactList}\small\item\em Find a value of n that classifies at least 90 senators correctly. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacelab4_a6fd54c2b5b11a8c2578c2777a6f47a35}{lab4.\+senator\+\_\+classified} = limited\+\_\+house\+\_\+classifier(senate\+\_\+people, senate\+\_\+votes, N\+\_\+2)
+\item 
+int \hyperlink{namespacelab4_af4fa52415c905938ba3e0b76e2b57196}{lab4.\+N\+\_\+3} = 10
+\begin{DoxyCompactList}\small\item\em Now, find a value of n that classifies at least 95 of last year\textquotesingle{}s senators correctly. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacelab4_a085a485c7a948fb548fb294216b560bc}{lab4.\+old\+\_\+senator\+\_\+classified} = limited\+\_\+house\+\_\+classifier(last\+\_\+senate\+\_\+people, last\+\_\+senate\+\_\+votes, N\+\_\+3)
+\item 
+string \hyperlink{namespacelab4_a603179138a7ff56fcea1a59347d8154c}{lab4.\+H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em The standard survey questions. \end{DoxyCompactList}\item 
+string \hyperlink{namespacelab4_ae3a183ad2ccdafaeb81264d2e04a7e71}{lab4.\+W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G} = \char`\"{}\char`\"{}
+\item 
+string \hyperlink{namespacelab4_a9ef9abf2d634215662582c7fae76fb2e}{lab4.\+W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}

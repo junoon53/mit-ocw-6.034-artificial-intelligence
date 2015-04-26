@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['barely_5fwinning_5fboard',['BARELY_WINNING_BOARD',['../namespacetests.html#aad7560588da32a5e7c87a112a3171521',1,'tests.BARELY_WINNING_BOARD()'],['../namespaceutil.html#a9b1bc05e3033e4dcb536327cd0fd4b41',1,'util.BARELY_WINNING_BOARD()']]],
+  ['basic_5fboard',['BASIC_BOARD',['../namespaceutil.html#a10b9210601911f13607868bf248c4f6c',1,'util']]],
+  ['basic_5fplayer',['basic_player',['../namespacebasicplayer.html#af4714dbbe203205344968d715419e8dd',1,'basicplayer']]],
+  ['basic_5fstarting_5fboard_5f1',['BASIC_STARTING_BOARD_1',['../namespaceutil.html#aecf4927bd0b242a8302cb1c60cc19af5',1,'util']]],
+  ['basic_5fstarting_5fboard_5f2',['BASIC_STARTING_BOARD_2',['../namespaceutil.html#a70ced14d7bb5c7b954153b6b13c45781',1,'util']]],
+  ['beam_5fsearch_5f1_5fanswer',['beam_search_1_answer',['../namespacetests.html#ae630b7a11ae3117aca8e662e028baa16',1,'tests']]],
+  ['beam_5fsearch_5f1_5fbeam_5f10_5fanswer',['beam_search_1_beam_10_answer',['../namespacetests.html#aa029d5b0ab71cc26e35f61a7004b4833',1,'tests']]],
+  ['beam_5fsearch_5f2_5fanswer',['beam_search_2_answer',['../namespacetests.html#a387c20c9a461a16a4c6485ee4ddd20b5',1,'tests']]],
+  ['beam_5fsearch_5f2_5fbeam_5f10_5fanswer',['beam_search_2_beam_10_answer',['../namespacetests.html#a91dd1d08dd312fba0580229b50286438',1,'tests']]],
+  ['beam_5fsearch_5f3_5fbeam_5f2_5fanswer',['beam_search_3_beam_2_answer',['../namespacetests.html#aedade58ae82945a9c03d099a5dd60694',1,'tests']]],
+  ['beam_5fsearch_5f3_5fbeam_5f5_5fanswer',['beam_search_3_beam_5_answer',['../namespacetests.html#a9dbc940fdc896da1e9579ea1442b19be',1,'tests']]],
+  ['black_5fdata',['black_data',['../namespacelab1.html#a8717d4ee063423939345a9b9089bbbee',1,'lab1']]],
+  ['black_5ffamily_5fcousins',['black_family_cousins',['../namespacelab1.html#a57fa573631e1075c1d6127a56aee196b',1,'lab1']]],
+  ['board_5fheight',['board_height',['../classconnectfour_1_1_connect_four_board.html#a31a0129e0fd919af299f88e82a44348f',1,'connectfour::ConnectFourBoard']]],
+  ['board_5fsymbol_5fmapping',['board_symbol_mapping',['../classconnectfour_1_1_connect_four_board.html#a939160228737190efd67695aea4e08f1',1,'connectfour.ConnectFourBoard.board_symbol_mapping()'],['../classconnectfour_1_1_connect_four_board.html#ae28d1dac88e83fb944b018976f719cef',1,'connectfour.ConnectFourBoard.board_symbol_mapping()']]],
+  ['board_5fsymbol_5fmapping_5fascii',['board_symbol_mapping_ascii',['../classconnectfour_1_1_connect_four_board.html#a7d5a560c3dde1e17eae92e13ce03f32a',1,'connectfour::ConnectFourBoard']]],
+  ['board_5ftuples',['board_tuples',['../namespacelab3.html#af72a06890c8de2fae05fc82044aa76be',1,'lab3']]],
+  ['board_5fwidth',['board_width',['../classconnectfour_1_1_connect_four_board.html#a57326ec6b2c23f9dafd27d84f6ce0b27',1,'connectfour::ConnectFourBoard']]],
+  ['brother_5frule',['brother_rule',['../namespacelab1.html#a2a12c1747bc9ea2b9438e91ff8de062f',1,'lab1']]]
+];

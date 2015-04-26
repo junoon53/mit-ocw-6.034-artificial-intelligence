@@ -1,0 +1,6 @@
+digraph "lab1" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_30b8b56b34db815a64954e8b425ad116 [shape=box, label="lab1", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_30b8b56b34db815a64954e8b425ad116.html"];
+}

@@ -1,0 +1,173 @@
+\hypertarget{classproduction_1_1_rule_expression}{}\section{production.\+Rule\+Expression Class Reference}
+\label{classproduction_1_1_rule_expression}\index{production.\+Rule\+Expression@{production.\+Rule\+Expression}}
+
+
+Inheritance diagram for production.\+Rule\+Expression\+:
+% FIG 0
+
+
+Collaboration diagram for production.\+Rule\+Expression\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classproduction_1_1_rule_expression_ab6d7a849ec3298b8b4a222e0208201b2}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, args)
+\item 
+def \hyperlink{classproduction_1_1_rule_expression_a0f5feebb30e016d12373b05723e001b1}{conditions} (self)
+\item 
+def \hyperlink{classproduction_1_1_rule_expression_a51c09052da5da96990ef0525c64f28f2}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classproduction_1_1_rule_expression_ab01f1ddf2fbacabf107473975d749e1a}{test\+\_\+term\+\_\+matches}
+\item 
+def \hyperlink{classproduction_1_1_rule_expression_ad530f5927cc21f08597c57845b417c58}{basecase\+\_\+bindings} (self, condition, rules, context\+\_\+so\+\_\+far)
+\item 
+def \hyperlink{classproduction_1_1_rule_expression_a01eda3165e4879358c77c101948d1773}{get\+\_\+condition\+\_\+vars} (self)
+\item 
+def \hyperlink{classproduction_1_1_rule_expression_a021d20def341cc41414d9bb6a20cf66a}{test\+\_\+matches} (self, rules)
+\item 
+def \hyperlink{classproduction_1_1_rule_expression_ad422592d44cf8b4fe1f987fe18f67896}{\+\_\+\+\_\+eq\+\_\+\+\_\+} (self, other)
+\item 
+def \hyperlink{classproduction_1_1_rule_expression_ae278b8ba8b2302409db2bb0e10a7f5e0}{\+\_\+\+\_\+hash\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}The parent class of AND, OR, and NOT expressions.
+
+Just like Sums and Products from lab 0, RuleExpressions act
+like lists wherever possible. For convenience, you can leave
+out the brackets when initializing them: AND([1, 2, 3]) ==
+AND(1, 2, 3).
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classproduction_1_1_rule_expression_ab6d7a849ec3298b8b4a222e0208201b2}{}\index{production\+::\+Rule\+Expression@{production\+::\+Rule\+Expression}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!production\+::\+Rule\+Expression@{production\+::\+Rule\+Expression}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+Rule\+Expression.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{args}
+\end{DoxyParamCaption}
+)}\label{classproduction_1_1_rule_expression_ab6d7a849ec3298b8b4a222e0208201b2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classproduction_1_1_rule_expression_ad422592d44cf8b4fe1f987fe18f67896}{}\index{production\+::\+Rule\+Expression@{production\+::\+Rule\+Expression}!\+\_\+\+\_\+eq\+\_\+\+\_\+@{\+\_\+\+\_\+eq\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+eq\+\_\+\+\_\+@{\+\_\+\+\_\+eq\+\_\+\+\_\+}!production\+::\+Rule\+Expression@{production\+::\+Rule\+Expression}}
+\subsubsection[{\+\_\+\+\_\+eq\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+Rule\+Expression.\+\_\+\+\_\+eq\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{other}
+\end{DoxyParamCaption}
+)}\label{classproduction_1_1_rule_expression_ad422592d44cf8b4fe1f987fe18f67896}
+\hypertarget{classproduction_1_1_rule_expression_ae278b8ba8b2302409db2bb0e10a7f5e0}{}\index{production\+::\+Rule\+Expression@{production\+::\+Rule\+Expression}!\+\_\+\+\_\+hash\+\_\+\+\_\+@{\+\_\+\+\_\+hash\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+hash\+\_\+\+\_\+@{\+\_\+\+\_\+hash\+\_\+\+\_\+}!production\+::\+Rule\+Expression@{production\+::\+Rule\+Expression}}
+\subsubsection[{\+\_\+\+\_\+hash\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+Rule\+Expression.\+\_\+\+\_\+hash\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classproduction_1_1_rule_expression_ae278b8ba8b2302409db2bb0e10a7f5e0}
+\hypertarget{classproduction_1_1_rule_expression_a51c09052da5da96990ef0525c64f28f2}{}\index{production\+::\+Rule\+Expression@{production\+::\+Rule\+Expression}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!production\+::\+Rule\+Expression@{production\+::\+Rule\+Expression}}
+\subsubsection[{\+\_\+\+\_\+str\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+Rule\+Expression.\+\_\+\+\_\+str\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classproduction_1_1_rule_expression_a51c09052da5da96990ef0525c64f28f2}
+
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+\hypertarget{classproduction_1_1_rule_expression_ad530f5927cc21f08597c57845b417c58}{}\index{production\+::\+Rule\+Expression@{production\+::\+Rule\+Expression}!basecase\+\_\+bindings@{basecase\+\_\+bindings}}
+\index{basecase\+\_\+bindings@{basecase\+\_\+bindings}!production\+::\+Rule\+Expression@{production\+::\+Rule\+Expression}}
+\subsubsection[{basecase\+\_\+bindings}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+Rule\+Expression.\+basecase\+\_\+bindings (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{condition, }
+\item[{}]{rules, }
+\item[{}]{context\+\_\+so\+\_\+far}
+\end{DoxyParamCaption}
+)}\label{classproduction_1_1_rule_expression_ad530f5927cc21f08597c57845b417c58}
+
+
+Here is the call graph for this function\+:
+% FIG 4
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 5
+
+
+\hypertarget{classproduction_1_1_rule_expression_a0f5feebb30e016d12373b05723e001b1}{}\index{production\+::\+Rule\+Expression@{production\+::\+Rule\+Expression}!conditions@{conditions}}
+\index{conditions@{conditions}!production\+::\+Rule\+Expression@{production\+::\+Rule\+Expression}}
+\subsubsection[{conditions}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+Rule\+Expression.\+conditions (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classproduction_1_1_rule_expression_a0f5feebb30e016d12373b05723e001b1}
+\begin{DoxyVerb}Return the conditions contained by this
+RuleExpression. This is the same as converting it to a
+list.
+\end{DoxyVerb}
+ \hypertarget{classproduction_1_1_rule_expression_a01eda3165e4879358c77c101948d1773}{}\index{production\+::\+Rule\+Expression@{production\+::\+Rule\+Expression}!get\+\_\+condition\+\_\+vars@{get\+\_\+condition\+\_\+vars}}
+\index{get\+\_\+condition\+\_\+vars@{get\+\_\+condition\+\_\+vars}!production\+::\+Rule\+Expression@{production\+::\+Rule\+Expression}}
+\subsubsection[{get\+\_\+condition\+\_\+vars}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+Rule\+Expression.\+get\+\_\+condition\+\_\+vars (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classproduction_1_1_rule_expression_a01eda3165e4879358c77c101948d1773}
+
+
+Here is the call graph for this function\+:
+% FIG 6
+
+
+\hypertarget{classproduction_1_1_rule_expression_a021d20def341cc41414d9bb6a20cf66a}{}\index{production\+::\+Rule\+Expression@{production\+::\+Rule\+Expression}!test\+\_\+matches@{test\+\_\+matches}}
+\index{test\+\_\+matches@{test\+\_\+matches}!production\+::\+Rule\+Expression@{production\+::\+Rule\+Expression}}
+\subsubsection[{test\+\_\+matches}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+Rule\+Expression.\+test\+\_\+matches (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{rules}
+\end{DoxyParamCaption}
+)}\label{classproduction_1_1_rule_expression_a021d20def341cc41414d9bb6a20cf66a}
+\hypertarget{classproduction_1_1_rule_expression_ab01f1ddf2fbacabf107473975d749e1a}{}\index{production\+::\+Rule\+Expression@{production\+::\+Rule\+Expression}!test\+\_\+term\+\_\+matches@{test\+\_\+term\+\_\+matches}}
+\index{test\+\_\+term\+\_\+matches@{test\+\_\+term\+\_\+matches}!production\+::\+Rule\+Expression@{production\+::\+Rule\+Expression}}
+\subsubsection[{test\+\_\+term\+\_\+matches}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+Rule\+Expression.\+test\+\_\+term\+\_\+matches (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{condition, }
+\item[{}]{rules, }
+\item[{}]{context\+\_\+so\+\_\+far = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classproduction_1_1_rule_expression_ab01f1ddf2fbacabf107473975d749e1a}
+\begin{DoxyVerb}Given an expression which might be just a string, check
+it against the rules.
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 7
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 8
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lab1/\hyperlink{production_8py}{production.\+py}\end{DoxyCompactItemize}

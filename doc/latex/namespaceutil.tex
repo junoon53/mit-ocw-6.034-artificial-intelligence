@@ -1,0 +1,190 @@
+\hypertarget{namespaceutil}{}\section{util Namespace Reference}
+\label{namespaceutil}\index{util@{util}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classutil_1_1_continuous_thread}{Continuous\+Thread}
+\item 
+class \hyperlink{classutil_1_1count__runs}{count\+\_\+runs}
+\item 
+class \hyperlink{classutil_1_1memoize}{memoize}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceutil_ab8b35c47eb1a77e7a3f61851a1b46122}{run\+\_\+search\+\_\+function}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespaceutil_a7eb14c55451b00b740e7a1f68099e86d}{I\+N\+F\+I\+N\+I\+T\+Y} = float(\char`\"{}infinity\char`\"{})
+\begin{DoxyCompactList}\small\item\em Define \textquotesingle{}I\+N\+F\+I\+N\+I\+T\+Y\textquotesingle{} and \textquotesingle{}N\+E\+G\+\_\+\+I\+N\+F\+I\+N\+I\+T\+Y\textquotesingle{}. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespaceutil_af395e63ea20fc9bb8466417c67280fc4}{N\+E\+G\+\_\+\+I\+N\+F\+I\+N\+I\+T\+Y} = float(\char`\"{}-\/infinity\char`\"{})
+\item 
+tuple \hyperlink{namespaceutil_ad0bc1a0f6b9b7b0f55adf4b9120ba14d}{W\+I\+N\+N\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D}
+\item 
+tuple \hyperlink{namespaceutil_a9b1bc05e3033e4dcb536327cd0fd4b41}{B\+A\+R\+E\+L\+Y\+\_\+\+W\+I\+N\+N\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D}
+\item 
+tuple \hyperlink{namespaceutil_aecf4927bd0b242a8302cb1c60cc19af5}{B\+A\+S\+I\+C\+\_\+\+S\+T\+A\+R\+T\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D\+\_\+1}
+\item 
+tuple \hyperlink{namespaceutil_a70ced14d7bb5c7b954153b6b13c45781}{B\+A\+S\+I\+C\+\_\+\+S\+T\+A\+R\+T\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D\+\_\+2}
+\item 
+tuple \hyperlink{namespaceutil_a10b9210601911f13607868bf248c4f6c}{B\+A\+S\+I\+C\+\_\+\+B\+O\+A\+R\+D} = \hyperlink{classconnectfour_1_1_connect_four_board}{Connect\+Four\+Board}()
+\item 
+tuple \hyperlink{namespaceutil_aeb1172b7a9311e22f027d739b689c080}{T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+1}
+\item 
+tuple \hyperlink{namespaceutil_a9ae6aec6e35dfd821e0ffaac044a1990}{T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+2}
+\item 
+tuple \hyperlink{namespaceutil_a66be78f83e41a72ba109897c87dd8c37}{T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+3}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceutil_ab8b35c47eb1a77e7a3f61851a1b46122}{}\index{util@{util}!run\+\_\+search\+\_\+function@{run\+\_\+search\+\_\+function}}
+\index{run\+\_\+search\+\_\+function@{run\+\_\+search\+\_\+function}!util@{util}}
+\subsubsection[{run\+\_\+search\+\_\+function}]{\setlength{\rightskip}{0pt plus 5cm}def util.\+run\+\_\+search\+\_\+function (
+\begin{DoxyParamCaption}
+\item[{}]{board, }
+\item[{}]{search\+\_\+fn, }
+\item[{}]{eval\+\_\+fn, }
+\item[{}]{timeout = {\ttfamily 5}}
+\end{DoxyParamCaption}
+)}\label{namespaceutil_ab8b35c47eb1a77e7a3f61851a1b46122}
+\begin{DoxyVerb}Run the specified search function "search_fn" to increasing depths
+until "time" has expired; then return the most recent available return value
+
+"search_fn" must take the following arguments:
+board -- the ConnectFourBoard to search
+depth -- the depth to estimate to
+eval_fn -- the evaluation function to use to rank nodes
+
+"eval_fn" must take the following arguments:
+board -- the ConnectFourBoard to rank
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\hypertarget{namespaceutil_a9b1bc05e3033e4dcb536327cd0fd4b41}{}\index{util@{util}!B\+A\+R\+E\+L\+Y\+\_\+\+W\+I\+N\+N\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D@{B\+A\+R\+E\+L\+Y\+\_\+\+W\+I\+N\+N\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D}}
+\index{B\+A\+R\+E\+L\+Y\+\_\+\+W\+I\+N\+N\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D@{B\+A\+R\+E\+L\+Y\+\_\+\+W\+I\+N\+N\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D}!util@{util}}
+\subsubsection[{B\+A\+R\+E\+L\+Y\+\_\+\+W\+I\+N\+N\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D}]{\setlength{\rightskip}{0pt plus 5cm}tuple util.\+B\+A\+R\+E\+L\+Y\+\_\+\+W\+I\+N\+N\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D}\label{namespaceutil_a9b1bc05e3033e4dcb536327cd0fd4b41}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \hyperlink{classconnectfour_1_1_connect_four_board}{ConnectFourBoard}(board\_array =
+2                                         ( ( 0,0,0,0,0,0,0 ),
+3                                           ( 0,0,0,0,0,0,0 ),
+4                                           ( 0,0,0,0,0,0,0 ),
+5                                           ( 0,2,2,1,1,2,0 ),
+6                                           ( 0,2,1,2,1,2,0 ),
+7                                           ( 2,1,2,1,1,1,0 ),
+8                                           ),
+9                                         current\_player = 2)
+\end{DoxyCode}
+\hypertarget{namespaceutil_a10b9210601911f13607868bf248c4f6c}{}\index{util@{util}!B\+A\+S\+I\+C\+\_\+\+B\+O\+A\+R\+D@{B\+A\+S\+I\+C\+\_\+\+B\+O\+A\+R\+D}}
+\index{B\+A\+S\+I\+C\+\_\+\+B\+O\+A\+R\+D@{B\+A\+S\+I\+C\+\_\+\+B\+O\+A\+R\+D}!util@{util}}
+\subsubsection[{B\+A\+S\+I\+C\+\_\+\+B\+O\+A\+R\+D}]{\setlength{\rightskip}{0pt plus 5cm}tuple util.\+B\+A\+S\+I\+C\+\_\+\+B\+O\+A\+R\+D = {\bf Connect\+Four\+Board}()}\label{namespaceutil_a10b9210601911f13607868bf248c4f6c}
+\hypertarget{namespaceutil_aecf4927bd0b242a8302cb1c60cc19af5}{}\index{util@{util}!B\+A\+S\+I\+C\+\_\+\+S\+T\+A\+R\+T\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D\+\_\+1@{B\+A\+S\+I\+C\+\_\+\+S\+T\+A\+R\+T\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D\+\_\+1}}
+\index{B\+A\+S\+I\+C\+\_\+\+S\+T\+A\+R\+T\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D\+\_\+1@{B\+A\+S\+I\+C\+\_\+\+S\+T\+A\+R\+T\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D\+\_\+1}!util@{util}}
+\subsubsection[{B\+A\+S\+I\+C\+\_\+\+S\+T\+A\+R\+T\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D\+\_\+1}]{\setlength{\rightskip}{0pt plus 5cm}tuple util.\+B\+A\+S\+I\+C\+\_\+\+S\+T\+A\+R\+T\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D\+\_\+1}\label{namespaceutil_aecf4927bd0b242a8302cb1c60cc19af5}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \hyperlink{classconnectfour_1_1_connect_four_board}{ConnectFourBoard}(board\_array =
+2                                           ( ( 0,0,0,0,0,0,0 ),
+3                                             ( 0,0,0,0,0,0,0 ),
+4                                             ( 0,0,0,0,0,0,0 ),
+5                                             ( 0,0,0,0,0,0,0 ),
+6                                             ( 0,0,0,0,0,0,0 ),
+7                                             ( 0,0,1,0,2,0,0 ),
+8                                             ),
+9                                           current\_player = 1)
+\end{DoxyCode}
+\hypertarget{namespaceutil_a70ced14d7bb5c7b954153b6b13c45781}{}\index{util@{util}!B\+A\+S\+I\+C\+\_\+\+S\+T\+A\+R\+T\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D\+\_\+2@{B\+A\+S\+I\+C\+\_\+\+S\+T\+A\+R\+T\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D\+\_\+2}}
+\index{B\+A\+S\+I\+C\+\_\+\+S\+T\+A\+R\+T\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D\+\_\+2@{B\+A\+S\+I\+C\+\_\+\+S\+T\+A\+R\+T\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D\+\_\+2}!util@{util}}
+\subsubsection[{B\+A\+S\+I\+C\+\_\+\+S\+T\+A\+R\+T\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D\+\_\+2}]{\setlength{\rightskip}{0pt plus 5cm}tuple util.\+B\+A\+S\+I\+C\+\_\+\+S\+T\+A\+R\+T\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D\+\_\+2}\label{namespaceutil_a70ced14d7bb5c7b954153b6b13c45781}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \hyperlink{classconnectfour_1_1_connect_four_board}{ConnectFourBoard}(board\_array =
+2                                           ( ( 0,0,0,0,0,0,0 ),
+3                                             ( 0,0,0,0,0,0,0 ),
+4                                             ( 0,0,0,0,0,0,0 ),
+5                                             ( 0,0,0,0,0,0,0 ),
+6                                             ( 0,0,2,0,0,0,0 ),
+7                                             ( 0,0,1,0,0,0,0 ),
+8                                             ),
+9                                           current\_player = 1)
+\end{DoxyCode}
+\hypertarget{namespaceutil_a7eb14c55451b00b740e7a1f68099e86d}{}\index{util@{util}!I\+N\+F\+I\+N\+I\+T\+Y@{I\+N\+F\+I\+N\+I\+T\+Y}}
+\index{I\+N\+F\+I\+N\+I\+T\+Y@{I\+N\+F\+I\+N\+I\+T\+Y}!util@{util}}
+\subsubsection[{I\+N\+F\+I\+N\+I\+T\+Y}]{\setlength{\rightskip}{0pt plus 5cm}tuple util.\+I\+N\+F\+I\+N\+I\+T\+Y = float(\char`\"{}infinity\char`\"{})}\label{namespaceutil_a7eb14c55451b00b740e7a1f68099e86d}
+
+
+Define \textquotesingle{}I\+N\+F\+I\+N\+I\+T\+Y\textquotesingle{} and \textquotesingle{}N\+E\+G\+\_\+\+I\+N\+F\+I\+N\+I\+T\+Y\textquotesingle{}. 
+
+\hypertarget{namespaceutil_af395e63ea20fc9bb8466417c67280fc4}{}\index{util@{util}!N\+E\+G\+\_\+\+I\+N\+F\+I\+N\+I\+T\+Y@{N\+E\+G\+\_\+\+I\+N\+F\+I\+N\+I\+T\+Y}}
+\index{N\+E\+G\+\_\+\+I\+N\+F\+I\+N\+I\+T\+Y@{N\+E\+G\+\_\+\+I\+N\+F\+I\+N\+I\+T\+Y}!util@{util}}
+\subsubsection[{N\+E\+G\+\_\+\+I\+N\+F\+I\+N\+I\+T\+Y}]{\setlength{\rightskip}{0pt plus 5cm}tuple util.\+N\+E\+G\+\_\+\+I\+N\+F\+I\+N\+I\+T\+Y = float(\char`\"{}-\/infinity\char`\"{})}\label{namespaceutil_af395e63ea20fc9bb8466417c67280fc4}
+\hypertarget{namespaceutil_aeb1172b7a9311e22f027d739b689c080}{}\index{util@{util}!T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+1@{T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+1}}
+\index{T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+1@{T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+1}!util@{util}}
+\subsubsection[{T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+1}]{\setlength{\rightskip}{0pt plus 5cm}tuple util.\+T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+1}\label{namespaceutil_aeb1172b7a9311e22f027d739b689c080}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \hyperlink{namespacetree__searcher_ad7aa3b2a8e8a2967ca966399c95c9401}{tree\_searcher.make\_tree}((\textcolor{stringliteral}{"A"}, \textcolor{keywordtype}{None},
+2                                        (\textcolor{stringliteral}{"B"}, \textcolor{keywordtype}{None},
+3                                         (\textcolor{stringliteral}{"C"}, \textcolor{keywordtype}{None},
+4                                          (\textcolor{stringliteral}{"D"}, 2),
+5                                          (\textcolor{stringliteral}{"E"}, 2)),
+6                                         (\textcolor{stringliteral}{"F"}, \textcolor{keywordtype}{None},
+7                                          (\textcolor{stringliteral}{"G"}, 0),
+8                                          (\textcolor{stringliteral}{"H"}, 4))
+9                                         ),
+10                                        (\textcolor{stringliteral}{"I"}, \textcolor{keywordtype}{None},
+11                                         (\textcolor{stringliteral}{"J"}, \textcolor{keywordtype}{None},
+12                                          (\textcolor{stringliteral}{"K"}, 6),
+13                                          (\textcolor{stringliteral}{"L"}, 8)),
+14                                         (\textcolor{stringliteral}{"M"}, \textcolor{keywordtype}{None},
+15                                          (\textcolor{stringliteral}{"N"}, 4),
+16                                          (\textcolor{stringliteral}{"O"}, 6))
+17                                         )
+18                                        ))
+\end{DoxyCode}
+\hypertarget{namespaceutil_a9ae6aec6e35dfd821e0ffaac044a1990}{}\index{util@{util}!T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+2@{T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+2}}
+\index{T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+2@{T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+2}!util@{util}}
+\subsubsection[{T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+2}]{\setlength{\rightskip}{0pt plus 5cm}tuple util.\+T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+2}\label{namespaceutil_a9ae6aec6e35dfd821e0ffaac044a1990}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \hyperlink{namespacetree__searcher_ad7aa3b2a8e8a2967ca966399c95c9401}{tree\_searcher.make\_tree}((\textcolor{stringliteral}{"A"}, \textcolor{keywordtype}{None},
+2                                        (\textcolor{stringliteral}{"B"}, \textcolor{keywordtype}{None},
+3                                         (\textcolor{stringliteral}{"C"}, \textcolor{keywordtype}{None},
+4                                          (\textcolor{stringliteral}{"D"}, 6),
+5                                          (\textcolor{stringliteral}{"E"}, 4)),
+6                                         (\textcolor{stringliteral}{"F"}, \textcolor{keywordtype}{None},
+7                                          (\textcolor{stringliteral}{"G"}, 8),
+8                                          (\textcolor{stringliteral}{"H"}, 6))
+9                                         ),
+10                                        (\textcolor{stringliteral}{"I"}, \textcolor{keywordtype}{None},
+11                                         (\textcolor{stringliteral}{"J"}, \textcolor{keywordtype}{None},
+12                                          (\textcolor{stringliteral}{"K"}, 4),
+13                                          (\textcolor{stringliteral}{"L"}, 0)),
+14                                         (\textcolor{stringliteral}{"M"}, \textcolor{keywordtype}{None},
+15                                          (\textcolor{stringliteral}{"N"}, 2),
+16                                          (\textcolor{stringliteral}{"O"}, 2))
+17                                         )
+18                                        ))
+\end{DoxyCode}
+\hypertarget{namespaceutil_a66be78f83e41a72ba109897c87dd8c37}{}\index{util@{util}!T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+3@{T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+3}}
+\index{T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+3@{T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+3}!util@{util}}
+\subsubsection[{T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+3}]{\setlength{\rightskip}{0pt plus 5cm}tuple util.\+T\+E\+S\+T\+\_\+\+T\+R\+E\+E\+\_\+3}\label{namespaceutil_a66be78f83e41a72ba109897c87dd8c37}
+\hypertarget{namespaceutil_ad0bc1a0f6b9b7b0f55adf4b9120ba14d}{}\index{util@{util}!W\+I\+N\+N\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D@{W\+I\+N\+N\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D}}
+\index{W\+I\+N\+N\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D@{W\+I\+N\+N\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D}!util@{util}}
+\subsubsection[{W\+I\+N\+N\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D}]{\setlength{\rightskip}{0pt plus 5cm}tuple util.\+W\+I\+N\+N\+I\+N\+G\+\_\+\+B\+O\+A\+R\+D}\label{namespaceutil_ad0bc1a0f6b9b7b0f55adf4b9120ba14d}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \hyperlink{classconnectfour_1_1_connect_four_board}{ConnectFourBoard}(board\_array =
+2                                  ( ( 0,0,0,0,0,0,0 ),
+3                                    ( 0,0,0,0,0,0,0 ),
+4                                    ( 0,0,0,0,0,0,0 ),
+5                                    ( 0,1,0,0,0,0,0 ),
+6                                    ( 0,1,0,0,0,2,0 ),
+7                                    ( 0,1,0,0,2,2,0 ),
+8                                    ),
+9                                  current\_player = 1)
+\end{DoxyCode}

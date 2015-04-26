@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['senate_5fpeople',['senate_people',['../namespacelab4.html#ab431969dcbdc497ed29f78787174f64b',1,'lab4.senate_people()'],['../namespacetests.html#a76731f212803054faab680e5139f44e4',1,'tests.senate_people()']]],
+  ['senate_5fvotes',['senate_votes',['../namespacelab4.html#ac5205d0d5639e598abd827580ff7f6ce',1,'lab4.senate_votes()'],['../namespacetests.html#a31fa9b044d03a027e3ab901df1eae4f3',1,'tests.senate_votes()']]],
+  ['senator_5fclassified',['senator_classified',['../namespacelab4.html#a6fd54c2b5b11a8c2578c2777a6f47a35',1,'lab4']]],
+  ['senator_5fclassified_5fgetargs',['senator_classified_getargs',['../namespacetests.html#a710ce4daf7bb272f672cf82c3a6ca91d',1,'tests']]],
+  ['senator_5fclassified_5ftestanswer',['senator_classified_testanswer',['../namespacetests.html#a363b99edb38f47371c545fff22ff33fc',1,'tests']]],
+  ['set_5fvalue',['set_value',['../classcsp_1_1_variable.html#ad42362de592cfbf507a1f12fd908752a',1,'csp::Variable']]],
+  ['set_5fvariable_5fby_5findex',['set_variable_by_index',['../classcsp_1_1_c_s_p_state.html#af21de7f4ee6ccec033123fa67e7787eb',1,'csp::CSPState']]],
+  ['show_5fexception',['show_exception',['../namespacetester.html#ad1e0737b7db28310d56e78c79dbd820b',1,'tester']]],
+  ['show_5fresult',['show_result',['../namespacetester.html#a6f608a4c1c426885e10fda8317ec38cc',1,'tester']]],
+  ['simple_5fcsp_5fproblem',['simple_csp_problem',['../namespacecsp.html#a44b4e01fccb1ead68ca05c94eca176f0',1,'csp']]],
+  ['sol',['sol',['../namespacesudoku__csp.html#ad63795a911d014e95721a1018f8dde6e',1,'sudoku_csp']]],
+  ['solution',['SOLUTION',['../classcsp_1_1_node.html#a233c4430c7ef9f5d4017c43abc95192b',1,'csp.Node.SOLUTION()'],['../classcsp_1_1_c_s_p_state.html#a93600486c87a23f34bd070352e52e8be',1,'csp.CSPState.solution()']]],
+  ['solve',['solve',['../classcsp_1_1_c_s_p.html#a3a11bac70a871ced6790bb527a704ee0',1,'csp::CSP']]],
+  ['solve_5fcsp_5fproblem',['solve_csp_problem',['../namespacecsp.html#a1c5d405433770dac8d183988546dc1ee',1,'csp']]],
+  ['state_5fcodes',['state_codes',['../namespacedata__reader.html#ad3c1b3a1ac9c17a8a9901495e9c4ec36',1,'data_reader']]],
+  ['status',['status',['../classcsp_1_1_node.html#a5d6490f3695a26b990b8d8aac5e62de2',1,'csp::Node']]],
+  ['step',['step',['../classcsp_1_1_node.html#ad24c152aa4db47cdcaf07e9f300da283',1,'csp::Node']]],
+  ['sudoku_5fcsp',['sudoku_csp',['../namespacesudoku__csp.html',1,'']]],
+  ['sudoku_5fcsp_2epy',['sudoku_csp.py',['../sudoku__csp_8py.html',1,'']]],
+  ['sudoku_5fcsp_5fproblem',['sudoku_csp_problem',['../namespacesudoku__csp.html#a9c87cb782dcce61a05568a53d019d51f',1,'sudoku_csp']]]
+];

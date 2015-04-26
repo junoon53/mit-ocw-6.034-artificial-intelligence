@@ -1,0 +1,8 @@
+<map id="lab4.limited_house_classifier" name="lab4.limited_house_classifier">
+<area shape="rect" id="node2" href="$namespacedata__reader.html#ab91ea6523c4ca764fb49f9fdfb1789cb" title="data_reader.limit_votes" alt="" coords="184,5,339,32"/>
+<area shape="rect" id="node4" href="$namespaceclassify.html#ad3d37310e4719022d61524cf3f147bf8" title="classify.crosscheck\l_groups" alt="" coords="193,57,330,98"/>
+<area shape="rect" id="node5" href="$namespaceclassify.html#a54e0f202c3873fb6293abb16a348b873" title="classify.evaluate" alt="" coords="203,123,320,149"/>
+<area shape="rect" id="node7" href="$namespaceclassify.html#ae8f78a6b644ef73e187aedd781af07a7" title="classify.idtree_maker" alt="" coords="189,173,334,200"/>
+<area shape="rect" id="node3" href="$namespacedata__reader.html#ac24e4a632575f7c91465a3d73e98a03f" title="data_reader.is_interesting" alt="" coords="388,5,559,32"/>
+<area shape="rect" id="node6" href="$namespacedata__reader.html#ae6d7a3d1c3644c57a762604d7521784f" title="data_reader.legislator_info" alt="" coords="387,123,560,149"/>
+</map>

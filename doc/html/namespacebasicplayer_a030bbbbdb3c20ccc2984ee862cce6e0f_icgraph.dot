@@ -1,0 +1,12 @@
+digraph "basicplayer.minimax"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="basicplayer.minimax",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="basicplayer.minimax\l_find_board_value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacebasicplayer.html#a62f7c238ff1fe79bcb2c56d5897a4864"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="basicplayer.is_terminal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacebasicplayer.html#ae276eac2da00c9d44c78c0c9ac1452b0"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

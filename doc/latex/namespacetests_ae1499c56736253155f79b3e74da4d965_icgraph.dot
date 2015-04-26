@@ -1,0 +1,11 @@
+digraph "tests.HOW_MANY_HOURS_THIS_PSET_TOOK_testanswer"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="tests.HOW_MANY_HOURS\l_THIS_PSET_TOOK_testanswer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="tests.is_consistent\l_5_testanswer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacetests.html#aeb030be9fc4e4e682b08d2aedf34213d"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="tests.COMPETE_testanswer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacetests.html#a75639bbe216bc0814b7ce89dd5f932a1"];
+}

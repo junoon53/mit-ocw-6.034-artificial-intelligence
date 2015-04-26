@@ -1,0 +1,154 @@
+\hypertarget{classcsp_1_1_binary_constraint}{}\section{csp.\+Binary\+Constraint Class Reference}
+\label{classcsp_1_1_binary_constraint}\index{csp.\+Binary\+Constraint@{csp.\+Binary\+Constraint}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcsp_1_1_binary_constraint_ad7582e800f9f34d68dae23d90261f8d0}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classcsp_1_1_binary_constraint_aa30156c7b8063ccae3028e4f506f6fc2}{get\+\_\+variable\+\_\+i\+\_\+name} (self)
+\item 
+def \hyperlink{classcsp_1_1_binary_constraint_a933562991c6baebb5b5264ed3c8d641c}{get\+\_\+variable\+\_\+j\+\_\+name} (self)
+\item 
+def \hyperlink{classcsp_1_1_binary_constraint_a60ad1bf7ae317b370fe91d763b5e8cb0}{check}
+\item 
+def \hyperlink{classcsp_1_1_binary_constraint_abd1037cf01a9cb0f6bbf24296045f19e}{\+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classcsp_1_1_binary_constraint_ad3ab0eb66415031545a6898c0110fdc6}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcsp_1_1_binary_constraint_aa951bc2855e453270f5f28ba829636c5}{var\+\_\+i\+\_\+name}
+\item 
+\hyperlink{classcsp_1_1_binary_constraint_a4e917e6acb014116c86a11aa94f98757}{var\+\_\+j\+\_\+name}
+\item 
+\hyperlink{classcsp_1_1_binary_constraint_a7b43cf5ee6cd9aa0ea6a75b5b69f17b1}{check\+\_\+func}
+\item 
+\hyperlink{classcsp_1_1_binary_constraint_aaab7a705fdfae23b58a5346d3c846f12}{description}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Representation of a binary-constraint on two variables variable i and
+variable j.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcsp_1_1_binary_constraint_ad7582e800f9f34d68dae23d90261f8d0}{}\index{csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+Binary\+Constraint.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{var\+\_\+i\+\_\+name, }
+\item[{}]{var\+\_\+j\+\_\+name, }
+\item[{}]{check\+\_\+func, }
+\item[{}]{description = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_binary_constraint_ad7582e800f9f34d68dae23d90261f8d0}
+\begin{DoxyVerb}* var_i_name, var_j_name are the names of the variables.
+* check_func is a function that takes four arguments value_i and
+value_j. var_name_i, var_name_j
+Example. lambda i,j,name_i,name_j: i < j and returns true if
+the values passes the constraint, false otherwise.
+* description is a string descriptor of the constraint (helpful
+to determine what constraints triggered a search failure.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcsp_1_1_binary_constraint_abd1037cf01a9cb0f6bbf24296045f19e}{}\index{csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}!\+\_\+\+\_\+repr\+\_\+\+\_\+@{\+\_\+\+\_\+repr\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+repr\+\_\+\+\_\+@{\+\_\+\+\_\+repr\+\_\+\+\_\+}!csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}}
+\subsubsection[{\+\_\+\+\_\+repr\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+Binary\+Constraint.\+\_\+\+\_\+repr\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_binary_constraint_abd1037cf01a9cb0f6bbf24296045f19e}
+
+
+Here is the call graph for this function\+:
+% FIG 0
+
+
+\hypertarget{classcsp_1_1_binary_constraint_ad3ab0eb66415031545a6898c0110fdc6}{}\index{csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}}
+\subsubsection[{\+\_\+\+\_\+str\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+Binary\+Constraint.\+\_\+\+\_\+str\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_binary_constraint_ad3ab0eb66415031545a6898c0110fdc6}
+
+
+Here is the call graph for this function\+:
+% FIG 1
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+\hypertarget{classcsp_1_1_binary_constraint_a60ad1bf7ae317b370fe91d763b5e8cb0}{}\index{csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}!check@{check}}
+\index{check@{check}!csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}}
+\subsubsection[{check}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+Binary\+Constraint.\+check (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{state, }
+\item[{}]{value\+\_\+i = {\ttfamily None}, }
+\item[{}]{value\+\_\+j = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_binary_constraint_a60ad1bf7ae317b370fe91d763b5e8cb0}
+\begin{DoxyVerb}state is the csp state and should be an instance of
+CSPState.
+value_i and value_j are the values assigned to variable
+i and j respectively.   If they are not provided, the they are
+fetched from the state by looking up variable_i and variable_j's
+names.
+\end{DoxyVerb}
+ \hypertarget{classcsp_1_1_binary_constraint_aa30156c7b8063ccae3028e4f506f6fc2}{}\index{csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}!get\+\_\+variable\+\_\+i\+\_\+name@{get\+\_\+variable\+\_\+i\+\_\+name}}
+\index{get\+\_\+variable\+\_\+i\+\_\+name@{get\+\_\+variable\+\_\+i\+\_\+name}!csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}}
+\subsubsection[{get\+\_\+variable\+\_\+i\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+Binary\+Constraint.\+get\+\_\+variable\+\_\+i\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_binary_constraint_aa30156c7b8063ccae3028e4f506f6fc2}
+
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+\hypertarget{classcsp_1_1_binary_constraint_a933562991c6baebb5b5264ed3c8d641c}{}\index{csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}!get\+\_\+variable\+\_\+j\+\_\+name@{get\+\_\+variable\+\_\+j\+\_\+name}}
+\index{get\+\_\+variable\+\_\+j\+\_\+name@{get\+\_\+variable\+\_\+j\+\_\+name}!csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}}
+\subsubsection[{get\+\_\+variable\+\_\+j\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}def csp.\+Binary\+Constraint.\+get\+\_\+variable\+\_\+j\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classcsp_1_1_binary_constraint_a933562991c6baebb5b5264ed3c8d641c}
+
+
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcsp_1_1_binary_constraint_a7b43cf5ee6cd9aa0ea6a75b5b69f17b1}{}\index{csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}!check\+\_\+func@{check\+\_\+func}}
+\index{check\+\_\+func@{check\+\_\+func}!csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}}
+\subsubsection[{check\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}csp.\+Binary\+Constraint.\+check\+\_\+func}\label{classcsp_1_1_binary_constraint_a7b43cf5ee6cd9aa0ea6a75b5b69f17b1}
+\hypertarget{classcsp_1_1_binary_constraint_aaab7a705fdfae23b58a5346d3c846f12}{}\index{csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}!description@{description}}
+\index{description@{description}!csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}}
+\subsubsection[{description}]{\setlength{\rightskip}{0pt plus 5cm}csp.\+Binary\+Constraint.\+description}\label{classcsp_1_1_binary_constraint_aaab7a705fdfae23b58a5346d3c846f12}
+\hypertarget{classcsp_1_1_binary_constraint_aa951bc2855e453270f5f28ba829636c5}{}\index{csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}!var\+\_\+i\+\_\+name@{var\+\_\+i\+\_\+name}}
+\index{var\+\_\+i\+\_\+name@{var\+\_\+i\+\_\+name}!csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}}
+\subsubsection[{var\+\_\+i\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}csp.\+Binary\+Constraint.\+var\+\_\+i\+\_\+name}\label{classcsp_1_1_binary_constraint_aa951bc2855e453270f5f28ba829636c5}
+\hypertarget{classcsp_1_1_binary_constraint_a4e917e6acb014116c86a11aa94f98757}{}\index{csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}!var\+\_\+j\+\_\+name@{var\+\_\+j\+\_\+name}}
+\index{var\+\_\+j\+\_\+name@{var\+\_\+j\+\_\+name}!csp\+::\+Binary\+Constraint@{csp\+::\+Binary\+Constraint}}
+\subsubsection[{var\+\_\+j\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}csp.\+Binary\+Constraint.\+var\+\_\+j\+\_\+name}\label{classcsp_1_1_binary_constraint_a4e917e6acb014116c86a11aa94f98757}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lab4/\hyperlink{csp_8py}{csp.\+py}\end{DoxyCompactItemize}

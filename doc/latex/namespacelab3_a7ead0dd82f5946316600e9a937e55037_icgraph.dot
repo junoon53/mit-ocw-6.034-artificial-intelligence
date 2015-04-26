@@ -1,0 +1,15 @@
+digraph "lab3.alpha_beta_search"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="lab3.alpha_beta_search",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="tree_searcher.TEST_1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacetree__searcher.html#a1b3b90d379cc3db6e9d0dedd3ba40264"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="tree_searcher.TEST_3",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacetree__searcher.html#a22d3d902139be0cd38cec908adfefdcb"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="tree_searcher.TEST_2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacetree__searcher.html#a977851e09f5b46a5710d065d8f342d39"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

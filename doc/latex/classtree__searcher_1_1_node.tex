@@ -1,0 +1,97 @@
+\hypertarget{classtree__searcher_1_1_node}{}\section{tree\+\_\+searcher.\+Node Class Reference}
+\label{classtree__searcher_1_1_node}\index{tree\+\_\+searcher.\+Node@{tree\+\_\+searcher.\+Node}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classtree__searcher_1_1_node_a80ab00ecf5611a144eb7e24dd9a0b314}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classtree__searcher_1_1_node_af3c56007d8740dba4d4a6445cc97f1c0}{set\+\_\+children} (self, child\+\_\+nodes)
+\item 
+def \hyperlink{classtree__searcher_1_1_node_a7108e576099089aafb9b935dfde86c2d}{get\+\_\+children} (self)
+\item 
+def \hyperlink{classtree__searcher_1_1_node_a9df64b2c256743926866b8174db61d6f}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classtree__searcher_1_1_node_a7613337237445f292443793ede8137e3}{add} (self, child)
+\item 
+def \hyperlink{classtree__searcher_1_1_node_a20a00b8d92aae1ffbb7c4ec70836777c}{num\+\_\+children} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Representation of a generic game tree node.
+Each node holds
+1. a label
+2. a static value (internal nodes
+generally have a None static value)
+3. node type  {MIN, MAX}
+4. list of child nodes.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtree__searcher_1_1_node_a80ab00ecf5611a144eb7e24dd9a0b314}{}\index{tree\+\_\+searcher\+::\+Node@{tree\+\_\+searcher\+::\+Node}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!tree\+\_\+searcher\+::\+Node@{tree\+\_\+searcher\+::\+Node}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def tree\+\_\+searcher.\+Node.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{label, }
+\item[{}]{value, }
+\item[{}]{node\+\_\+type, }
+\item[{}]{children = {\ttfamily \mbox{[}\mbox{]}}}
+\end{DoxyParamCaption}
+)}\label{classtree__searcher_1_1_node_a80ab00ecf5611a144eb7e24dd9a0b314}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtree__searcher_1_1_node_a9df64b2c256743926866b8174db61d6f}{}\index{tree\+\_\+searcher\+::\+Node@{tree\+\_\+searcher\+::\+Node}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!tree\+\_\+searcher\+::\+Node@{tree\+\_\+searcher\+::\+Node}}
+\subsubsection[{\+\_\+\+\_\+str\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def tree\+\_\+searcher.\+Node.\+\_\+\+\_\+str\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classtree__searcher_1_1_node_a9df64b2c256743926866b8174db61d6f}
+\begin{DoxyVerb}Print the value of this node.\end{DoxyVerb}
+ 
+
+Here is the caller graph for this function\+:
+% FIG 0
+
+
+\hypertarget{classtree__searcher_1_1_node_a7613337237445f292443793ede8137e3}{}\index{tree\+\_\+searcher\+::\+Node@{tree\+\_\+searcher\+::\+Node}!add@{add}}
+\index{add@{add}!tree\+\_\+searcher\+::\+Node@{tree\+\_\+searcher\+::\+Node}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}def tree\+\_\+searcher.\+Node.\+add (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{child}
+\end{DoxyParamCaption}
+)}\label{classtree__searcher_1_1_node_a7613337237445f292443793ede8137e3}
+\begin{DoxyVerb}Add children to this node.\end{DoxyVerb}
+ \hypertarget{classtree__searcher_1_1_node_a7108e576099089aafb9b935dfde86c2d}{}\index{tree\+\_\+searcher\+::\+Node@{tree\+\_\+searcher\+::\+Node}!get\+\_\+children@{get\+\_\+children}}
+\index{get\+\_\+children@{get\+\_\+children}!tree\+\_\+searcher\+::\+Node@{tree\+\_\+searcher\+::\+Node}}
+\subsubsection[{get\+\_\+children}]{\setlength{\rightskip}{0pt plus 5cm}def tree\+\_\+searcher.\+Node.\+get\+\_\+children (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classtree__searcher_1_1_node_a7108e576099089aafb9b935dfde86c2d}
+\hypertarget{classtree__searcher_1_1_node_a20a00b8d92aae1ffbb7c4ec70836777c}{}\index{tree\+\_\+searcher\+::\+Node@{tree\+\_\+searcher\+::\+Node}!num\+\_\+children@{num\+\_\+children}}
+\index{num\+\_\+children@{num\+\_\+children}!tree\+\_\+searcher\+::\+Node@{tree\+\_\+searcher\+::\+Node}}
+\subsubsection[{num\+\_\+children}]{\setlength{\rightskip}{0pt plus 5cm}def tree\+\_\+searcher.\+Node.\+num\+\_\+children (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classtree__searcher_1_1_node_a20a00b8d92aae1ffbb7c4ec70836777c}
+\begin{DoxyVerb}Find how many children this node has.\end{DoxyVerb}
+ \hypertarget{classtree__searcher_1_1_node_af3c56007d8740dba4d4a6445cc97f1c0}{}\index{tree\+\_\+searcher\+::\+Node@{tree\+\_\+searcher\+::\+Node}!set\+\_\+children@{set\+\_\+children}}
+\index{set\+\_\+children@{set\+\_\+children}!tree\+\_\+searcher\+::\+Node@{tree\+\_\+searcher\+::\+Node}}
+\subsubsection[{set\+\_\+children}]{\setlength{\rightskip}{0pt plus 5cm}def tree\+\_\+searcher.\+Node.\+set\+\_\+children (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{child\+\_\+nodes}
+\end{DoxyParamCaption}
+)}\label{classtree__searcher_1_1_node_af3c56007d8740dba4d4a6445cc97f1c0}
+\begin{DoxyVerb}Set the children of this tree node\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lab3/\hyperlink{tree__searcher_8py}{tree\+\_\+searcher.\+py}\end{DoxyCompactItemize}

@@ -1,0 +1,15 @@
+digraph "connectfour.ConnectFourBoard.is_game_over"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="connectfour.ConnectFourBoard.is\l_game_over",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="connectfour.ConnectFourBoard.is_win",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconnectfour_1_1_connect_four_board.html#a69769c7825f546e9e9fe5af60ef6ebac"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="connectfour.ConnectFourBoard.get_cell",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconnectfour_1_1_connect_four_board.html#a088fda69e8c13c1e938cb4e138bb396d"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="connectfour.ConnectFourBoard.\l_is_win_from_cell",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconnectfour_1_1_connect_four_board.html#a97f43455d548ff5cc1d6cce4fdac68f4"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="connectfour.ConnectFourBoard.is_tie",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconnectfour_1_1_connect_four_board.html#aa56fe0b1b07f9995e4b0bec934317a62"];
+}

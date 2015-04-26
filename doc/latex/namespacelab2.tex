@@ -1,0 +1,366 @@
+\hypertarget{namespacelab2}{}\section{lab2 Namespace Reference}
+\label{namespacelab2}\index{lab2@{lab2}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacelab2_a587fb5e12b9b6bbe5a98a76af303b841}{quick\+Sort}
+\item 
+def \hyperlink{namespacelab2_a3a1a3b5cfb516d5a9d5ee8bb9e9d1354}{quick\+Sort\+Helper} (graph, goal, alist, first, last, sort\+Type)
+\item 
+def \hyperlink{namespacelab2_ac92a9ebd5c8b038233463d4d04860d54}{partition} (graph, goal, alist, first, last)
+\item 
+def \hyperlink{namespacelab2_ac6d556c4bfdfe4909967b690a3fc6a6b}{quick\+Sort\+\_\+bnb}
+\item 
+def \hyperlink{namespacelab2_af0c98e54367bc2fe44f40db0af6e4b12}{quick\+Sort\+Helper\+\_\+bnb} (graph, goal, alist, first, last, sort\+Type)
+\item 
+def \hyperlink{namespacelab2_a5a7d465167cf72bb801f8d2918930b2b}{partition\+\_\+bnb} (graph, goal, alist, first, last)
+\item 
+def \hyperlink{namespacelab2_a344025dfc264b6f4463c871a836954e9}{bfs} (graph, start, goal)
+\begin{DoxyCompactList}\small\item\em Optional Warm-\/up\+: B\+F\+S and D\+F\+S If you implement these, the offline tester will test them. \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab2_a77ce040b144b3d0ac11ee7a3b247e45e}{dfs} (graph, start, goal)
+\begin{DoxyCompactList}\small\item\em Once you have completed the breadth-\/first search, this part should be very simple to complete. \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab2_ac34e3ba898541997df325041046f5418}{hill\+\_\+climbing} (graph, start, goal)
+\begin{DoxyCompactList}\small\item\em Now we\textquotesingle{}re going to add some heuristics into the search. \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab2_a6e27047ed6d844e2e8dc9ed3d1571473}{beam\+\_\+search} (graph, start, goal, beam\+\_\+width)
+\begin{DoxyCompactList}\small\item\em Now we\textquotesingle{}re going to implement beam search, a variation on B\+F\+S that caps the amount of memory used to store paths. \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab2_a9124033f320681f2240efa74a9961c48}{path\+\_\+length} (graph, node\+\_\+names)
+\begin{DoxyCompactList}\small\item\em Now we\textquotesingle{}re going to try optimal search. \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab2_a3723e90643162dc478de991430d9d51a}{branch\+\_\+and\+\_\+bound} (graph, start, goal)
+\item 
+def \hyperlink{namespacelab2_a1726fe9f0f3452bc927a9e54bc5bbdfa}{a\+\_\+star} (graph, start, goal)
+\item 
+def \hyperlink{namespacelab2_a2ed8d798792ec9dc5671acfe1bdf7a78}{is\+\_\+admissible} (graph, goal)
+\begin{DoxyCompactList}\small\item\em It\textquotesingle{}s useful to determine if a graph has a consistent and admissible heuristic. \end{DoxyCompactList}\item 
+def \hyperlink{namespacelab2_a8d80dde2701b05918676e6e47e89aad1}{is\+\_\+consistent} (graph, goal)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacelab2_ac153a22864432f910baefac153e7a698}{A\+N\+S\+W\+E\+R1} = False
+\item 
+\hyperlink{namespacelab2_a66d9259ba41ee446cbc1c50a43cc8738}{A\+N\+S\+W\+E\+R2} = False
+\item 
+\hyperlink{namespacelab2_a842aa549dd9983b4fbabd3c793019c76}{A\+N\+S\+W\+E\+R3} = True
+\item 
+\hyperlink{namespacelab2_a49727baf529f24de65cac3c829b2fba7}{A\+N\+S\+W\+E\+R4} = True
+\item 
+\hyperlink{namespacelab2_a32b554d2d28143b3cdb9a1a4ca2c82e7}{A\+N\+S\+W\+E\+R5} = True
+\item 
+\hyperlink{namespacelab2_acbd4e5ee954cf29e548871ab554f9c8d}{A\+N\+S\+W\+E\+R6} = False
+\item 
+string \hyperlink{namespacelab2_a190be521385f6bcfb5a42c6bc464f04f}{H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K} = \textquotesingle{}6\textquotesingle{}
+\item 
+string \hyperlink{namespacelab2_ade9711a14dafdd4de1a1fe2392664e1f}{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G} = \textquotesingle{}a star\textquotesingle{}
+\item 
+string \hyperlink{namespacelab2_ac59a3bdfe7b687eace57bb057cd2c9ae}{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G} = \textquotesingle{}nothing\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacelab2_a1726fe9f0f3452bc927a9e54bc5bbdfa}{}\index{lab2@{lab2}!a\+\_\+star@{a\+\_\+star}}
+\index{a\+\_\+star@{a\+\_\+star}!lab2@{lab2}}
+\subsubsection[{a\+\_\+star}]{\setlength{\rightskip}{0pt plus 5cm}def lab2.\+a\+\_\+star (
+\begin{DoxyParamCaption}
+\item[{}]{graph, }
+\item[{}]{start, }
+\item[{}]{goal}
+\end{DoxyParamCaption}
+)}\label{namespacelab2_a1726fe9f0f3452bc927a9e54bc5bbdfa}
+
+
+Here is the call graph for this function\+:
+% FIG 0
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+\hypertarget{namespacelab2_a6e27047ed6d844e2e8dc9ed3d1571473}{}\index{lab2@{lab2}!beam\+\_\+search@{beam\+\_\+search}}
+\index{beam\+\_\+search@{beam\+\_\+search}!lab2@{lab2}}
+\subsubsection[{beam\+\_\+search}]{\setlength{\rightskip}{0pt plus 5cm}def lab2.\+beam\+\_\+search (
+\begin{DoxyParamCaption}
+\item[{}]{graph, }
+\item[{}]{start, }
+\item[{}]{goal, }
+\item[{}]{beam\+\_\+width}
+\end{DoxyParamCaption}
+)}\label{namespacelab2_a6e27047ed6d844e2e8dc9ed3d1571473}
+
+
+Now we\textquotesingle{}re going to implement beam search, a variation on B\+F\+S that caps the amount of memory used to store paths. 
+
+Remember, we maintain only k candidate paths of length n in our agenda at any time. The k top candidates are to be determined using the graph get\+\_\+heuristic function, with lower values being better values. 
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+\hypertarget{namespacelab2_a344025dfc264b6f4463c871a836954e9}{}\index{lab2@{lab2}!bfs@{bfs}}
+\index{bfs@{bfs}!lab2@{lab2}}
+\subsubsection[{bfs}]{\setlength{\rightskip}{0pt plus 5cm}def lab2.\+bfs (
+\begin{DoxyParamCaption}
+\item[{}]{graph, }
+\item[{}]{start, }
+\item[{}]{goal}
+\end{DoxyParamCaption}
+)}\label{namespacelab2_a344025dfc264b6f4463c871a836954e9}
+
+
+Optional Warm-\/up\+: B\+F\+S and D\+F\+S If you implement these, the offline tester will test them. 
+
+If you don\textquotesingle{}t, it won\textquotesingle{}t. The online tester will not test them. \hypertarget{namespacelab2_a3723e90643162dc478de991430d9d51a}{}\index{lab2@{lab2}!branch\+\_\+and\+\_\+bound@{branch\+\_\+and\+\_\+bound}}
+\index{branch\+\_\+and\+\_\+bound@{branch\+\_\+and\+\_\+bound}!lab2@{lab2}}
+\subsubsection[{branch\+\_\+and\+\_\+bound}]{\setlength{\rightskip}{0pt plus 5cm}def lab2.\+branch\+\_\+and\+\_\+bound (
+\begin{DoxyParamCaption}
+\item[{}]{graph, }
+\item[{}]{start, }
+\item[{}]{goal}
+\end{DoxyParamCaption}
+)}\label{namespacelab2_a3723e90643162dc478de991430d9d51a}
+
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+\hypertarget{namespacelab2_a77ce040b144b3d0ac11ee7a3b247e45e}{}\index{lab2@{lab2}!dfs@{dfs}}
+\index{dfs@{dfs}!lab2@{lab2}}
+\subsubsection[{dfs}]{\setlength{\rightskip}{0pt plus 5cm}def lab2.\+dfs (
+\begin{DoxyParamCaption}
+\item[{}]{graph, }
+\item[{}]{start, }
+\item[{}]{goal}
+\end{DoxyParamCaption}
+)}\label{namespacelab2_a77ce040b144b3d0ac11ee7a3b247e45e}
+
+
+Once you have completed the breadth-\/first search, this part should be very simple to complete. 
+
+\hypertarget{namespacelab2_ac34e3ba898541997df325041046f5418}{}\index{lab2@{lab2}!hill\+\_\+climbing@{hill\+\_\+climbing}}
+\index{hill\+\_\+climbing@{hill\+\_\+climbing}!lab2@{lab2}}
+\subsubsection[{hill\+\_\+climbing}]{\setlength{\rightskip}{0pt plus 5cm}def lab2.\+hill\+\_\+climbing (
+\begin{DoxyParamCaption}
+\item[{}]{graph, }
+\item[{}]{start, }
+\item[{}]{goal}
+\end{DoxyParamCaption}
+)}\label{namespacelab2_ac34e3ba898541997df325041046f5418}
+
+
+Now we\textquotesingle{}re going to add some heuristics into the search. 
+
+Remember that hill-\/climbing is a modified version of depth-\/first search. Search direction should be towards lower heuristic values to the goal. 
+
+Here is the call graph for this function\+:
+% FIG 4
+
+
+\hypertarget{namespacelab2_a2ed8d798792ec9dc5671acfe1bdf7a78}{}\index{lab2@{lab2}!is\+\_\+admissible@{is\+\_\+admissible}}
+\index{is\+\_\+admissible@{is\+\_\+admissible}!lab2@{lab2}}
+\subsubsection[{is\+\_\+admissible}]{\setlength{\rightskip}{0pt plus 5cm}def lab2.\+is\+\_\+admissible (
+\begin{DoxyParamCaption}
+\item[{}]{graph, }
+\item[{}]{goal}
+\end{DoxyParamCaption}
+)}\label{namespacelab2_a2ed8d798792ec9dc5671acfe1bdf7a78}
+
+
+It\textquotesingle{}s useful to determine if a graph has a consistent and admissible heuristic. 
+
+You\textquotesingle{}ve seen graphs with heuristics that are admissible, but not consistent. Have you seen any graphs that are consistent, but not admissible? 
+
+Here is the call graph for this function\+:
+% FIG 5
+
+
+\hypertarget{namespacelab2_a8d80dde2701b05918676e6e47e89aad1}{}\index{lab2@{lab2}!is\+\_\+consistent@{is\+\_\+consistent}}
+\index{is\+\_\+consistent@{is\+\_\+consistent}!lab2@{lab2}}
+\subsubsection[{is\+\_\+consistent}]{\setlength{\rightskip}{0pt plus 5cm}def lab2.\+is\+\_\+consistent (
+\begin{DoxyParamCaption}
+\item[{}]{graph, }
+\item[{}]{goal}
+\end{DoxyParamCaption}
+)}\label{namespacelab2_a8d80dde2701b05918676e6e47e89aad1}
+\hypertarget{namespacelab2_ac92a9ebd5c8b038233463d4d04860d54}{}\index{lab2@{lab2}!partition@{partition}}
+\index{partition@{partition}!lab2@{lab2}}
+\subsubsection[{partition}]{\setlength{\rightskip}{0pt plus 5cm}def lab2.\+partition (
+\begin{DoxyParamCaption}
+\item[{}]{graph, }
+\item[{}]{goal, }
+\item[{}]{alist, }
+\item[{}]{first, }
+\item[{}]{last}
+\end{DoxyParamCaption}
+)}\label{namespacelab2_ac92a9ebd5c8b038233463d4d04860d54}
+
+
+Here is the caller graph for this function\+:
+% FIG 6
+
+
+\hypertarget{namespacelab2_a5a7d465167cf72bb801f8d2918930b2b}{}\index{lab2@{lab2}!partition\+\_\+bnb@{partition\+\_\+bnb}}
+\index{partition\+\_\+bnb@{partition\+\_\+bnb}!lab2@{lab2}}
+\subsubsection[{partition\+\_\+bnb}]{\setlength{\rightskip}{0pt plus 5cm}def lab2.\+partition\+\_\+bnb (
+\begin{DoxyParamCaption}
+\item[{}]{graph, }
+\item[{}]{goal, }
+\item[{}]{alist, }
+\item[{}]{first, }
+\item[{}]{last}
+\end{DoxyParamCaption}
+)}\label{namespacelab2_a5a7d465167cf72bb801f8d2918930b2b}
+
+
+Here is the call graph for this function\+:
+% FIG 7
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 8
+
+
+\hypertarget{namespacelab2_a9124033f320681f2240efa74a9961c48}{}\index{lab2@{lab2}!path\+\_\+length@{path\+\_\+length}}
+\index{path\+\_\+length@{path\+\_\+length}!lab2@{lab2}}
+\subsubsection[{path\+\_\+length}]{\setlength{\rightskip}{0pt plus 5cm}def lab2.\+path\+\_\+length (
+\begin{DoxyParamCaption}
+\item[{}]{graph, }
+\item[{}]{node\+\_\+names}
+\end{DoxyParamCaption}
+)}\label{namespacelab2_a9124033f320681f2240efa74a9961c48}
+
+
+Now we\textquotesingle{}re going to try optimal search. 
+
+The previous searches haven\textquotesingle{}t used edge distances in the calculation. This function takes in a graph and a list of node names, and returns the sum of edge lengths along the path -- the total distance in the path. 
+
+Here is the caller graph for this function\+:
+% FIG 9
+
+
+\hypertarget{namespacelab2_a587fb5e12b9b6bbe5a98a76af303b841}{}\index{lab2@{lab2}!quick\+Sort@{quick\+Sort}}
+\index{quick\+Sort@{quick\+Sort}!lab2@{lab2}}
+\subsubsection[{quick\+Sort}]{\setlength{\rightskip}{0pt plus 5cm}def lab2.\+quick\+Sort (
+\begin{DoxyParamCaption}
+\item[{}]{graph, }
+\item[{}]{goal, }
+\item[{}]{alist, }
+\item[{}]{sort\+Type = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{namespacelab2_a587fb5e12b9b6bbe5a98a76af303b841}
+
+
+Here is the call graph for this function\+:
+% FIG 10
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 11
+
+
+\hypertarget{namespacelab2_ac6d556c4bfdfe4909967b690a3fc6a6b}{}\index{lab2@{lab2}!quick\+Sort\+\_\+bnb@{quick\+Sort\+\_\+bnb}}
+\index{quick\+Sort\+\_\+bnb@{quick\+Sort\+\_\+bnb}!lab2@{lab2}}
+\subsubsection[{quick\+Sort\+\_\+bnb}]{\setlength{\rightskip}{0pt plus 5cm}def lab2.\+quick\+Sort\+\_\+bnb (
+\begin{DoxyParamCaption}
+\item[{}]{graph, }
+\item[{}]{goal, }
+\item[{}]{alist, }
+\item[{}]{sort\+Type = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{namespacelab2_ac6d556c4bfdfe4909967b690a3fc6a6b}
+
+
+Here is the call graph for this function\+:
+% FIG 12
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 13
+
+
+\hypertarget{namespacelab2_a3a1a3b5cfb516d5a9d5ee8bb9e9d1354}{}\index{lab2@{lab2}!quick\+Sort\+Helper@{quick\+Sort\+Helper}}
+\index{quick\+Sort\+Helper@{quick\+Sort\+Helper}!lab2@{lab2}}
+\subsubsection[{quick\+Sort\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}def lab2.\+quick\+Sort\+Helper (
+\begin{DoxyParamCaption}
+\item[{}]{graph, }
+\item[{}]{goal, }
+\item[{}]{alist, }
+\item[{}]{first, }
+\item[{}]{last, }
+\item[{}]{sort\+Type}
+\end{DoxyParamCaption}
+)}\label{namespacelab2_a3a1a3b5cfb516d5a9d5ee8bb9e9d1354}
+
+
+Here is the call graph for this function\+:
+% FIG 14
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 15
+
+
+\hypertarget{namespacelab2_af0c98e54367bc2fe44f40db0af6e4b12}{}\index{lab2@{lab2}!quick\+Sort\+Helper\+\_\+bnb@{quick\+Sort\+Helper\+\_\+bnb}}
+\index{quick\+Sort\+Helper\+\_\+bnb@{quick\+Sort\+Helper\+\_\+bnb}!lab2@{lab2}}
+\subsubsection[{quick\+Sort\+Helper\+\_\+bnb}]{\setlength{\rightskip}{0pt plus 5cm}def lab2.\+quick\+Sort\+Helper\+\_\+bnb (
+\begin{DoxyParamCaption}
+\item[{}]{graph, }
+\item[{}]{goal, }
+\item[{}]{alist, }
+\item[{}]{first, }
+\item[{}]{last, }
+\item[{}]{sort\+Type}
+\end{DoxyParamCaption}
+)}\label{namespacelab2_af0c98e54367bc2fe44f40db0af6e4b12}
+
+
+Here is the call graph for this function\+:
+% FIG 16
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 17
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacelab2_ac153a22864432f910baefac153e7a698}{}\index{lab2@{lab2}!A\+N\+S\+W\+E\+R1@{A\+N\+S\+W\+E\+R1}}
+\index{A\+N\+S\+W\+E\+R1@{A\+N\+S\+W\+E\+R1}!lab2@{lab2}}
+\subsubsection[{A\+N\+S\+W\+E\+R1}]{\setlength{\rightskip}{0pt plus 5cm}lab2.\+A\+N\+S\+W\+E\+R1 = False}\label{namespacelab2_ac153a22864432f910baefac153e7a698}
+\hypertarget{namespacelab2_a66d9259ba41ee446cbc1c50a43cc8738}{}\index{lab2@{lab2}!A\+N\+S\+W\+E\+R2@{A\+N\+S\+W\+E\+R2}}
+\index{A\+N\+S\+W\+E\+R2@{A\+N\+S\+W\+E\+R2}!lab2@{lab2}}
+\subsubsection[{A\+N\+S\+W\+E\+R2}]{\setlength{\rightskip}{0pt plus 5cm}lab2.\+A\+N\+S\+W\+E\+R2 = False}\label{namespacelab2_a66d9259ba41ee446cbc1c50a43cc8738}
+\hypertarget{namespacelab2_a842aa549dd9983b4fbabd3c793019c76}{}\index{lab2@{lab2}!A\+N\+S\+W\+E\+R3@{A\+N\+S\+W\+E\+R3}}
+\index{A\+N\+S\+W\+E\+R3@{A\+N\+S\+W\+E\+R3}!lab2@{lab2}}
+\subsubsection[{A\+N\+S\+W\+E\+R3}]{\setlength{\rightskip}{0pt plus 5cm}lab2.\+A\+N\+S\+W\+E\+R3 = True}\label{namespacelab2_a842aa549dd9983b4fbabd3c793019c76}
+\hypertarget{namespacelab2_a49727baf529f24de65cac3c829b2fba7}{}\index{lab2@{lab2}!A\+N\+S\+W\+E\+R4@{A\+N\+S\+W\+E\+R4}}
+\index{A\+N\+S\+W\+E\+R4@{A\+N\+S\+W\+E\+R4}!lab2@{lab2}}
+\subsubsection[{A\+N\+S\+W\+E\+R4}]{\setlength{\rightskip}{0pt plus 5cm}lab2.\+A\+N\+S\+W\+E\+R4 = True}\label{namespacelab2_a49727baf529f24de65cac3c829b2fba7}
+\hypertarget{namespacelab2_a32b554d2d28143b3cdb9a1a4ca2c82e7}{}\index{lab2@{lab2}!A\+N\+S\+W\+E\+R5@{A\+N\+S\+W\+E\+R5}}
+\index{A\+N\+S\+W\+E\+R5@{A\+N\+S\+W\+E\+R5}!lab2@{lab2}}
+\subsubsection[{A\+N\+S\+W\+E\+R5}]{\setlength{\rightskip}{0pt plus 5cm}lab2.\+A\+N\+S\+W\+E\+R5 = True}\label{namespacelab2_a32b554d2d28143b3cdb9a1a4ca2c82e7}
+\hypertarget{namespacelab2_acbd4e5ee954cf29e548871ab554f9c8d}{}\index{lab2@{lab2}!A\+N\+S\+W\+E\+R6@{A\+N\+S\+W\+E\+R6}}
+\index{A\+N\+S\+W\+E\+R6@{A\+N\+S\+W\+E\+R6}!lab2@{lab2}}
+\subsubsection[{A\+N\+S\+W\+E\+R6}]{\setlength{\rightskip}{0pt plus 5cm}lab2.\+A\+N\+S\+W\+E\+R6 = False}\label{namespacelab2_acbd4e5ee954cf29e548871ab554f9c8d}
+\hypertarget{namespacelab2_a190be521385f6bcfb5a42c6bc464f04f}{}\index{lab2@{lab2}!H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K@{H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K}}
+\index{H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K@{H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K}!lab2@{lab2}}
+\subsubsection[{H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K}]{\setlength{\rightskip}{0pt plus 5cm}string lab2.\+H\+O\+W\+\_\+\+M\+A\+N\+Y\+\_\+\+H\+O\+U\+R\+S\+\_\+\+T\+H\+I\+S\+\_\+\+P\+S\+E\+T\+\_\+\+T\+O\+O\+K = \textquotesingle{}6\textquotesingle{}}\label{namespacelab2_a190be521385f6bcfb5a42c6bc464f04f}
+\hypertarget{namespacelab2_ac59a3bdfe7b687eace57bb057cd2c9ae}{}\index{lab2@{lab2}!W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G@{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G}}
+\index{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G@{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G}!lab2@{lab2}}
+\subsubsection[{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}string lab2.\+W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+B\+O\+R\+I\+N\+G = \textquotesingle{}nothing\textquotesingle{}}\label{namespacelab2_ac59a3bdfe7b687eace57bb057cd2c9ae}
+\hypertarget{namespacelab2_ade9711a14dafdd4de1a1fe2392664e1f}{}\index{lab2@{lab2}!W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G@{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G}}
+\index{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G@{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G}!lab2@{lab2}}
+\subsubsection[{W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}string lab2.\+W\+H\+A\+T\+\_\+\+I\+\_\+\+F\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+N\+G = \textquotesingle{}a star\textquotesingle{}}\label{namespacelab2_ade9711a14dafdd4de1a1fe2392664e1f}

@@ -1,0 +1,99 @@
+\hypertarget{namespacealgebra}{}\section{algebra Namespace Reference}
+\label{namespacealgebra}\index{algebra@{algebra}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classalgebra_1_1_expression}{Expression}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classalgebra_1_1_expression}{Expression} classes \+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+. \end{DoxyCompactList}\item 
+class \hyperlink{classalgebra_1_1_product}{Product}
+\item 
+class \hyperlink{classalgebra_1_1_sum}{Sum}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacealgebra_a3d670661d8c8c55f6bbdd902678f08a8}{simplify\+\_\+if\+\_\+possible} (expr)
+\item 
+def \hyperlink{namespacealgebra_a1293927dfb502302e1bfafa581d2d602}{multiply} (expr1, expr2)
+\item 
+def \hyperlink{namespacealgebra_a5ea0efba014ee3b9e07e77132793757c}{do\+\_\+multiply} (expr1, expr2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacealgebra_a5ea0efba014ee3b9e07e77132793757c}{}\index{algebra@{algebra}!do\+\_\+multiply@{do\+\_\+multiply}}
+\index{do\+\_\+multiply@{do\+\_\+multiply}!algebra@{algebra}}
+\subsubsection[{do\+\_\+multiply}]{\setlength{\rightskip}{0pt plus 5cm}def algebra.\+do\+\_\+multiply (
+\begin{DoxyParamCaption}
+\item[{}]{expr1, }
+\item[{}]{expr2}
+\end{DoxyParamCaption}
+)}\label{namespacealgebra_a5ea0efba014ee3b9e07e77132793757c}
+\begin{DoxyVerb}You have two Expressions, and you need to make a simplified expression
+representing their product. They are guaranteed to be of type Expression
+-- that is, either Sums or Products -- by the multiply() function that
+calls this one.
+
+So, you have four cases to deal with:
+* expr1 is a Sum, and expr2 is a Sum
+* expr1 is a Sum, and expr2 is a Product
+* expr1 is a Product, and expr2 is a Sum
+* expr1 is a Product, and expr2 is a Product
+
+You need to create Sums or Products that represent what you get by
+applying the algebraic rules of multiplication to these expressions,
+and simplifying.
+
+Look above for details on the Sum and Product classes. The Python operator
+'*' will not help you.
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 0
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+\hypertarget{namespacealgebra_a1293927dfb502302e1bfafa581d2d602}{}\index{algebra@{algebra}!multiply@{multiply}}
+\index{multiply@{multiply}!algebra@{algebra}}
+\subsubsection[{multiply}]{\setlength{\rightskip}{0pt plus 5cm}def algebra.\+multiply (
+\begin{DoxyParamCaption}
+\item[{}]{expr1, }
+\item[{}]{expr2}
+\end{DoxyParamCaption}
+)}\label{namespacealgebra_a1293927dfb502302e1bfafa581d2d602}
+\begin{DoxyVerb}This function makes sure that its arguments are represented as either a
+Sum or a Product, and then passes the hard work onto do_multiply.
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+\hypertarget{namespacealgebra_a3d670661d8c8c55f6bbdd902678f08a8}{}\index{algebra@{algebra}!simplify\+\_\+if\+\_\+possible@{simplify\+\_\+if\+\_\+possible}}
+\index{simplify\+\_\+if\+\_\+possible@{simplify\+\_\+if\+\_\+possible}!algebra@{algebra}}
+\subsubsection[{simplify\+\_\+if\+\_\+possible}]{\setlength{\rightskip}{0pt plus 5cm}def algebra.\+simplify\+\_\+if\+\_\+possible (
+\begin{DoxyParamCaption}
+\item[{}]{expr}
+\end{DoxyParamCaption}
+)}\label{namespacealgebra_a3d670661d8c8c55f6bbdd902678f08a8}
+\begin{DoxyVerb}A helper function that guards against trying to simplify a non-Expression.
+\end{DoxyVerb}
+ 
+
+Here is the caller graph for this function\+:
+% FIG 4
+
+

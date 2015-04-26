@@ -1,0 +1,131 @@
+\hypertarget{classproduction_1_1_i_f}{}\section{production.\+I\+F Class Reference}
+\label{classproduction_1_1_i_f}\index{production.\+I\+F@{production.\+I\+F}}
+
+
+Inheritance diagram for production.\+I\+F\+:
+% FIG 0
+
+
+Collaboration diagram for production.\+I\+F\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classproduction_1_1_i_f_a9017c2c3d1ca4982ebc9dc58afc2b750}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classproduction_1_1_i_f_a8d8249f6e0329407f77f23f9eede1342}{apply}
+\item 
+def \hyperlink{classproduction_1_1_i_f_a913c0fb435ac0a64a1ddf956fd9376c1}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classproduction_1_1_i_f_a57e2be295731642cad9b4fb43239ed33}{antecedent} (self)
+\item 
+def \hyperlink{classproduction_1_1_i_f_a5568bdf2f662fb1f9a143ace153fccf6}{consequent} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A conditional rule.
+
+This should have the form IF( antecedent, THEN(consequent) ),
+or IF( antecedent, THEN(consequent), DELETE(delete_clause) ).
+
+The antecedent is an expression or AND/OR tree with variables
+in it, determining under what conditions the rule can fire.
+
+The consequent is an expression or list of expressions that
+will be added when the rule fires. Variables can be filled in
+from the antecedent.
+
+The delete_clause is an expression or list of expressions
+that will be deleted when the rule fires. Again, variables
+can be filled in from the antecedent.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classproduction_1_1_i_f_a9017c2c3d1ca4982ebc9dc58afc2b750}{}\index{production\+::\+I\+F@{production\+::\+I\+F}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!production\+::\+I\+F@{production\+::\+I\+F}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+I\+F.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{conditional, }
+\item[{}]{action = {\ttfamily None}, }
+\item[{}]{delete\+\_\+clause = {\ttfamily ()}}
+\end{DoxyParamCaption}
+)}\label{classproduction_1_1_i_f_a9017c2c3d1ca4982ebc9dc58afc2b750}
+
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classproduction_1_1_i_f_a913c0fb435ac0a64a1ddf956fd9376c1}{}\index{production\+::\+I\+F@{production\+::\+I\+F}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!production\+::\+I\+F@{production\+::\+I\+F}}
+\subsubsection[{\+\_\+\+\_\+str\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+I\+F.\+\_\+\+\_\+str\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classproduction_1_1_i_f_a913c0fb435ac0a64a1ddf956fd9376c1}
+
+
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+\hypertarget{classproduction_1_1_i_f_a57e2be295731642cad9b4fb43239ed33}{}\index{production\+::\+I\+F@{production\+::\+I\+F}!antecedent@{antecedent}}
+\index{antecedent@{antecedent}!production\+::\+I\+F@{production\+::\+I\+F}}
+\subsubsection[{antecedent}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+I\+F.\+antecedent (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classproduction_1_1_i_f_a57e2be295731642cad9b4fb43239ed33}
+\hypertarget{classproduction_1_1_i_f_a8d8249f6e0329407f77f23f9eede1342}{}\index{production\+::\+I\+F@{production\+::\+I\+F}!apply@{apply}}
+\index{apply@{apply}!production\+::\+I\+F@{production\+::\+I\+F}}
+\subsubsection[{apply}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+I\+F.\+apply (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{rules, }
+\item[{}]{apply\+\_\+only\+\_\+one = {\ttfamily False}, }
+\item[{}]{verbose = {\ttfamily False}}
+\end{DoxyParamCaption}
+)}\label{classproduction_1_1_i_f_a8d8249f6e0329407f77f23f9eede1342}
+\begin{DoxyVerb}Return a new set of data updated by the conditions and
+actions of this IF statement.
+
+If 'apply_only_one' is True, after adding one datum,
+return immediately instead of continuing. This is the
+behavior described in class, but it is slower.
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 5
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 6
+
+
+\hypertarget{classproduction_1_1_i_f_a5568bdf2f662fb1f9a143ace153fccf6}{}\index{production\+::\+I\+F@{production\+::\+I\+F}!consequent@{consequent}}
+\index{consequent@{consequent}!production\+::\+I\+F@{production\+::\+I\+F}}
+\subsubsection[{consequent}]{\setlength{\rightskip}{0pt plus 5cm}def production.\+I\+F.\+consequent (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classproduction_1_1_i_f_a5568bdf2f662fb1f9a143ace153fccf6}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lab1/\hyperlink{production_8py}{production.\+py}\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\hypertarget{classalgebra_1_1_sum}{}\section{algebra.\+Sum Class Reference}
+\label{classalgebra_1_1_sum}\index{algebra.\+Sum@{algebra.\+Sum}}
+
+
+Inheritance diagram for algebra.\+Sum\+:
+% FIG 0
+
+
+Collaboration diagram for algebra.\+Sum\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classalgebra_1_1_sum_a841f362488110cc4eb90a9d1da422759}{\+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classalgebra_1_1_sum_acf943c215b2493f954d12057fdcfb2f5}{simplify} (self)
+\item 
+def \hyperlink{classalgebra_1_1_sum_ae1f037128c76fce074f14c134e250d3f}{flatten} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A Sum acts just like a list in almost all regards, except that this code
+can tell it is a Sum using isinstance(), and we add useful methods
+such as simplify().
+
+Because of this:
+  * You can index into a sum like a list, as in term = sum[0].
+  * You can iterate over a sum with "for term in sum:".
+  * You can convert a sum to an ordinary list with the list() constructor:
+     the_list = list(the_sum)
+  * You can convert an ordinary list to a sum with the Sum() constructor:
+     the_sum = Sum(the_list)
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classalgebra_1_1_sum_a841f362488110cc4eb90a9d1da422759}{}\index{algebra\+::\+Sum@{algebra\+::\+Sum}!\+\_\+\+\_\+repr\+\_\+\+\_\+@{\+\_\+\+\_\+repr\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+repr\+\_\+\+\_\+@{\+\_\+\+\_\+repr\+\_\+\+\_\+}!algebra\+::\+Sum@{algebra\+::\+Sum}}
+\subsubsection[{\+\_\+\+\_\+repr\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def algebra.\+Sum.\+\_\+\+\_\+repr\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classalgebra_1_1_sum_a841f362488110cc4eb90a9d1da422759}
+\hypertarget{classalgebra_1_1_sum_ae1f037128c76fce074f14c134e250d3f}{}\index{algebra\+::\+Sum@{algebra\+::\+Sum}!flatten@{flatten}}
+\index{flatten@{flatten}!algebra\+::\+Sum@{algebra\+::\+Sum}}
+\subsubsection[{flatten}]{\setlength{\rightskip}{0pt plus 5cm}def algebra.\+Sum.\+flatten (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classalgebra_1_1_sum_ae1f037128c76fce074f14c134e250d3f}
+\begin{DoxyVerb}Simplifies nested sums.\end{DoxyVerb}
+ 
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+\hypertarget{classalgebra_1_1_sum_acf943c215b2493f954d12057fdcfb2f5}{}\index{algebra\+::\+Sum@{algebra\+::\+Sum}!simplify@{simplify}}
+\index{simplify@{simplify}!algebra\+::\+Sum@{algebra\+::\+Sum}}
+\subsubsection[{simplify}]{\setlength{\rightskip}{0pt plus 5cm}def algebra.\+Sum.\+simplify (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classalgebra_1_1_sum_acf943c215b2493f954d12057fdcfb2f5}
+\begin{DoxyVerb}This is the starting point for the task you need to perform. It
+removes unnecessary nesting and applies the associative law.
+\end{DoxyVerb}
+ 
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lab0/\hyperlink{algebra_8py}{algebra.\+py}\end{DoxyCompactItemize}

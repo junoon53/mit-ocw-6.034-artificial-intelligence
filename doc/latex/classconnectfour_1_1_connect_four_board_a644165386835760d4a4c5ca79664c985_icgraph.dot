@@ -1,0 +1,11 @@
+digraph "connectfour.ConnectFourBoard.get_board_array"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="connectfour.ConnectFourBoard.get\l_board_array",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="connectfour.ConnectFourBoard.do_move",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconnectfour_1_1_connect_four_board.html#af8352dbf6f205a0ddfb6c642a166b43e"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="connectfour.ConnectFourBoard.\l__eq__",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconnectfour_1_1_connect_four_board.html#ac14002ce00eb4b9f764237dea5c14a39"];
+}

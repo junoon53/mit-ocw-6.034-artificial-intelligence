@@ -1,0 +1,11 @@
+digraph "classify.CongressIDTree.__str__"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="classify.CongressIDTree.\l__str__",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="classify.CongressIDTree._str",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classclassify_1_1_congress_i_d_tree.html#a76d5275bbd146ace57c1912f446a1283"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="data_reader.vote_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedata__reader.html#ab188bb279dfcad5668b987fb397d7ba0"];
+}
